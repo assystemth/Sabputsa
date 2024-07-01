@@ -1,0 +1,313 @@
+<!-- Include Bootstrap CSS and JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+<!-- sweetalert 2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- chart พาย  -->
+<script src="<?= base_url('asset/'); ?>rpie.js"></script>
+
+<!-- sb-admin-2 -->
+<!-- Bootstrap core JavaScript-->
+<script src="<?= base_url(); ?>vendor/jquery/jquery.min.js"></script>
+<!-- <script src="<?= base_url(); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+<!-- Core plugin JavaScript-->
+<script src="<?= base_url(); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="<?= base_url('asset/'); ?>js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<!-- <script src="<?= base_url(); ?>vendor/chart.js/Chart.min.js"></script> -->
+
+<!-- Page level custom scripts -->
+<!-- <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script> -->
+
+<!-- Page level plugins -->
+<script src="<?= base_url(); ?>vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url(); ?>vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="<?= base_url('asset/'); ?>js/demo/datatables-demo.js"></script>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- รูปภาพ preview -->
+<script src="<?= base_url('asset/'); ?>lightbox2/src/js/lightbox.js"></script>
+
+<!-- chart w3school -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<!-- chart google -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script>
+  // dropdown report e-gp *********************************************************************
+  function showChartPurchase(chartId, year) {
+    // ซ่อนทุก chart ก่อน
+    document.querySelectorAll('.chang_chart_purchase').forEach(container => {
+      container.style.display = 'none';
+    });
+
+    // แสดง chart ที่เลือก
+    document.getElementById(chartId).style.display = 'block';
+
+    // เปลี่ยนข้อความในปุ่ม dropdown เป็นปีที่เลือก
+    document.getElementById('dropdownMenuLinkPurchase').innerText = 'ปีงบประมาณ ' + year;
+  }
+
+  function showChartType(chartId, year) {
+    // ซ่อนทุก chart ก่อน
+    document.querySelectorAll('.chang_chart_type').forEach(container => {
+      container.style.display = 'none';
+    });
+
+    // แสดง chart ที่เลือก
+    document.getElementById(chartId).style.display = 'block';
+
+    // เปลี่ยนข้อความในปุ่ม dropdown เป็นปีที่เลือก
+    document.getElementById('dropdownMenuLinkType').innerText = 'ปีงบประมาณ ' + year;
+  }
+
+  function showChartStatus(chartId, year) {
+    // ซ่อนทุก chart ก่อน
+    document.querySelectorAll('.chang_chart_status').forEach(container => {
+      container.style.display = 'none';
+    });
+
+    // แสดง chart ที่เลือก
+    document.getElementById(chartId).style.display = 'block';
+
+    // เปลี่ยนข้อความในปุ่ม dropdown เป็นปีที่เลือก
+    document.getElementById('dropdownMenuLinkStatus').innerText = 'ปีงบประมาณ ' + year;
+  }
+
+  function showChart(chartId, year) {
+    // ซ่อนทุก chart ก่อน
+    document.querySelectorAll('.chang_tmt_budjet').forEach(container => {
+      container.style.display = 'none';
+    });
+
+    // แสดง chart ที่เลือก
+    document.getElementById(chartId).style.display = 'block';
+
+    // เปลี่ยนข้อความในปุ่ม dropdown เป็นปีที่เลือก
+    document.getElementById('dropdownMenuLinkBudget').innerText = 'ปีงบประมาณ ' + year;
+  }
+
+  // **************************************************************************************
+
+  // รูปภาพ preview *********************************************************************
+  $(document).ready(function() {
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+  });
+  // **************************************************************************************
+  // คำหยาบ vulgar **********************************
+  $(document).ready(function() {
+    // เมื่อคลิกปุ่ม "จัดการ"
+    $(".popup-insert").click(function() {
+      var target = $(this).data("target");
+      $(target).show();
+    });
+
+    // เมื่อคลิกปุ่ม "ยกเลิก"
+    $(".cancel-button").click(function() {
+      var target = $(this).data("target");
+      $(target).hide();
+    });
+  });
+
+  // ***************************************************
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var currentPage = '<?php echo current_url(); ?>';
+    var navbarLinks = document.querySelectorAll('.navbar-link');
+
+    navbarLinks.forEach(function(link) {
+      var linkHref = link.getAttribute('href');
+      var linkImageSrc = link.getAttribute('data-image-src');
+
+      // ตรวจสอบว่า URL ของลิงก์ตรงกับหน้าที่กำลังใช้งานหรือไม่
+      if (currentPage.includes(linkHref)) {
+        link.classList.add('active');
+        changeImage(linkImageSrc, link);
+      }
+
+      // เพิ่ม Event Listener เพื่อตรวจสอบการคลิกทุกรายการ
+      link.addEventListener('click', function(event) {
+        navbarLinks.forEach(function(innerLink) {
+          innerLink.classList.remove('active');
+        });
+
+        link.classList.add('active');
+        changeImage(linkImageSrc, link);
+      });
+    });
+  });
+
+  function changeImage(src, link) {
+    var img = link.querySelector('img');
+    img.src = src;
+  }
+
+
+  $(document).ready(function() {
+    <?php if ($this->session->flashdata('save_success')) { ?>
+      Swal.fire({
+        // position: 'top-end',
+        icon: 'success',
+        title: 'บันทึกข้อมูลสำเร็จ',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    <?php } ?>
+  });
+
+  $(document).ready(function() {
+    <?php if ($this->session->flashdata('save_error')) { ?>
+      Swal.fire({
+        icon: 'error',
+        title: 'ตรวจพบปัญหา',
+        text: 'หน่วยความจำของท่าเต็ม!',
+        footer: '<a href="#">ติดต่อผู้ดูแลระบบ?</a>'
+      })
+    <?php } ?>
+  });
+
+  $(document).ready(function() {
+    <?php if ($this->session->flashdata('save_maxsize')) { ?>
+      Swal.fire({
+        icon: 'error',
+        title: 'ตรวจพบปัญหา',
+        text: 'ขนาดรูปภาพต้องไม่เกิน 1.5MB!',
+        footer: '<a href="#">ติดต่อผู้ดูแลระบบ?</a>'
+      })
+    <?php } ?>
+  });
+
+  $(document).ready(function() {
+    <?php if ($this->session->flashdata('del_success')) { ?>
+      Swal.fire({
+        // position: 'top-end',
+        icon: 'success',
+        title: 'ลบข้อมูลสำเร็จ',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    <?php } ?>
+  });
+
+  $(document).ready(function() {
+    <?php if ($this->session->flashdata('save_again')) { ?>
+      Swal.fire({
+        icon: 'warning',
+        title: 'ตรวจพบปัญหา',
+        text: 'มีข้อมูลอยู่แล้ว!',
+        footer: '<a href="#">ติดต่อผู้ดูแลระบบ?</a>'
+      })
+    <?php } ?>
+  });
+
+  $(document).ready(function() {
+    <?php if ($this->session->flashdata('password_mismatch')) { ?>
+      Swal.fire({
+        icon: 'warning',
+        title: 'ตรวจพบปัญหา',
+        text: 'รหัสผ่านไม่ตรงกัน!',
+        footer: '<a href="#">ติดต่อผู้ดูแลระบบ?</a>'
+      })
+    <?php } ?>
+  });
+</script>
+<!-- <script>
+    // setup 
+    const data = {
+        labels: ['จำนวนเงินรวม', 'ระหว่างดำเนินการ', 'จำนวนเงินรวม', 'สิ้นสุดสัญญา'],
+        datasets: [{
+            label: 'A',
+            data: [18, 5],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 21, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 21, 1)'
+            ],
+            hoverBackgroundColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 21, 1)'
+            ],
+        }, {
+            label: 'A',
+            data: [11, 20],
+            backgroundColor: [
+                'rgba(255, 26, 255, 0.2)',
+                'rgba(255, 26, 104, 0.2)'
+
+            ],
+            borderColor: [
+                'rgba(255, 26, 255, 1)',
+                'rgba(255, 26, 104, 1)'
+            ],
+            hoverBackgroundColor: [
+                'rgba(255, 26, 255, 1)',
+                'rgba(255, 26, 104, 1)'
+            ],
+        }]
+    };
+
+    const doughnutLabel = {
+        id: 'doughnutLabel',
+        beforeDataSetsDraw(chart, args, pluginOptions) {
+            const {
+                ctx,
+                data
+            } = chart;
+
+            ctx.save();
+            const xCoor = chart.getDatasetMeta(0).data[0].x;
+            const yCoor = chart.getDatasetMeta(0).data[0].y;
+            ctx.font = 'bold 10px sans-serif';
+            ctx.fillStyle = 'rgba(255, 26, 255, 1)';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(`A`, xCoor, yCoor);
+        }
+    }
+
+    // config 
+    const config = {
+        type: 'doughnut',
+        data: data,
+        options: {
+            borderWidth: 1,
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+            }
+        },
+        plugins: [doughnutLabel]
+    };
+
+    // render init block
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    // Instantly assign Chart.js version
+    const chartVersion = document.getElementById('chartVersion');
+    chartVersion.innerText = Chart.version;
+
+</script> -->
