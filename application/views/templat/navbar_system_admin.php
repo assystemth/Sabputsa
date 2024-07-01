@@ -73,6 +73,7 @@
                 <a class="collapse-item" href="<?php echo site_url('Si_backend'); ?>">ยุทธศาสตร์การพัฒนา<br>และแนวทางการพัฒนา</a>
                 <a class="collapse-item" href="<?php echo site_url('Authority_backend'); ?>">ข้อมูลอำนาจหน้าที่</a>
                 <a class="collapse-item" href="<?php echo site_url('Vision_backend'); ?>">วิสัยทัศน์และพันธกิจ</a>
+                <a class="collapse-item" href="<?php echo site_url('Moto_backend'); ?>">คำขวัญ</a>
                 <a class="collapse-item" href="<?php echo site_url('Executivepolicy_backend'); ?>">นโยบายผู้บริหาร</a>
                 <a class="collapse-item" href="<?php echo site_url('Activity_backend'); ?>">ข่าวสาร / กิจกรรม</a>
                 <a class="collapse-item" href="<?php echo site_url('travel_backend'); ?>">สถานที่ท่องเที่ยว</a>
@@ -675,6 +676,13 @@
 
                     <li class="hide">
                         <span>ข้อมูลวิสัยทัศน์และพันธกิจ</span>
+                    </li>
+                </a>
+
+                <a href="<?php echo site_url('Moto_backend'); ?>" class="link">
+
+                    <li class="hide">
+                        <span>คำขวัญ</span>
                     </li>
                 </a>
 
