@@ -302,6 +302,7 @@
                       <div class="dropdown-center">
                           <a href="<?php echo site_url('Pages/authority'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;อำนาจหน้าที่</span></a></a>
                           <a href="<?php echo site_url('Pages/vision'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;วิสัยทัศน์และพันธกิจ</span></a></a>
+                          <a href="<?php echo site_url('Pages/motto'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำขวัญ</span></a></a>
                           <a href="<?php echo site_url('Pages/executivepolicy'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายของผู้บริหาร</span></a></a>
                           <a href="<?php echo site_url('Pages/news_dla'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.</span></a></a>
                           <a href="<?php echo site_url('Pages/prov_local_doc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.จ.</span></a></a>
@@ -541,7 +542,7 @@
       <div style="position: absolute; margin: 25px 25px; z-index: 101;">
           <div class="row">
               <div class="col-4">
-                  <img style="margin-left: 10px;" src="docs/logo.png" width="145" >
+                  <img style="margin-left: 10px;" src="docs/logo.png" width="145">
               </div>
               <div class="col-8" style="margin-top: 5px;">
                   <span class="font-head-navbar-letf-logo1" style="margin-left: 20px;">อบต. ซับพุทรา</span><br>
@@ -571,6 +572,7 @@
                           <div class="dropdown-center">
                               <a href="<?php echo site_url('Pages/authority'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;อำนาจหน้าที่</span></a></a>
                               <a href="<?php echo site_url('Pages/vision'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;วิสัยทัศน์และพันธกิจ</span></a></a>
+                              <a href="<?php echo site_url('Pages/motto'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำขวัญ</span></a></a>
                               <a href="<?php echo site_url('Pages/executivepolicy'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายของผู้บริหาร</span></a></a>
                               <a href="<?php echo site_url('Pages/news_dla'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.</span></a></a>
                               <a href="<?php echo site_url('Pages/prov_local_doc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.จ.</span></a></a>

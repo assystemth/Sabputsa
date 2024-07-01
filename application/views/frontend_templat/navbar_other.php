@@ -293,29 +293,30 @@
               <div class="dropdown-content">
                   <ul class="no-bullets mt-2" style="margin-left: 400px">
                       <div class="dropdown-left">
-                          <a href="<?php echo site_url('Pages/history'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ประวัติความเป็นมา</span></a></a>
-                          <a href="<?php echo site_url('Pages/ci'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อมูลชุมชน</span></a></a>
-                          <a href="<?php echo site_url('Pages/gci'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อมูลสภาพทั่วไป</span></a></a>
-                          <a href="<?php echo site_url('Pages/msg_pres'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สารจากนายก (MES)</span></a></a>
-                          <a href="<?php echo site_url('Pages/mission'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ภารกิจและความรับผิดชอบ</span></a></a>
-                          <a href="<?php echo site_url('Pages/si'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยุทธศาสตร์การพัฒนาด้านโครงสร้างพื้นฐาน</span></a></a>
+                          <a href="<?php echo site_url('Pages/history'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ประวัติความเป็นมา</span></a></a>
+                          <a href="<?php echo site_url('Pages/ci'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อมูลชุมชน</span></a></a>
+                          <a href="<?php echo site_url('Pages/gci'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อมูลสภาพทั่วไป</span></a></a>
+                          <a href="<?php echo site_url('Pages/msg_pres'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สารจากนายก (MES)</span></a></a>
+                          <a href="<?php echo site_url('Pages/mission'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ภารกิจและความรับผิดชอบ</span></a></a>
+                          <a href="<?php echo site_url('Pages/si'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยุทธศาสตร์การพัฒนาด้านโครงสร้างพื้นฐาน</span></a></a>
                       </div>
                       <div class="dropdown-center">
-                          <a href="<?php echo site_url('Pages/authority'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;อำนาจหน้าที่</span></a></a>
-                          <a href="<?php echo site_url('Pages/vision'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;วิสัยทัศน์และพันธกิจ</span></a></a>
-                          <a href="<?php echo site_url('Pages/executivepolicy'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายของผู้บริหาร</span></a></a>
-                          <a href="<?php echo site_url('Pages/news_dla'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.</span></a></a>
-                          <a href="<?php echo site_url('Pages/prov_local_doc'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.จ.</span></a></a>
-                          <a href="<?php echo site_url('Pages/egp'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวจัดซื้อจัดจ้าง e-GP</span></a></a>
+                          <a href="<?php echo site_url('Pages/authority'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;อำนาจหน้าที่</span></a></a>
+                          <a href="<?php echo site_url('Pages/vision'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;วิสัยทัศน์และพันธกิจ</span></a></a>
+                          <a href="<?php echo site_url('Pages/motto'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำขวัญ</span></a></a>
+                          <a href="<?php echo site_url('Pages/executivepolicy'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายของผู้บริหาร</span></a></a>
+                          <a href="<?php echo site_url('Pages/news_dla'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.</span></a></a>
+                          <a href="<?php echo site_url('Pages/prov_local_doc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.จ.</span></a></a>
+                          <a href="<?php echo site_url('Pages/egp'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวจัดซื้อจัดจ้าง e-GP</span></a></a>
                       </div>
                       <div class="dropdown-right">
-                          <a href="<?php echo site_url('Pages/news'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวประชาสัมพันธ์</span></a></a>
-                          <a href="<?php echo site_url('Pages/activity'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวสาร / กิจกรรม</span></a></a>
-                          <a href="<?php echo site_url('Pages/procurement'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวจัดซื้อจัดจ้าง</span></a></a>
-                          <a href="<?php echo site_url('Pages/travel'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สถานที่ท่องเที่ยว</span></a></a>
-                          <a href="<?php echo site_url('Pages/otop'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ผลิตภัณฑ์ชุมชน</span></a></a>
-                          <a href="<?php echo site_url('Pages/newsletter'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;จดหมายข่าว</span></a></a>
-                          <a href="<?php echo site_url('Pages/contact'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ติดต่อเรา</span></a></a>
+                          <a href="<?php echo site_url('Pages/news'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวประชาสัมพันธ์</span></a></a>
+                          <a href="<?php echo site_url('Pages/activity'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวสาร / กิจกรรม</span></a></a>
+                          <a href="<?php echo site_url('Pages/procurement'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวจัดซื้อจัดจ้าง</span></a></a>
+                          <a href="<?php echo site_url('Pages/travel'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สถานที่ท่องเที่ยว</span></a></a>
+                          <a href="<?php echo site_url('Pages/otop'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ผลิตภัณฑ์ชุมชน</span></a></a>
+                          <a href="<?php echo site_url('Pages/newsletter'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;จดหมายข่าว</span></a></a>
+                          <a href="<?php echo site_url('Pages/contact'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ติดต่อเรา</span></a></a>
                       </div>
                   </ul>
               </div>
@@ -325,22 +326,22 @@
               <div class="dropdown-content">
                   <ul class="no-bullets mt-2" style="margin-left: 400px">
                       <div class="dropdown-left">
-                          <a href="<?php echo site_url('Pages/site_map'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนผังโครงสร้างรวม</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_executives'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คณะผู้บริหาร</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_council'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สมาชิกสภาตำบล</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_unit_leaders'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หัวหน้าส่วนราชการ</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_deputy'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สำนักปลัดองค์การบริหารส่วนตำบล</span></a></a>
+                          <a href="<?php echo site_url('Pages/site_map'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนผังโครงสร้างรวม</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_executives'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คณะผู้บริหาร</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_council'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สมาชิกสภาตำบล</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_unit_leaders'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หัวหน้าส่วนราชการ</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_deputy'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สำนักปลัดองค์การบริหารส่วนตำบล</span></a></a>
                       </div>
                       <div class="dropdown-center">
-                          <a href="<?php echo site_url('Pages/p_treasury'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองคลัง</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_maintenance'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองช่าง</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_welfare'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสวัสดิการ</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_treasury'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองคลัง</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_maintenance'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองช่าง</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_welfare'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสวัสดิการ</span></a></a>
                       </div>
                       <div class="dropdown-right">
-                          <a href="<?php echo site_url('Pages/p_learder'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กำนันผู้ใหญ่บ้าน</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_audit'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_learder'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กำนันผู้ใหญ่บ้าน</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_audit'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</span></a></a>
                       </div>
                   </ul>
               </div>
@@ -350,32 +351,32 @@
               <div class="dropdown-content">
                   <ul class="no-bullets mt-2" style="margin-left: 200px">
                       <div class="dropdown-left">
-                          <a href="<?php echo site_url('Pages/pbsv_utilities'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สาธารณูประโภค</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_cjc'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ยุติธรรมชุมชน</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_cac'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ช่วยเหลือประชาชน</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_cig'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารทางราชการ</span></a></a>
-                          <a href="https://www.oic.go.th/INFOCENTER78/7852/" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_ahs'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หลักประกันสุขภาพตำบล</span></a></a>
-                          <a href="<?php echo site_url('Pages/odata'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ฐานข้อมูลเปิดภาครัฐ (Open Data)</span></a></a>
-                          <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยกระดับเจตจำนงทางการเมืองในการต่อต้านการทุจริต</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_utilities'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สาธารณูประโภค</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_cjc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ยุติธรรมชุมชน</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_cac'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ช่วยเหลือประชาชน</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_cig'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารทางราชการ</span></a></a>
+                          <a href="https://www.oic.go.th/INFOCENTER78/7852/" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_ahs'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หลักประกันสุขภาพตำบล</span></a></a>
+                          <a href="<?php echo site_url('Pages/odata'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ฐานข้อมูลเปิดภาครัฐ (Open Data)</span></a></a>
+                          <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยกระดับเจตจำนงทางการเมืองในการต่อต้านการทุจริต</span></a></a>
                       </div>
                       <div class="dropdown-center">
-                          <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;เบี้ยยังชีพผู้สูงอายุ / ผู้พิการ</span></a></a>
-                          <a href="<?php echo site_url('Pages/kid_aw_ods'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;เงินอุดหนุนเด็กแรกเกิด</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_gup'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือสำหรับประชาชน</span></a></a>
-                          <a href="https://dbdregcom.dbd.go.th/mainsite/index.php?id=28" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือจดทะเบียนพาณิชย์</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_sags'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือและมาตรฐานการให้บริการ</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_ems'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;งานกู้ชีพ / การบริการการแพทย์ฉุกเฉิน (EMS)</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_oppr'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;งานอาสาสมัครป้องกันภัยฝ่ายพลเรือน (อปพร.)</span></a></a>
+                          <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;เบี้ยยังชีพผู้สูงอายุ / ผู้พิการ</span></a></a>
+                          <a href="<?php echo site_url('Pages/kid_aw_ods'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;เงินอุดหนุนเด็กแรกเกิด</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_gup'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือสำหรับประชาชน</span></a></a>
+                          <a href="https://dbdregcom.dbd.go.th/mainsite/index.php?id=28" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือจดทะเบียนพาณิชย์</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_sags'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือและมาตรฐานการให้บริการ</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_ems'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;งานกู้ชีพ / การบริการการแพทย์ฉุกเฉิน (EMS)</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_oppr'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;งานอาสาสมัครป้องกันภัยฝ่ายพลเรือน (อปพร.)</span></a></a>
                       </div>
                       <div class="dropdown-right">
-                          <a href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ร้องเรียนร้องทุกข์</span></a></a>
-                          <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยื่นเอกสารออนไลน์</span></a></a>
-                          <a href="<?php echo site_url('Pages/adding_suggestions'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</span></a></a>
-                          <a href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</span></a></a>
-                          <a href="<?php echo site_url('Pages/q_a'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กระทู้ ถาม-ตอบ (Q&A)</span></a></a>
-                          <a href="<?php echo site_url('Pages/questions'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำถามที่พบบ่อย (FAQ)</span></a></a>
-                          <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม E-Book</span></a></a>
+                          <a href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ร้องเรียนร้องทุกข์</span></a></a>
+                          <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยื่นเอกสารออนไลน์</span></a></a>
+                          <a href="<?php echo site_url('Pages/adding_suggestions'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</span></a></a>
+                          <a href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</span></a></a>
+                          <a href="<?php echo site_url('Pages/q_a'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กระทู้ ถาม-ตอบ (Q&A)</span></a></a>
+                          <a href="<?php echo site_url('Pages/questions'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำถามที่พบบ่อย (FAQ)</span></a></a>
+                          <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม E-Book</span></a></a>
                       </div>
                   </ul>
               </div>
@@ -385,23 +386,23 @@
               <div class="dropdown-content">
                   <ul class="no-bullets mt-2" style="margin-left: 400px">
                       <div class="dropdown-left">
-                          <a href="<?php echo site_url('Pages/plan_pdl'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาท้องถิ่น</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_psi'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนแม่บทสารสนเทศ</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_pop'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนปฏิบัติการจัดซื้อจัดจ้าง</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_paca'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนปฏิบัติการป้องกันการทุจริต</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_pmda'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนป้องกันและบรรเทาสาธารณภัยประจำปี</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_dpy'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการบริหารและพัฒนาทรัพยากรบุคคลประจำปี</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_pdl'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาท้องถิ่น</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_psi'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนแม่บทสารสนเทศ</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_pop'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนปฏิบัติการจัดซื้อจัดจ้าง</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_paca'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนปฏิบัติการป้องกันการทุจริต</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_pmda'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนป้องกันและบรรเทาสาธารณภัยประจำปี</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_dpy'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการบริหารและพัฒนาทรัพยากรบุคคลประจำปี</span></a></a>
                       </div>
                       <div class="dropdown-center">
-                          <a href="<?php echo site_url('Pages/plan_pc3y'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนอัตรากำลัง 3 ปี</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_pds3y'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาบุคลากร 3 ปี</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_poa'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการดำเนินงานประจำปี</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_pdpa'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาบุคลากรประจำปี</span></a></a>
-                          <a href="<?php echo site_url('Pages/plan_pcra'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการจัดเก็บรายได้ประจำปี</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_pc3y'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนอัตรากำลัง 3 ปี</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_pds3y'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาบุคลากร 3 ปี</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_poa'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการดำเนินงานประจำปี</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_pdpa'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาบุคลากรประจำปี</span></a></a>
+                          <a href="<?php echo site_url('Pages/plan_pcra'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการจัดเก็บรายได้ประจำปี</span></a></a>
                       </div>
                       <div class="dropdown-right">
-                          <a href="https://itas.nacc.go.th/go/iit/6bq910" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;IIT แบบวัดการรับรู้ภายใน</span></a></a>
-                          <a href="https://itas.nacc.go.th/go/eit/6bq910" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;EIT แบบวัดการรับรู้ภายนอก</span></a></a>
+                          <a href="https://itas.nacc.go.th/go/iit/6bq910" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;IIT แบบวัดการรับรู้ภายใน</span></a></a>
+                          <a href="https://itas.nacc.go.th/go/eit/6bq910" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;EIT แบบวัดการรับรู้ภายนอก</span></a></a>
                       </div>
                   </ul>
               </div>
@@ -411,32 +412,32 @@
               <div class="dropdown-content">
                   <ul class="no-bullets mt-2" style="margin-left: 200px">
                       <div class="dropdown-left">
-                          <a href="<?php echo site_url('Pages/operation_aca'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การปฏิบัติการป้องกันการทุจริต</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_mcc'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การจัดการเรื่องร้องเรียนการทุจริต</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_sap'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การปฏิบัติงานและการให้บริการ</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_pgn'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายไม่รับของขวัญ no gift policy</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_po'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การเปิดโอกาสให้มีส่วนร่วม</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_pm'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การมีส่วนร่วมของผู้บริหาร</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_eco_topic'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การเสริมสร้างวัฒนธรรมองค์กร</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_mr'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การบริหารจัดการความเสี่ยง</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_aca'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การปฏิบัติการป้องกันการทุจริต</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_mcc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การจัดการเรื่องร้องเรียนการทุจริต</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_sap'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การปฏิบัติงานและการให้บริการ</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_pgn'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายไม่รับของขวัญ no gift policy</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_po'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การเปิดโอกาสให้มีส่วนร่วม</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_pm'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การมีส่วนร่วมของผู้บริหาร</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_eco_topic'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การเสริมสร้างวัฒนธรรมองค์กร</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_mr'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การบริหารจัดการความเสี่ยง</span></a></a>
                       </div>
                       <div class="dropdown-center">
-                          <a href="<?php echo site_url('Pages/ita_all'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การประเมินคุณธรรมและความโปร่งใส ITA</span></a></a>
-                          <a href="<?php echo site_url('Pages/lpa'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การประเมินประสิทธิภาพขององค์กร LPA</span></a></a>
-                          <a><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การบริหารและพัฒนาทรัพยากรบุคคล ></span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_policy_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;นโยบายบริหารทรัพยากรบุคคล</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_am_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;การดำเนินการบริหารทรัพยากรบุคคล</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_cdm_topic'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;หลักเกณฑ์การบริหารและพัฒนา</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_rdam_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;รายงานผลการบริหารและพัฒนาทรัพยากรบุคคล</span></a></a>
+                          <a href="<?php echo site_url('Pages/ita_all'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การประเมินคุณธรรมและความโปร่งใส ITA</span></a></a>
+                          <a href="<?php echo site_url('Pages/lpa'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การประเมินประสิทธิภาพขององค์กร LPA</span></a></a>
+                          <a><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การบริหารและพัฒนาทรัพยากรบุคคล ></span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_policy_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;นโยบายบริหารทรัพยากรบุคคล</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_am_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;การดำเนินการบริหารทรัพยากรบุคคล</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_cdm_topic'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;หลักเกณฑ์การบริหารและพัฒนา</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_rdam_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;รายงานผลการบริหารและพัฒนาทรัพยากรบุคคล</span></a></a>
                       </div>
                       <div class="dropdown-right">
-                          <a href="<?php echo site_url('Pages/operation_aa'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กิจการสภา</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ตรวจสอบภายใน</span></a></a>
-                          <a href="<?php echo site_url('Pages/operation_reauf'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานติดตามและประเมินผลแผน</span></a></a>
-                          <a><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การจัดซื้อจัดจ้างหรือการจัดหาพัสดุ ></span></a></a>
-                          <a href="<?php echo site_url('Pages/p_rpobuy'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;รายการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_sopopaortsr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;รายงานสรุปผลการจัดซื้อจัดจั้างหรือการจัดหาพัสดุ</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_sopopip'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;รายงานความก้าวหน้าการจัดซื้อจัดจ้างหรือ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การจัดหาพัสดุ</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_aa'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กิจการสภา</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ตรวจสอบภายใน</span></a></a>
+                          <a href="<?php echo site_url('Pages/operation_reauf'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานติดตามและประเมินผลแผน</span></a></a>
+                          <a><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การจัดซื้อจัดจ้างหรือการจัดหาพัสดุ ></span></a></a>
+                          <a href="<?php echo site_url('Pages/p_rpobuy'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;รายการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_sopopaortsr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;รายงานสรุปผลการจัดซื้อจัดจั้างหรือการจัดหาพัสดุ</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_sopopip'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;รายงานความก้าวหน้าการจัดซื้อจัดจ้างหรือ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การจัดหาพัสดุ</span></a></a>
                       </div>
                   </ul>
               </div>
@@ -446,28 +447,28 @@
               <div class="dropdown-content">
                   <ul class="no-bullets mt-2" style="margin-left: 400px">
                       <div class="dropdown-left">
-                          <a href="<?php echo site_url('Pages/order'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำสั่ง</span></a></a>
-                          <a href="<?php echo site_url('Pages/announce'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ประกาศ</span></a></a>
-                          <a href="<?php echo site_url('Pages/mui'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;มาตรการภายใน</span></a></a>
-                          <a href="<?php echo site_url('Pages/guide_work'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือการปฏิบัติงาน</span></a></a>
-                          <a href="<?php echo site_url('Pages/laws_topic'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กฏหมายที่เกี่ยวข้อง</span></a></a>
-                          <a href="<?php echo site_url('Pages/loadform'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม</span></a></a>
-                          <a href="<?php echo site_url('Pages/pppw'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;พรบ./พรก ที่ใช้การปฏิบัติงาน</span></a></a>
+                          <a href="<?php echo site_url('Pages/order'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำสั่ง</span></a></a>
+                          <a href="<?php echo site_url('Pages/announce'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ประกาศ</span></a></a>
+                          <a href="<?php echo site_url('Pages/mui'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;มาตรการภายใน</span></a></a>
+                          <a href="<?php echo site_url('Pages/guide_work'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือการปฏิบัติงาน</span></a></a>
+                          <a href="<?php echo site_url('Pages/laws_topic'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กฏหมายที่เกี่ยวข้อง</span></a></a>
+                          <a href="<?php echo site_url('Pages/loadform'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม</span></a></a>
+                          <a href="<?php echo site_url('Pages/pppw'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;พรบ./พรก ที่ใช้การปฏิบัติงาน</span></a></a>
                       </div>
                       <div class="dropdown-center">
-                          <a href="<?php echo site_url('Pages/canon_bgps'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติงบประมาณ</span></a></a>
-                          <a href="<?php echo site_url('Pages/canon_chh'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การควบคุมกิจการที่เป็นอันตรายต่อสุขภาพ</span></a></a>
-                          <a href="<?php echo site_url('Pages/canon_ritw'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติการติดตั้งระบบบำบัดน้ำเสียในอาคาร</span></a></a>
-                          <a href="<?php echo site_url('Pages/canon_market'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติตลาด</span></a></a>
-                          <a href="<?php echo site_url('Pages/canon_rmwp'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติการจัดการสิ่งปฏิกูลและมูลฝอย</span></a></a>
-                          <a href="<?php echo site_url('Pages/canon_rcsp'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติหลักเกณฑ์การคัดมูลฝอย</span></a></a>
-                          <a href="<?php echo site_url('Pages/canon_rcp'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติควบคุมการเลี้ยงหรือปล่อยสุนัขและแมว</span></a></a>
+                          <a href="<?php echo site_url('Pages/canon_bgps'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติงบประมาณ</span></a></a>
+                          <a href="<?php echo site_url('Pages/canon_chh'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การควบคุมกิจการที่เป็นอันตรายต่อสุขภาพ</span></a></a>
+                          <a href="<?php echo site_url('Pages/canon_ritw'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติการติดตั้งระบบบำบัดน้ำเสียในอาคาร</span></a></a>
+                          <a href="<?php echo site_url('Pages/canon_market'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติตลาด</span></a></a>
+                          <a href="<?php echo site_url('Pages/canon_rmwp'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติการจัดการสิ่งปฏิกูลและมูลฝอย</span></a></a>
+                          <a href="<?php echo site_url('Pages/canon_rcsp'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติหลักเกณฑ์การคัดมูลฝอย</span></a></a>
+                          <a href="<?php echo site_url('Pages/canon_rcp'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติควบคุมการเลี้ยงหรือปล่อยสุนัขและแมว</span></a></a>
                       </div>
                       <div class="dropdown-right">
-                          <a href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;E-service</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_reb'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานใช้จ่ายงบประมาณจัดซื้อจัดจ้าง</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_rpo'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</span></a></a>
-                          <a href="<?php echo site_url('Pages/km'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;knowledge Management: KM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การจัดการความรู้ของท้องถิ่น</span></a></a>
+                          <a href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;E-service</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_reb'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานใช้จ่ายงบประมาณจัดซื้อจัดจ้าง</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_rpo'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</span></a></a>
+                          <a href="<?php echo site_url('Pages/km'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;knowledge Management: KM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การจัดการความรู้ของท้องถิ่น</span></a></a>
                       </div>
                   </ul>
               </div>
@@ -558,29 +559,30 @@
                   <div class="dropdown-content" style="margin-top: 80px;">
                       <ul class="no-bullets mt-2" style="margin-left: 400px">
                           <div class="dropdown-left">
-                              <a href="<?php echo site_url('Pages/history'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ประวัติความเป็นมา</span></a></a>
-                              <a href="<?php echo site_url('Pages/ci'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อมูลชุมชน</span></a></a>
-                              <a href="<?php echo site_url('Pages/gci'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อมูลสภาพทั่วไป</span></a></a>
-                              <a href="<?php echo site_url('Pages/msg_pres'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สารจากนายก (MES)</span></a></a>
-                              <a href="<?php echo site_url('Pages/mission'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ภารกิจและความรับผิดชอบ</span></a></a>
-                              <a href="<?php echo site_url('Pages/si'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยุทธศาสตร์การพัฒนาด้านโครงสร้างพื้นฐาน</span></a></a>
+                              <a href="<?php echo site_url('Pages/history'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ประวัติความเป็นมา</span></a></a>
+                              <a href="<?php echo site_url('Pages/ci'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อมูลชุมชน</span></a></a>
+                              <a href="<?php echo site_url('Pages/gci'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อมูลสภาพทั่วไป</span></a></a>
+                              <a href="<?php echo site_url('Pages/msg_pres'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สารจากนายก (MES)</span></a></a>
+                              <a href="<?php echo site_url('Pages/mission'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ภารกิจและความรับผิดชอบ</span></a></a>
+                              <a href="<?php echo site_url('Pages/si'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยุทธศาสตร์การพัฒนาด้านโครงสร้างพื้นฐาน</span></a></a>
                           </div>
                           <div class="dropdown-center">
-                              <a href="<?php echo site_url('Pages/authority'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;อำนาจหน้าที่</span></a></a>
-                              <a href="<?php echo site_url('Pages/vision'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;วิสัยทัศน์และพันธกิจ</span></a></a>
-                              <a href="<?php echo site_url('Pages/executivepolicy'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายของผู้บริหาร</span></a></a>
-                              <a href="<?php echo site_url('Pages/news_dla'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.</span></a></a>
-                              <a href="<?php echo site_url('Pages/prov_local_doc'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.จ.</span></a></a>
-                              <a href="<?php echo site_url('Pages/egp'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวจัดซื้อจัดจ้าง e-GP</span></a></a>
+                              <a href="<?php echo site_url('Pages/authority'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;อำนาจหน้าที่</span></a></a>
+                              <a href="<?php echo site_url('Pages/vision'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;วิสัยทัศน์และพันธกิจ</span></a></a>
+                              <a href="<?php echo site_url('Pages/motto'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำขวัญ</span></a></a>
+                              <a href="<?php echo site_url('Pages/executivepolicy'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายของผู้บริหาร</span></a></a>
+                              <a href="<?php echo site_url('Pages/news_dla'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.</span></a></a>
+                              <a href="<?php echo site_url('Pages/prov_local_doc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หนังสือราชการ สถ.จ.</span></a></a>
+                              <a href="<?php echo site_url('Pages/egp'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวจัดซื้อจัดจ้าง e-GP</span></a></a>
                           </div>
                           <div class="dropdown-right">
-                              <a href="<?php echo site_url('Pages/news'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวประชาสัมพันธ์</span></a></a>
-                              <a href="<?php echo site_url('Pages/activity'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวสาร / กิจกรรม</span></a></a>
-                              <a href="<?php echo site_url('Pages/procurement'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวจัดซื้อจัดจ้าง</span></a></a>
-                              <a href="<?php echo site_url('Pages/travel'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สถานที่ท่องเที่ยว</span></a></a>
-                              <a href="<?php echo site_url('Pages/otop'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ผลิตภัณฑ์ชุมชน</span></a></a>
-                              <a href="<?php echo site_url('Pages/newsletter'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;จดหมายข่าว</span></a></a>
-                              <a href="<?php echo site_url('Pages/contact'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ติดต่อเรา</span></a></a>
+                              <a href="<?php echo site_url('Pages/news'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวประชาสัมพันธ์</span></a></a>
+                              <a href="<?php echo site_url('Pages/activity'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวสาร / กิจกรรม</span></a></a>
+                              <a href="<?php echo site_url('Pages/procurement'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข่าวจัดซื้อจัดจ้าง</span></a></a>
+                              <a href="<?php echo site_url('Pages/travel'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สถานที่ท่องเที่ยว</span></a></a>
+                              <a href="<?php echo site_url('Pages/otop'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ผลิตภัณฑ์ชุมชน</span></a></a>
+                              <a href="<?php echo site_url('Pages/newsletter'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;จดหมายข่าว</span></a></a>
+                              <a href="<?php echo site_url('Pages/contact'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ติดต่อเรา</span></a></a>
                           </div>
                       </ul>
                   </div>
@@ -590,22 +592,22 @@
                   <div class="dropdown-content" style="margin-top: 80px;">
                       <ul class="no-bullets mt-2" style="margin-left: 400px">
                           <div class="dropdown-left">
-                              <a href="<?php echo site_url('Pages/site_map'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนผังโครงสร้างรวม</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_executives'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คณะผู้บริหาร</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_council'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สมาชิกสภาตำบล</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_unit_leaders'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หัวหน้าส่วนราชการ</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_deputy'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สำนักปลัดองค์การบริหารส่วนตำบล</span></a></a>
+                              <a href="<?php echo site_url('Pages/site_map'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนผังโครงสร้างรวม</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_executives'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คณะผู้บริหาร</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_council'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สมาชิกสภาตำบล</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_unit_leaders'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หัวหน้าส่วนราชการ</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_deputy'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สำนักปลัดองค์การบริหารส่วนตำบล</span></a></a>
                           </div>
                           <div class="dropdown-center">
-                              <a href="<?php echo site_url('Pages/p_treasury'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองคลัง</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_maintenance'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองช่าง</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_welfare'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสวัสดิการ</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_treasury'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองคลัง</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_maintenance'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองช่าง</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_welfare'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสวัสดิการ</span></a></a>
                           </div>
                           <div class="dropdown-right">
-                              <a href="<?php echo site_url('Pages/p_learder'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กำนันผู้ใหญ่บ้าน</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_audit'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_learder'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กำนันผู้ใหญ่บ้าน</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_audit'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</span></a></a>
                           </div>
                       </ul>
                   </div>
@@ -615,32 +617,32 @@
                   <div class="dropdown-content" style="margin-top: 80px;">
                       <ul class="no-bullets mt-2" style="margin-left: 200px">
                           <div class="dropdown-left">
-                              <a href="<?php echo site_url('Pages/pbsv_utilities'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สาธารณูประโภค</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_cjc'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ยุติธรรมชุมชน</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_cac'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ช่วยเหลือประชาชน</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_cig'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารทางราชการ</span></a></a>
-                              <a href="https://www.oic.go.th/INFOCENTER78/7852/" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_ahs'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หลักประกันสุขภาพตำบล</span></a></a>
-                              <a href="<?php echo site_url('Pages/odata'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ฐานข้อมูลเปิดภาครัฐ (Open Data)</span></a></a>
-                              <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยกระดับเจตจำนงทางการเมืองในการต่อต้านการทุจริต</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_utilities'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;สาธารณูประโภค</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_cjc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ยุติธรรมชุมชน</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_cac'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ช่วยเหลือประชาชน</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_cig'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารทางราชการ</span></a></a>
+                              <a href="https://www.oic.go.th/INFOCENTER78/7852/" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_ahs'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หลักประกันสุขภาพตำบล</span></a></a>
+                              <a href="<?php echo site_url('Pages/odata'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ฐานข้อมูลเปิดภาครัฐ (Open Data)</span></a></a>
+                              <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยกระดับเจตจำนงทางการเมืองในการต่อต้านการทุจริต</span></a></a>
                           </div>
                           <div class="dropdown-center">
-                              <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;เบี้ยยังชีพผู้สูงอายุ / ผู้พิการ</span></a></a>
-                              <a href="<?php echo site_url('Pages/kid_aw_ods'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;เงินอุดหนุนเด็กแรกเกิด</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_gup'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือสำหรับประชาชน</span></a></a>
-                              <a href="https://dbdregcom.dbd.go.th/mainsite/index.php?id=28" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือจดทะเบียนพาณิชย์</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_sags'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือและมาตรฐานการให้บริการ</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_ems'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;งานกู้ชีพ / การบริการการแพทย์ฉุกเฉิน (EMS)</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_oppr'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;งานอาสาสมัครป้องกันภัยฝ่ายพลเรือน (อปพร.)</span></a></a>
+                              <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;เบี้ยยังชีพผู้สูงอายุ / ผู้พิการ</span></a></a>
+                              <a href="<?php echo site_url('Pages/kid_aw_ods'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;เงินอุดหนุนเด็กแรกเกิด</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_gup'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือสำหรับประชาชน</span></a></a>
+                              <a href="https://dbdregcom.dbd.go.th/mainsite/index.php?id=28" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือจดทะเบียนพาณิชย์</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_sags'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือและมาตรฐานการให้บริการ</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_ems'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;งานกู้ชีพ / การบริการการแพทย์ฉุกเฉิน (EMS)</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_oppr'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;งานอาสาสมัครป้องกันภัยฝ่ายพลเรือน (อปพร.)</span></a></a>
                           </div>
                           <div class="dropdown-right">
-                              <a href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ร้องเรียนร้องทุกข์</span></a></a>
-                              <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยื่นเอกสารออนไลน์</span></a></a>
-                              <a href="<?php echo site_url('Pages/adding_suggestions'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</span></a></a>
-                              <a href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</span></a></a>
-                              <a href="<?php echo site_url('Pages/q_a'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กระทู้ ถาม-ตอบ (Q&A)</span></a></a>
-                              <a href="<?php echo site_url('Pages/questions'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำถามที่พบบ่อย (FAQ)</span></a></a>
-                              <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม E-Book</span></a></a>
+                              <a href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ร้องเรียนร้องทุกข์</span></a></a>
+                              <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยื่นเอกสารออนไลน์</span></a></a>
+                              <a href="<?php echo site_url('Pages/adding_suggestions'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</span></a></a>
+                              <a href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</span></a></a>
+                              <a href="<?php echo site_url('Pages/q_a'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กระทู้ ถาม-ตอบ (Q&A)</span></a></a>
+                              <a href="<?php echo site_url('Pages/questions'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำถามที่พบบ่อย (FAQ)</span></a></a>
+                              <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม E-Book</span></a></a>
                           </div>
                       </ul>
                   </div>
@@ -650,23 +652,23 @@
                   <div class="dropdown-content" style="margin-top: 80px;">
                       <ul class="no-bullets mt-2" style="margin-left: 400px">
                           <div class="dropdown-left">
-                              <a href="<?php echo site_url('Pages/plan_pdl'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาท้องถิ่น</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_psi'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนแม่บทสารสนเทศ</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_pop'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนปฏิบัติการจัดซื้อจัดจ้าง</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_paca'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนปฏิบัติการป้องกันการทุจริต</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_pmda'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนป้องกันและบรรเทาสาธารณภัยประจำปี</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_dpy'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการบริหารและพัฒนาทรัพยากรบุคคลประจำปี</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_pdl'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาท้องถิ่น</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_psi'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนแม่บทสารสนเทศ</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_pop'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนปฏิบัติการจัดซื้อจัดจ้าง</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_paca'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนปฏิบัติการป้องกันการทุจริต</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_pmda'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนป้องกันและบรรเทาสาธารณภัยประจำปี</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_dpy'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการบริหารและพัฒนาทรัพยากรบุคคลประจำปี</span></a></a>
                           </div>
                           <div class="dropdown-center">
-                              <a href="<?php echo site_url('Pages/plan_pc3y'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนอัตรากำลัง 3 ปี</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_pds3y'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาบุคลากร 3 ปี</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_poa'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการดำเนินงานประจำปี</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_pdpa'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาบุคลากรประจำปี</span></a></a>
-                              <a href="<?php echo site_url('Pages/plan_pcra'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการจัดเก็บรายได้ประจำปี</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_pc3y'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนอัตรากำลัง 3 ปี</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_pds3y'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาบุคลากร 3 ปี</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_poa'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการดำเนินงานประจำปี</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_pdpa'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนพัฒนาบุคลากรประจำปี</span></a></a>
+                              <a href="<?php echo site_url('Pages/plan_pcra'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการจัดเก็บรายได้ประจำปี</span></a></a>
                           </div>
                           <div class="dropdown-right">
-                              <a href="https://itas.nacc.go.th/go/iit/6bq910" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;IIT แบบวัดการรับรู้ภายใน</span></a></a>
-                              <a href="https://itas.nacc.go.th/go/eit/6bq910" target="_blank"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;EIT แบบวัดการรับรู้ภายนอก</span></a></a>
+                              <a href="https://itas.nacc.go.th/go/iit/6bq910" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;IIT แบบวัดการรับรู้ภายใน</span></a></a>
+                              <a href="https://itas.nacc.go.th/go/eit/6bq910" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;EIT แบบวัดการรับรู้ภายนอก</span></a></a>
                           </div>
                       </ul>
                   </div>
@@ -676,32 +678,32 @@
                   <div class="dropdown-content" style="margin-top: 80px;">
                       <ul class="no-bullets mt-2" style="margin-left: 200px">
                           <div class="dropdown-left">
-                              <a href="<?php echo site_url('Pages/operation_aca'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การปฏิบัติการป้องกันการทุจริต</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_mcc'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การจัดการเรื่องร้องเรียนการทุจริต</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_sap'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การปฏิบัติงานและการให้บริการ</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_pgn'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายไม่รับของขวัญ no gift policy</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_po'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การเปิดโอกาสให้มีส่วนร่วม</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_pm'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การมีส่วนร่วมของผู้บริหาร</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_eco_topic'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การเสริมสร้างวัฒนธรรมองค์กร</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_mr'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การบริหารจัดการความเสี่ยง</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_aca'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การปฏิบัติการป้องกันการทุจริต</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_mcc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การจัดการเรื่องร้องเรียนการทุจริต</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_sap'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การปฏิบัติงานและการให้บริการ</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_pgn'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;นโยบายไม่รับของขวัญ no gift policy</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_po'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การเปิดโอกาสให้มีส่วนร่วม</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_pm'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การมีส่วนร่วมของผู้บริหาร</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_eco_topic'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การเสริมสร้างวัฒนธรรมองค์กร</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_mr'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การบริหารจัดการความเสี่ยง</span></a></a>
                           </div>
                           <div class="dropdown-center">
-                              <a href="<?php echo site_url('Pages/ita_all'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การประเมินคุณธรรมและความโปร่งใส ITA</span></a></a>
-                              <a href="<?php echo site_url('Pages/lpa'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การประเมินประสิทธิภาพขององค์กร LPA</span></a></a>
-                              <a><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การบริหารและพัฒนาทรัพยากรบุคคล ></span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_policy_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;นโยบายบริหารทรัพยากรบุคคล</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_am_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;การดำเนินการบริหารทรัพยากรบุคคล</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_cdm_topic'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;หลักเกณฑ์การบริหารและพัฒนา</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_rdam_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;รายงานผลการบริหารและพัฒนาทรัพยากรบุคคล</span></a></a>
+                              <a href="<?php echo site_url('Pages/ita_all'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การประเมินคุณธรรมและความโปร่งใส ITA</span></a></a>
+                              <a href="<?php echo site_url('Pages/lpa'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การประเมินประสิทธิภาพขององค์กร LPA</span></a></a>
+                              <a><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การบริหารและพัฒนาทรัพยากรบุคคล ></span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_policy_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;นโยบายบริหารทรัพยากรบุคคล</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_am_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;การดำเนินการบริหารทรัพยากรบุคคล</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_cdm_topic'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;หลักเกณฑ์การบริหารและพัฒนา</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_rdam_hr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;รายงานผลการบริหารและพัฒนาทรัพยากรบุคคล</span></a></a>
                           </div>
                           <div class="dropdown-right">
-                              <a href="<?php echo site_url('Pages/operation_aa'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กิจการสภา</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ตรวจสอบภายใน</span></a></a>
-                              <a href="<?php echo site_url('Pages/operation_reauf'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานติดตามและประเมินผลแผน</span></a></a>
-                              <a><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การจัดซื้อจัดจ้างหรือการจัดหาพัสดุ ></span></a></a>
-                              <a href="<?php echo site_url('Pages/p_rpobuy'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;รายการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_sopopaortsr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;รายงานสรุปผลการจัดซื้อจัดจั้างหรือการจัดหาพัสดุ</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_sopopip'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>">&nbsp;&nbsp;รายงานความก้าวหน้าการจัดซื้อจัดจ้างหรือ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การจัดหาพัสดุ</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_aa'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กิจการสภา</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_aditn'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ตรวจสอบภายใน</span></a></a>
+                              <a href="<?php echo site_url('Pages/operation_reauf'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานติดตามและประเมินผลแผน</span></a></a>
+                              <a><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การจัดซื้อจัดจ้างหรือการจัดหาพัสดุ ></span></a></a>
+                              <a href="<?php echo site_url('Pages/p_rpobuy'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;รายการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_sopopaortsr'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;รายงานสรุปผลการจัดซื้อจัดจั้างหรือการจัดหาพัสดุ</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_sopopip'); ?>"><span class="font-nav mar-left-6"><img src="<?php echo base_url('docs/icon-nav.png'); ?>">&nbsp;&nbsp;รายงานความก้าวหน้าการจัดซื้อจัดจ้างหรือ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การจัดหาพัสดุ</span></a></a>
                           </div>
                       </ul>
                   </div>
@@ -711,28 +713,28 @@
                   <div class="dropdown-content" style="margin-top: 80px;">
                       <ul class="no-bullets mt-2" style="margin-left: 400px">
                           <div class="dropdown-left">
-                              <a href="<?php echo site_url('Pages/order'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำสั่ง</span></a></a>
-                              <a href="<?php echo site_url('Pages/announce'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ประกาศ</span></a></a>
-                              <a href="<?php echo site_url('Pages/mui'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;มาตรการภายใน</span></a></a>
-                              <a href="<?php echo site_url('Pages/guide_work'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือการปฏิบัติงาน</span></a></a>
-                              <a href="<?php echo site_url('Pages/laws_topic'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กฏหมายที่เกี่ยวข้อง</span></a></a>
-                              <a href="<?php echo site_url('Pages/loadform'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม</span></a></a>
-                              <a href="<?php echo site_url('Pages/pppw'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;พรบ./พรก ที่ใช้การปฏิบัติงาน</span></a></a>
+                              <a href="<?php echo site_url('Pages/order'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำสั่ง</span></a></a>
+                              <a href="<?php echo site_url('Pages/announce'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ประกาศ</span></a></a>
+                              <a href="<?php echo site_url('Pages/mui'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;มาตรการภายใน</span></a></a>
+                              <a href="<?php echo site_url('Pages/guide_work'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คู่มือการปฏิบัติงาน</span></a></a>
+                              <a href="<?php echo site_url('Pages/laws_topic'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กฏหมายที่เกี่ยวข้อง</span></a></a>
+                              <a href="<?php echo site_url('Pages/loadform'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม</span></a></a>
+                              <a href="<?php echo site_url('Pages/pppw'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;พรบ./พรก ที่ใช้การปฏิบัติงาน</span></a></a>
                           </div>
                           <div class="dropdown-center">
-                              <a href="<?php echo site_url('Pages/canon_bgps'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติงบประมาณ</span></a></a>
-                              <a href="<?php echo site_url('Pages/canon_chh'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การควบคุมกิจการที่เป็นอันตรายต่อสุขภาพ</span></a></a>
-                              <a href="<?php echo site_url('Pages/canon_ritw'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติการติดตั้งระบบบำบัดน้ำเสียในอาคาร</span></a></a>
-                              <a href="<?php echo site_url('Pages/canon_market'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติตลาด</span></a></a>
-                              <a href="<?php echo site_url('Pages/canon_rmwp'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติการจัดการสิ่งปฏิกูลและมูลฝอย</span></a></a>
-                              <a href="<?php echo site_url('Pages/canon_rcsp'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติหลักเกณฑ์การคัดมูลฝอย</span></a></a>
-                              <a href="<?php echo site_url('Pages/canon_rcp'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติควบคุมการเลี้ยงหรือปล่อยสุนัขและแมว</span></a></a>
+                              <a href="<?php echo site_url('Pages/canon_bgps'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติงบประมาณ</span></a></a>
+                              <a href="<?php echo site_url('Pages/canon_chh'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;การควบคุมกิจการที่เป็นอันตรายต่อสุขภาพ</span></a></a>
+                              <a href="<?php echo site_url('Pages/canon_ritw'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติการติดตั้งระบบบำบัดน้ำเสียในอาคาร</span></a></a>
+                              <a href="<?php echo site_url('Pages/canon_market'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติตลาด</span></a></a>
+                              <a href="<?php echo site_url('Pages/canon_rmwp'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติการจัดการสิ่งปฏิกูลและมูลฝอย</span></a></a>
+                              <a href="<?php echo site_url('Pages/canon_rcsp'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติหลักเกณฑ์การคัดมูลฝอย</span></a></a>
+                              <a href="<?php echo site_url('Pages/canon_rcp'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ข้อบัญญัติควบคุมการเลี้ยงหรือปล่อยสุนัขและแมว</span></a></a>
                           </div>
                           <div class="dropdown-right">
-                              <a href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;E-service</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_reb'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานใช้จ่ายงบประมาณจัดซื้อจัดจ้าง</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_rpo'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</span></a></a>
-                              <a href="<?php echo site_url('Pages/km'); ?>"><img src="<?php echo base_url('docs/b.icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;knowledge Management: KM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การจัดการความรู้ของท้องถิ่น</span></a></a>
+                              <a href="<?php echo site_url('Pages/adding_complain'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;E-service</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_reb'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานใช้จ่ายงบประมาณจัดซื้อจัดจ้าง</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_rpo'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</span></a></a>
+                              <a href="<?php echo site_url('Pages/km'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;knowledge Management: KM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การจัดการความรู้ของท้องถิ่น</span></a></a>
                           </div>
                       </ul>
                   </div>
