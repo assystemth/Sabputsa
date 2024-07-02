@@ -44,6 +44,13 @@
     height: auto;
   }
 
+  .crop1440 {
+    margin: 0 auto;
+    padding: 0;
+    width: 1440px;
+    height: auto;
+  }
+
   /* สำหรับโทรศัพท์ */
   @media (max-width: 279) {
     main {
@@ -462,6 +469,7 @@
     /* เพื่อให้การเคลื่อนไหวไม่เกินขอบเขต */
     /* border: 1px solid black; */
     /* เส้นขอบสำหรับการแสดงผล */
+    z-index: 2;
   }
 
   .welcome {
@@ -486,14 +494,56 @@
   }
 
   .welcome-btm {
-    background-image: url('<?php echo base_url("docs/b.welcome-btm5.png"); ?>');
+    background-image: url('<?php echo base_url("docs/welcome-btm.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    z-index: 5;
+    z-index: 1;
     width: 1920px;
-    height: 474px;
+    height: 299px;
+    position: absolute;
+    margin-top: 700px;
+  }
+
+  .welcome-btm2 {
+    background-image: url('<?php echo base_url("docs/welcome-btm.png"); ?>');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+    width: 1920px;
+    height: 299px;
+    position: absolute;
+    margin-top: 700px;
+    animation: moveLeftRight 3s infinite alternate;
+  }
+
+  .wel-animation-water {
+    position: absolute;
+    animation: moveLeftRight 5s infinite alternate;
+    z-index: 1;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+      left: -100px;
+      /* จุดเริ่มต้นที่ด้านซ้ายสุด */
+    }
+
+    100% {
+      left: 0;
+      /* จุดสิ้นสุดที่ด้านขวาสุด ปรับค่า 100px ตามต้องการเพื่อระยะห่าง */
+    }
+  }
+
+
+  .welcome-btm-ontop {
+    background-image: url('<?php echo base_url("docs/welcome-btm-ontop2.png"); ?>');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    width: 1920px;
+    height: 299px;
     position: relative;
-    margin-top: 485px;
+    margin-top: 700px;
   }
 
   .font-welcome-btm {
@@ -1513,10 +1563,44 @@
     justify-content: center;
   } */
 
-  .travel-content {
-    max-width: 1360px;
-    margin-top: 140px;
-    margin-left: 230px;
+  .travel-content {}
+
+
+  .image-container {
+    z-index: 1;
+    position: absolute;
+  }
+
+  .bg-anime-travel {
+    background-image: url('<?php echo base_url("docs/bg-anime-travel.png"); ?>');
+    background-repeat: no-repeat;
+    width: 163px;
+  }
+
+  .img-travel {
+    position: relative;
+    z-index: 2;
+  }
+
+  .img-travel-180 {
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* New styles for rotation effect */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Rotate the second image when hovering over the first image's parent <a> tag */
+  a:hover+.img-travel-180 {
+    animation: rotate 3s linear infinite;
   }
 
   .font-travel {
@@ -1529,79 +1613,6 @@
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-  }
-
-  .image-container {
-    display: flex;
-    flex-direction: column;
-    /* จัดวางองค์ประกอบในแนวตั้ง */
-    align-items: center;
-    /* จัดกึ่งกลางองค์ประกอบในแนวนอน */
-    margin-left: 80px;
-    /* ค่าที่คุณตั้งไว้ */
-    margin-top: -40px;
-    /* ค่าที่คุณตั้งไว้ */
-  }
-
-  .image-container img {
-    animation: moveUpDown 3s infinite;
-    /* เรียกใช้อนิเมชั่น */
-  }
-
-  .image-container img:hover {
-    animation-play-state: paused;
-    /* หยุดอนิเมชั่นเมื่อเมาส์ชี้ */
-  }
-
-  @keyframes moveUpDown {
-
-    0%,
-    100% {
-      transform: translateY(0);
-      /* ตำแหน่งเริ่มต้นและสุดท้าย */
-    }
-
-    50% {
-      transform: translateY(-20px);
-      /* ตำแหน่งเมื่อขยับขึ้น */
-    }
-  }
-
-  /* เพิ่มความหน่วงเวลาให้กับแต่ละรูปภาพ */
-  .image-container:nth-child(1) img {
-    animation-delay: 0s;
-  }
-
-  .image-container:nth-child(2) img {
-    animation-delay: 1s;
-  }
-
-  .image-container:nth-child(3) img {
-    animation-delay: 1s;
-  }
-
-  .image-container:nth-child(4) img {
-    animation-delay: 1.5s;
-  }
-
-  .image-container:nth-child(5) img {
-    animation-delay: 2s;
-  }
-
-  .image-container:nth-child(6) img {
-    animation-delay: 2s;
-  }
-
-  .image-container:nth-child(7) img {
-    animation-delay: 2s;
-  }
-
-  .image-container:nth-child(8) img {
-    animation-delay: 2s;
-  }
-
-  .image-container:nth-child(9) img {
-    animation-delay: 2s;
   }
 
   .slick-prev,
@@ -1820,8 +1831,8 @@
   }
 
   .bg-q-a {
-    width: 370px;
-    height: 400px;
+    width: 708px;
+    height: 576px;
     flex-shrink: 0;
     border-radius: 20.394px;
     background: #FFFBF1;
@@ -1830,14 +1841,15 @@
   }
 
   .font-q-a-home-head {
-    color: #693708;
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
-
-    font-size: 24px;
+    background: linear-gradient(0deg, #00DD94 -15.14%, #009FE2 89.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Noto Looped Thai UI";
+    font-size: 28px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 46.41px;
-    /* 193.374% */
   }
 
   .head-q-a {
@@ -1846,13 +1858,25 @@
   }
 
   .font-q-a-home-form {
-    color: #693708;
-
-    font-size: 16px;
+    color: #023535;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Noto Looped Thai";
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29.47px;
-    /* 245.583% */
+    line-height: 0px;
+  }
+
+  .font-q-a-home-by {
+    color: #000;
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Noto Looped Thai";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0px;
+    /* 0% */
   }
 
   .content-q-a {
@@ -1916,12 +1940,12 @@
   }
 
   .custom-button-prev:hover img {
-    content: url('docs/s.pre-home-hover.png');
+    content: url('docs/pre-home-hover.png');
     /* เปลี่ยนเป็นรูปภาพใหม่เมื่อ hover */
   }
 
   .custom-button-next:hover img {
-    content: url('docs/s.next-home-hover.png');
+    content: url('docs/next-home-hover.png');
     /* เปลี่ยนเป็นรูปภาพใหม่เมื่อ hover */
   }
 
@@ -1977,7 +2001,7 @@
 
 
   .footer {
-    background-image: url('<?php echo base_url("docs/b.bg-bar-footer.png"); ?>');
+    background-image: url('<?php echo base_url("docs/bg-footer.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 75px;
@@ -3988,7 +4012,7 @@
   }
 
   .bg-banner {
-    background-image: url('<?php echo base_url("docs/bg-banner.png"); ?>');
+    background-image: url('<?php echo base_url("docs/bg-banner2.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 1000px;
@@ -4127,16 +4151,14 @@
   /* แสงวิบวับ fade in fade out  */
   @-webkit-keyframes blink-2 {
     0% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0.1;
-    }
-
-    100% {
-      opacity: 1;
-    }
+                opacity: 1;
+            }
+            50% {
+                opacity: 0; /* ให้หายไปทั้งหมด */
+            }
+            100% {
+                opacity: 1;
+            }
   }
 
   .bg-public-news2 {
@@ -4336,14 +4358,14 @@
 
   .star-news-animation-1 {
     position: absolute;
-
+    visibility: hidden;
     /* left: 100px; */
     /* animation: fadeInOut 4s infinite; */
   }
 
   .star-news-animation-2 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 250px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4351,7 +4373,7 @@
 
   .star-news-animation-3 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 465px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4359,7 +4381,7 @@
 
   .star-news-animation-4 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 510px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4367,7 +4389,7 @@
 
   .star-news-animation-5 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 655px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4375,7 +4397,7 @@
 
   .star-news-animation-6 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 740px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4383,7 +4405,7 @@
 
   .star-news-animation-7 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 715px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4391,7 +4413,7 @@
 
   .star-news-animation-8 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 860px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4399,7 +4421,7 @@
 
   .star-news-animation-9 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 1255px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4407,7 +4429,7 @@
 
   .star-news-animation-10 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 1285px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4415,7 +4437,7 @@
 
   .star-news-animation-11 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 1330px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4423,7 +4445,7 @@
 
   .star-news-animation-12 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 100px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4431,7 +4453,7 @@
 
   .star-news-animation-13 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 100px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4439,7 +4461,7 @@
 
   .star-news-animation-14 {
     position: absolute;
-
+    visibility: hidden;
 
     /* left: 100px; */
     /* animation: fadeInOut 4s infinite; */
@@ -4447,6 +4469,7 @@
 
   .star-news-animation-15 {
     position: absolute;
+    visibility: hidden;
 
 
     /* left: 100px; */
@@ -4457,8 +4480,9 @@
   @keyframes fadeInOut {
 
     0% {
-      top: -100px;
+      top: -10px;
       opacity: 1;
+      visibility: visible;
     }
 
 
@@ -4470,7 +4494,7 @@
   }
 
   .bg-travel {
-    background-image: url('<?php echo base_url("docs/bg-travel.png"); ?>');
+    background-image: url('<?php echo base_url("docs/bg-travel2.png"); ?>');
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
@@ -4491,14 +4515,12 @@
   }
 
   .bg-link {
-    background-image: url('<?php echo base_url("docs/b.bg-link3.png"); ?>');
+    background-image: url('<?php echo base_url("docs/bg-link.png"); ?>');
     background-repeat: no-repeat;
     background-size: cover;
     height: 925px;
     width: 1920px;
     margin: auto;
-    /* นี้จะทำให้ element อยู่ตรงกลางตามแนวนอน */
-    /* margin-top: 200px; */
 
   }
 
@@ -4632,26 +4654,12 @@
     /* ปรับขนาดตามที่ต้องการ */
   }
 
-  .bg-qa {
-    z-index: 1;
-    /* margin-left: 7%; */
-    /* margin-top: 80px; */
-    background-image: url('<?php echo base_url("docs/b.bg-qa3.png"); ?>');
-    background-repeat: no-repeat;
-    width: 737px;
-    height: 707px;
-    /* margin-top: 5%; */
-  }
-
   .bg-facebook {
     z-index: 1;
-    /* margin-left: 7%; */
-    /* margin-top: 80px; */
     background-image: url('<?php echo base_url("docs/bg-facebook.png"); ?>');
     background-repeat: no-repeat;
-    width: 447px;
-    height: 603px;
-    margin-top: 5%;
+    width: 282px;
+    height: 566px;
   }
 
   .bg-view {
@@ -4665,14 +4673,12 @@
     margin-top: 5%;
   }
 
-  .bg-vote {
+  .bg-like {
     z-index: 1;
-    margin-left: 5%;
-    /* margin-top: 80px; */
-    background-image: url('<?php echo base_url("docs/b.bg-eservice2.png"); ?>');
+    background-image: url('<?php echo base_url("docs/bg-like.png"); ?>');
     background-repeat: no-repeat;
-    width: 641px;
-    height: 332px;
+    width: 354px;
+    height: 270px;
   }
 
   .bg-prov {
@@ -4684,13 +4690,13 @@
   }
 
   .bg-qa-list {
+    z-index: 1;
     background-image: url('<?php echo base_url("docs/bg-qa.png"); ?>');
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 788px;
-    height: 648px;
+    width: 737px;
+    height: 707px;
     margin: auto;
-    padding: 95px 22px;
+    padding-top: 25px;
   }
 
   .bg-content-qa-list {
@@ -4701,15 +4707,12 @@
     border-radius: 82.647px;
     border: 1px solid #025A59;
     background: #FFF;
-    width: 647px;
-    height: 40px;
-    margin-left: 60px;
+    width: 646px;
+    height: 50px;
     position: relative;
-    /* ทำให้แน่ใจว่า service-box ใช้การจัดตำแหน่งสัมพัทธ์ */
-    top: 50px;
-    /* ขยับตำแหน่งลงมา 20px */
     transition: background 0.3s ease, border-color 0.3s ease;
-    /* เพิ่ม transition */
+    margin-top: 8px;
+    margin-left: 30px;
   }
 
   .bg-content-qa-list:hover {
@@ -4720,35 +4723,29 @@
     /* เปลี่ยนสีขอบเมื่อ hover */
   }
 
-  .bt-qa-all {
-    background-image: url('<?php echo base_url("docs/b.qa-all.png"); ?>');
-    width: 159px;
-    height: 50px;
+  .btn-qa-add {
+    background-image: url('<?php echo base_url("docs/btn-qa-add.png"); ?>');
+    width: 136px;
+    height: 46px;
     transition: background-image 0.6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
   }
 
-  .bt-qa-all:hover {
-    background-image: url('<?php echo base_url("docs/b.qa-all-hover.png"); ?>');
-    width: 159px;
-    height: 50px;
+  .btn-qa-add:hover {
+    background-image: url('<?php echo base_url("docs/btn-qa-add-hover.png"); ?>');
+    width: 136px;
+    height: 46px;
     transition: background-image 0.6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .bt-qa-add {
-    background-image: url('<?php echo base_url("docs/b.qa-add.png"); ?>');
-    width: 159px;
-    height: 47px;
-    transition: background-image 0.6s ease;
-  }
-
-  .bt-qa-add:hover {
-    background-image: url('<?php echo base_url("docs/b.qa-add-hover.png"); ?>');
-    width: 159px;
-    height: 47px;
-    transition: background-image 0.6s ease;
-  }
-
-  .bt-like {
+  .btn-like {
     background-image: url('<?php echo base_url("docs/b.bt-like.png"); ?>');
     width: 106px;
     height: 41px;
@@ -4759,7 +4756,7 @@
     transition: background-image 0.6s ease;
   }
 
-  .bt-like:hover {
+  .btn-like:hover {
     background-image: url('<?php echo base_url("docs/b.bt-like-hover.png"); ?>');
     width: 106px;
     height: 41px;
@@ -4773,7 +4770,6 @@
     /* ปรับขนาดความสูงตามที่คุณต้องการ */
     display: flex;
     justify-content: center;
-    /* จัดกึ่งกลางแนวนอน */
     align-items: center;
     /* จัดกึ่งกลางแนวตั้ง */
   }
@@ -4783,23 +4779,13 @@
     /* รีเซ็ต padding-left เพื่อให้ข้อความอยู่กลาง */
   }
 
-  .font-header-qa {
-    color: #000;
-    font-family: "Noto Looped Thai";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .font-bt-qa {
-    color: #000;
+  .font-btn-qa {
+    color: #3A3939;
     font-family: "Noto Looped Thai";
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-left: 50px;
   }
 
   .font-view {
@@ -4823,10 +4809,11 @@
   }
 
   .font-like {
-    color: #000;
-    text-align: center;
-    font-family: "Noto Looped Thai UI";
-    font-size: 22px;
+    background: linear-gradient(0deg, #00DD94 -15.14%, #009FE2 89.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Noto Looped Thai";
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -4838,22 +4825,21 @@
   }
 
   .content-like {
-    padding-top: 25px;
-    padding-left: 40px;
+    padding-top: 20px;
+    padding-left: 30px;
   }
 
   .border-like {
-    width: 31px;
-    height: 30px;
-    flex-shrink: 0;
+    width: 26px;
+    height: 25px;
     border-radius: 34px;
-    border: 1.2px solid #FEA8DD;
+    border: 1.2px solid #FF8500;
   }
 
   .form-check {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     /* เพิ่มพื้นที่ระหว่างแต่ละรายการ */
   }
 
@@ -4879,7 +4865,7 @@
   }
 
   .form-check-input:checked {
-    background-color: #FEA8DD;
+    background-color: #FF8500;
     border-color: #FFF;
   }
 
@@ -4894,19 +4880,16 @@
   }
 
   .font-link {
-    color: #fff;
+    color: #000;
     text-align: center;
     font-family: "Noto Looped Thai UI";
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 33.366px;
-    /* 139.024% */
   }
 
   .font-footer2 {
     color: #693708;
-
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -5166,14 +5149,13 @@
   }
 
   .font-like-new {
-    color: #000;
-    text-shadow: 0px 1.2px 2.399px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
-    font-size: 16px;
+    color: #3A3939;
+    text-align: center;
+    font-family: "Noto Looped Thai";
+    font-size: 20px;
     font-style: normal;
-    font-weight: 300;
-    line-height: 29.991px;
-    /* 187.444% */
+    font-weight: 700;
+    line-height: normal;
   }
 
   .welcome-other {
@@ -5214,18 +5196,17 @@
   }
 
   .font-welcome-btm-other1 {
-    background: var(--Gold2, linear-gradient(90deg, #D9AA58 4.04%, #F2B940 27.1%, #DEAE3F 46.15%, #E0B344 52.16%, #E7C354 61.19%, #F2DE6F 70.21%, #FFFC8D 78.23%, #FFE875 82.24%, #FFD55E 88.25%, #AA7100 100.28%));
-    background-size: 1000% 1000%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 36px;
+    color: #3D3D16;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: var(--, #FFF);
+    font-family: "Noto Looped Thai UI";
+    font-size: 48px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     line-height: normal;
-    z-index: 2;
-    position: relative;
-    animation: gradient-move-font 20s linear infinite;
+    /* animation: gradient-move-font 20s linear infinite; */
   }
 
   .font-welcome-btm-other2 {
@@ -5596,94 +5577,57 @@
     -webkit-box-orient: vertical;
   }
 
+  .sun-cartoon-animation{
+    z-index: 2;
+    position: absolute;
+    margin-left: 31%;
+    margin-top: 35px;
+  }
+
+  .sun-cartoon-animation2{
+    z-index: 2;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 60px;
+  }
+
+  .cloud-cartoon-animation{
+    position: absolute;
+    white-space: nowrap;
+    animation: fadeinleftoutright 50s linear infinite;
+    z-index: 1;
+    visibility: hidden;
+    /* ซ่อนภาพก่อนเริ่มแอนิเมชั่น */
+  }
+
   .cloud-cartoon-animation-1 {
-    margin-top: 700px;
+    margin-top: 120px;
   }
 
   .cloud-cartoon-animation-2 {
-    margin-top: 220px;
-    animation-delay: 2.5s;
+    margin-top: 50px;
+    animation-delay: 5s;
 
   }
 
   .cloud-cartoon-animation-3 {
-    margin-top: 400px;
-    animation-delay: 2s;
+    margin-top: 140px;
+    animation-delay: 10s;
 
   }
 
   .cloud-cartoon-animation-4 {
-    margin-top: 650px;
-    animation-delay: 3s;
+    margin-top: 60px;
+    animation-delay: 15s;
 
   }
 
   .cloud-cartoon-animation-5 {
-    margin-top: 600px;
-    animation-delay: 4.5s;
+    margin-top: 160px;
+    animation-delay: 15.2s;
   }
 
-  .cloud-cartoon-animation-6 {
-    margin-top: 50px;
-    animation-delay: 3.5s;
-  }
 
-  .cloud-cartoon-animation-7 {
-    margin-top: 70px;
-    animation-delay: 5.5s;
-  }
-
-  .cloud-cartoon-animation-8 {
-    margin-top: -5px;
-    animation-delay: 8.5s;
-
-  }
-
-  .cloud-cartoon-animation-9 {
-    margin-top: 50px;
-    animation-delay: 9.5s;
-
-  }
-
-  .cloud-cartoon-animation-10 {
-    margin-top: 770px;
-    animation-delay: 9.5s;
-  }
-
-  .cloud-cartoon-animation-11 {
-    margin-top: 50px;
-    animation-delay: 12s;
-  }
-
-  .cloud-cartoon-animation-12 {
-    margin-top: 770px;
-    animation-delay: 14s;
-  }
-
-  .cloud-cartoon-animation-13 {
-    margin-top: 730px;
-    animation-delay: 14.5s;
-  }
-
-  .cloud-cartoon-animation-14 {
-    margin-top: 830px;
-    animation-delay: 18s;
-  }
-
-  .cloud-cartoon-animation-15 {
-    margin-top: 780px;
-    animation-delay: 19s;
-  }
-
-  .cloud-cartoon-animation-16 {
-    margin-top: 290px;
-    animation-delay: 18.5s;
-  }
-
-  .cloud-cartoon-animation-17 {
-    margin-top: 245px;
-    animation-delay: 19.5s;
-  }
 
   .pages-head {
     padding-top: 35px;
@@ -5732,7 +5676,7 @@
   }
 
   .wel-g1-bg {
-    background-image: url('<?php echo base_url("docs/b.bg-welcome1.png"); ?>');
+    background-image: url('<?php echo base_url("docs/bg-welcome-g1v2.png"); ?>');
     position: absolute;
     width: 1920px;
     height: 767px;
@@ -5740,19 +5684,129 @@
   }
 
   .wel-g1-sky {
-    background-image: url('<?php echo base_url("docs/wel-g-sky2.png"); ?>');
+    background-image: url('<?php echo base_url("docs/wel-g-sky.png"); ?>');
     position: absolute;
     background-repeat: no-repeat;
-    background-size: 100% 700px;
-    /* ขนาดเต็ม 1920px x 600px */
+    background-size: 100% 1100px;
     width: 1920px;
-    height: 268px;
-    /* แสดงความสูงที่คุณต้องการ */
+    height: 170px;
     overflow: hidden;
-    position: absolute;
     background-position: top;
-    /* เริ่มจากด้านบน */
+    animation: move-up-sky-bg 30s linear infinite;
   }
+
+  @keyframes move-up-sky-bg {
+    0% {
+      background-position: top;
+    }
+
+    100% {
+      background-position: bottom;
+    }
+  }
+
+  .wel-g1-cloud-animation {
+    position: absolute;
+    white-space: nowrap;
+    animation: fadeinleftoutright-g1 30s linear infinite;
+    z-index: 1;
+    visibility: hidden;
+    /* ซ่อนภาพก่อนเริ่มแอนิเมชัน */
+  }
+
+  .wel-g1-cloud-animation-1 {
+    margin-top: 27%;
+  }
+
+  .wel-g1-cloud-animation-2 {
+    margin-top: 27%;
+    animation-delay: 12s;
+  }
+
+  @keyframes fadeinleftoutright-g1 {
+    0% {
+      left: -600px;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    5% {
+      left: 5%;
+      opacity: 0;
+      visibility: visible;
+    }
+
+    6% {
+      left: 6%;
+      opacity: 0.5;
+    }
+
+    50% {
+      left: 50%;
+      opacity: 1;
+    }
+
+    90% {
+      left: 90%;
+      opacity: 0;
+    }
+
+    100% {
+      left: 100%;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .wel-image-container {
+    display: flex;
+    flex-direction: column;
+    /* จัดวางองค์ประกอบในแนวตั้ง */
+    align-items: center;
+    /* จัดกึ่งกลางองค์ประกอบในแนวนอน */
+    margin-left: 80px;
+    /* ค่าที่คุณตั้งไว้ */
+    margin-top: -40px;
+    /* ค่าที่คุณตั้งไว้ */
+  }
+
+  .wel-image-container img {
+    animation: welmoveUpDown 3s infinite;
+    /* เรียกใช้อนิเมชั่น */
+  }
+
+  .wel-image-container img:hover {
+    animation-play-state: paused;
+    /* หยุดอนิเมชั่นเมื่อเมาส์ชี้ */
+  }
+
+  @keyframes welmoveUpDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+      /* ตำแหน่งเริ่มต้นและสุดท้าย */
+    }
+
+    50% {
+      transform: translateY(-20px);
+      /* ตำแหน่งเมื่อขยับขึ้น */
+    }
+  }
+
+
+  .wel-font-travel {
+    color: #000;
+    text-align: center;
+    -webkit-text-stroke-width: 0.5;
+    -webkit-text-stroke-color: var(--, #FFF);
+    font-family: "Noto Looped Thai UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
 
   @keyframes CenterOutRightWel {
     0% {
@@ -5864,29 +5918,51 @@
     /* ซ่อน div หลังจากแอนิเมชันหลักจบลง */
   }
 
-  .wel-g2-bg {
-    background-image: url('<?php echo base_url("docs/b.bg-welcome-g2v0.png"); ?>');
+  .wel-g2-bg1 {
+    background-image: url('<?php echo base_url("docs/wel-g2-bg1.png"); ?>');
     position: absolute;
     width: 1920px;
-    height: 245px;
+    height: 555px;
     top: 0;
-    /* ตำแหน่งบนสุดของหน้า */
-    z-index: 1;
-    /* ไม่จำเป็นต้องซ้อนทับ */
-    overflow: hidden;
+    z-index: 2;
   }
 
-  .wel-g2-bg1 {
-    background-image: url('<?php echo base_url("docs/b.bg-welcome-g2.png"); ?>');
+  .wel-g2-cloud-animation {
+    position: absolute;
+    white-space: nowrap;
+    animation: fadeinleftoutright-g1 50s linear infinite;
+    z-index: 1;
+    visibility: hidden;
+    /* ซ่อนภาพก่อนเริ่มแอนิเมชัน */
+  }
+
+
+  .wel-g2-cloud-animation-1 {
+    margin-top: 254px;
+  }
+
+  .wel-g2-cloud-animation-2 {
+    margin-top: 36px;
+    animation-delay: 8s;
+  }
+
+  .wel-g2-cloud-animation-3 {
+    margin-top: 220px;
+    animation-delay: 15s;
+
+  }
+
+  .wel-g2-cloud-animation-4 {
+    margin-top: 36px;
+    animation-delay: 22s;
+  }
+
+  .wel-g2-bg2 {
+    background-image: url('<?php echo base_url("docs/wel-g2-bg4.png"); ?>');
     position: absolute;
     width: 1920px;
-    height: 701px;
-    top: 135px;
-    /* ต่อจาก wel-g2-bg */
-    z-index: 2;
-    /* ไม่จำเป็นต้องซ้อนทับ */
-    overflow: hidden;
-    /* background-color: #000; */
+    height: 804px;
+    z-index: 3;
   }
 
 
@@ -5944,16 +6020,15 @@
   }
 
   .font-wel-g2-visit-content {
-    color: #FFF;
+    color: #194413;
     text-align: center;
-    font-family: Sriracha;
-    font-size: 40px;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Thasadith;
+    font-size: 35px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
-    animation: fadeInWel 5s ease-out forwards;
-    /* animation-delay: 13s; */
-    opacity: 0;
   }
 
   .font-wel-g2-visit-content2 {
@@ -5966,24 +6041,6 @@
     line-height: normal;
     animation: fadeInWel 5s ease-out forwards;
     opacity: 0;
-  }
-
-
-  .wel-g2-animation-3 {
-    position: absolute;
-    animation: moveLeftRight 5s infinite alternate;
-  }
-
-  @keyframes moveLeftRight {
-    0% {
-      left: -100px;
-      /* จุดเริ่มต้นที่ด้านซ้ายสุด */
-    }
-
-    100% {
-      left: 0;
-      /* จุดสิ้นสุดที่ด้านขวาสุด ปรับค่า 100px ตามต้องการเพื่อระยะห่าง */
-    }
   }
 
   .sriracha-regular {
@@ -6108,9 +6165,9 @@
 
   .text-btm2 {
     position: relative;
-    padding-top: 100px;
+    padding-top: 130px;
     /* padding-left: 1150px; */
-    z-index: 2;
+    z-index: 3;
   }
 
   /* .text-btm2 .text-center span {
@@ -6475,17 +6532,45 @@
     /* 133.333% */
   }
 
-  .wel-g3-bg {
-    background-image: url('<?php echo base_url("docs/b.bg-welcome-g3.png"); ?>');
+  .wel-g3-bg1 {
+    background-image: url('<?php echo base_url("docs/wel-g3-bg.png"); ?>');
     position: absolute;
     width: 1920px;
-    height: 1000px;
-    top: 0;
-    /* ตำแหน่งบนสุดของหน้า */
-    z-index: 1;
-    /* ไม่จำเป็นต้องซ้อนทับ */
-    overflow: hidden;
+    height: 804px;
+    z-index: 3;
   }
+
+  .wel-light-animation-1,
+  .wel-light-animation-2,
+  .wel-light-animation-3,
+  .wel-light-animation-4,
+  .wel-light-animation-5,
+  .wel-light-animation-6,
+  .wel-light-animation-7,
+  .wel-light-animation-8,
+  .wel-light-animation-9,
+  .wel-light-animation-10 {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  /* ดาวตก animation  */
+  @keyframes fadeTopInDownOut {
+
+    0% {
+      top: -100px;
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    100% {
+      top: 620px;
+      /* ตำแหน่งที่ออกไป */
+      opacity: 0;
+    }
+  }
+
 
   .local-sun-big {
     margin-top: -350px;
@@ -6980,11 +7065,37 @@
     height: 359px;
   }
 
+  .top-executives {
+    color: #1C455F;
+    text-align: center;
+    font-family: "Noto Looped Thai UI";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 12px;
+  }
+
   .bg-top-calender {
     background-image: url('<?php echo base_url("docs/bg-top-calender.png"); ?>');
     width: 602px;
     height: 396px;
     background-repeat: no-repeat;
+  }
+
+  .top-calender{
+    color: #1C455F;
+    text-align: center;
+    font-family: "Noto Looped Thai UI";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 12px;
   }
 
   .text-run-btm-eservice {
@@ -6995,5 +7106,15 @@
     background: #FFF;
     padding-top: 10px;
     margin-top: 10px;
+  }
+
+  .font-notify-home {
+    color: #8D8D8D;
+    text-align: right;
+    font-family: "Noto Looped Thai UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
 </style>

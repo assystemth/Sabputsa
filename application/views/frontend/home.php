@@ -80,107 +80,85 @@
     <div class="fade-container">
         <div class="fade-content active" id="div1">
             <div class="wel-g1-bg">
-                <div class="text-btm">
-                    <div class="text-center">
-                        <span class="font-wel-g2-visit-content" id="text-1">“มุ่งมั่นพัฒนาในด้าน<br>
-                            เศรษฐกิจ สังคม การเมือง<br>
-                            โดยการมีส่วนร่วมของประชาชนทุกภาคส่วน”</span>
-                    </div><br>
-                    <div class="text-center">
-                        <span class="font-wel-g2-visit-content2" id="text-2">วิสัยทัศน์<br>
-                            องค์การบริหารส่วนตำบลบ้านกลาง</span>
+                <img class="wel-g1-cloud-animation wel-g1-cloud-animation-1" src="docs/wel-g1-cloud-animation-1.png">
+                <img class="wel-g1-cloud-animation wel-g1-cloud-animation-2" src="docs/wel-g1-cloud-animation-2.png">
+                <div style="position: relative; z-index: 2; margin-top: 30%; margin-left: 57%; ">
+                    <img src="docs/wel-g1-bird.gif">
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="wel-image-container text-center" style="margin-left: -58%;">
+                            <a href="<?php echo site_url('Pages/travel_detail/1'); ?>">
+                                <img src="docs/wel-mark-travel1.png" alt="Map">
+                            </a>
+                            <span class="wel-font-travel">ภูเขาหินปะการัง</span><br>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="wel-image-container text-center" style="margin-left: 34%;">
+                            <a href="<?php echo site_url('Pages/travel_detail/1'); ?>">
+                                <img src="docs/wel-mark-travel2.png" alt="Map">
+                            </a>
+                            <span class="wel-font-travel">อ่างเก็บน้ำซับเจริญ</span><br>
+                        </div>
                     </div>
                 </div>
-                <img class="cloud-header1" src="docs/b.wel-cloud1v3.png" id="cloud">
+
             </div>
-            <img class="cloud-header2" src="docs/b.wel-cloud2.png">
+            <div class="wel-g1-sky"></div>
         </div>
 
         <div class="fade-content" id="div2">
-            <div class="wel-g2-bg">
-                <div class="bg-light-header">
-                    <img class="wel-g2-light" src="docs/b.wel-g2-light.png">
-                </div>
-                <div class="bg-cloud-header">
-                    <img class="wel-g2-cloud" src="docs/b.wel-g2-cloud.png">
-                </div>
-            </div>
             <div class="wel-g2-bg1">
-                <div class="bg-water-header">
-                    <img class="wel-g2-water" src="docs/b.wel-g2-water2.png">
+                <img class="wel-g2-cloud-animation wel-g2-cloud-animation-1" src="docs/wel-g2-cloud-animation-1.png">
+                <img class="wel-g2-cloud-animation wel-g2-cloud-animation-2" src="docs/wel-g2-cloud-animation-2.png">
+                <img class="wel-g2-cloud-animation wel-g2-cloud-animation-3" src="docs/wel-g2-cloud-animation-3.png">
+                <img class="wel-g2-cloud-animation wel-g2-cloud-animation-4" src="docs/wel-g2-cloud-animation-4.png">
+            </div>
+            <div class="wel-g2-bg2">
+                <div class="text-btm2 text-center">
+                    <span class="font-wel-g2-visit-content" id="text-1">“ องค์การบริหารส่วนตำบลซับพุทรา ตำบลน่าอยู่ ชุมชนเข้มแข็ง<br>
+                        ด้วยการบริหารจัดการที่ดี เน้นความร่วมมือจากทุกภาคส่วน<br>
+                        ส่งเสริมการรวมกลุ่มเศรษฐกิจ ยกระดับคุณภาพชีวิตและการศึกษา<br>
+                        มุ่งพัฒนาแหล่งท่องเที่ยวให้มีชื่อเสียง ”</span>
                 </div>
-                <div class="text-btm2">
-                    <div class="text-center">
-                        <span class="font-wel-g2-visit-content" id="text-3">“ ป่าต้นน้ำโคกเดิ่นฤาษี ประเพณีบุญบั้งไฟ<br>
-                            ลูกเจ้าพ่อเมืองกลางเมืองไกล<br>
-                            ตำบลใหญ่ประจำอำเภอ ”</span>
-                    </div><br>
-                    <div class="text-center">
-                        <span class="font-wel-g2-visit-content2" id="text-4">คำขวัญประจำตำบลบ้านกลาง</span>
-                    </div>
+                <div style="position: relative; z-index: 4; margin-top: 12%; margin-left: 58%; ">
+                    <img src="docs/wel-g1-bird.gif">
                 </div>
             </div>
         </div>
 
         <div class="fade-content" id="div3">
-            <div class="wel-g3-bg">
-                <!-- <div class="container-wel-g3-animation">
-                    <img class="wel-g3-animation-1" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="wel-g3-animation-2" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="wel-g3-animation-3" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="wel-g3-animation-4" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="wel-g3-animation-5" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="wel-g3-animation-6" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="wel-g3-animation-7" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="wel-g3-animation-8" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="wel-g3-animation-9" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="wel-g3-animation-10" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="wel-g3-animation-11" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="wel-g3-animation-12" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="wel-g3-animation-13" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                </div> -->
+            <div class="wel-g3-bg1">
+                <img class="wel-light-animation-1" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
+                <img class="wel-light-animation-2" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
+                <img class="wel-light-animation-3" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
+                <img class="wel-light-animation-4" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
+                <img class="wel-light-animation-5" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
+                <img class="wel-light-animation-6" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
+                <img class="wel-light-animation-7" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
+                <img class="wel-light-animation-8" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
+                <img class="wel-light-animation-9" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
+                <img class="wel-light-animation-10" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
 
-                <div class="container-star-news-animation">
-                    <img class="star-news-animation-1" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="star-news-animation-2" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="star-news-animation-3" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="star-news-animation-4" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="star-news-animation-5" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="star-news-animation-6" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="star-news-animation-7" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="star-news-animation-8" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="star-news-animation-9" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="star-news-animation-10" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
-                    <img class="star-news-animation-11" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="star-news-animation-12" src="<?php echo base_url('docs/wel-g3-light1.png'); ?>">
-                    <img class="star-news-animation-13" src="<?php echo base_url('docs/wel-g3-light2.png'); ?>">
+                <div class="text-btm2 text-center">
+                    <span class="font-wel-g2-visit-content">“ องค์การบริหารส่วนตำบลซับพุทรา ตำบลน่าอยู่ ชุมชนเข้มแข็ง<br>
+                        ด้วยการบริหารจัดการที่ดี เน้นความร่วมมือจากทุกภาคส่วน<br>
+                        ส่งเสริมการรวมกลุ่มเศรษฐกิจ ยกระดับคุณภาพชีวิตและการศึกษา<br>
+                        มุ่งพัฒนาแหล่งท่องเที่ยวให้มีชื่อเสียง ”</span>
                 </div>
-
-                <div class="local-sun-big">
-                    <img class="wel-light-nav" src="<?php echo base_url("docs/b.sun-g3.png"); ?>">
-                </div>
-                <div class="local-sun-left">
-                    <img class="" src="<?php echo base_url("docs/b.sun2-g3.png"); ?>">
-                </div>
-                <div class="">
-                    <div class="local-pol-left">
-                        <img class="" src="<?php echo base_url("docs/b.wel-g3-left.png"); ?>">
-                    </div>
-                    <div class="local-pol-right">
-                        <img class="" src="<?php echo base_url("docs/b.wel-g3-right.png"); ?>">
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
-
 </div>
 
-<div class="welcome-btm">
-    <div class="text-center" style="padding-top: 300px;">
+<div class="welcome-btm"> </div>
+<div class="welcome-btm2"> </div>
+<div class="welcome-btm-ontop" style="padding-top: 165px;">
+    <div class="text-center" style="position: absolute; margin-top: -110px; margin-left: 33%; ">
         <span class="font-welcome-btm-other1">องค์การบริหารส่วนตำบลบ้านกลาง</span>
-        <span class="font-welcome-btm-other2">องค์การบริหารส่วนตำบลบ้านกลาง</span>
+        <!-- <span class="font-welcome-btm-other2">องค์การบริหารส่วนตำบลบ้านกลาง</span> -->
     </div>
     <div class="d-flex justify-content-center">
         <div class="welcome-btm-text-run">
@@ -217,6 +195,13 @@
 
 
 <div class="bg-banner">
+    <img class="wipwap dot-news-animation-2" src="docs/animation-star-3.png" width="15" height="15">
+    <img class="wipwap dot-news-animation-5" src="docs/animation-star-1.png" width="35" height="35">
+    <img class="wipwap dot-news-animation-6" src="docs/animation-star-1.png" width="50" height="50">
+    <img class="wipwap dot-news-animation-9" src="docs/animation-star-3.png" width="15" height="15">
+    <img class="wipwap dot-news-animation-10" src="docs/animation-star-1.png" width="50" height="50">
+    <img class="wipwap dot-news-animation-11" src="docs/animation-star-3.png" width="15" height="15">
+    <img class="wipwap dot-news-animation-14" src="docs/animation-star-2.png" width="20" height="20">
     <div class="crop">
         <div class="row" style="padding-top: 30px; padding-bottom: 30px; ">
             <div class="col-9" style="padding-left: 100px;">
@@ -282,6 +267,9 @@
         <div class="row ">
             <div class="col-6 content-banner">
                 <div class="bg-top-executives">
+                    <div class="top-executives">
+                        <span>ผู้บริหาร</span>
+                    </div>
                     <div id="carouselExampleAutoplayingv2" class="carousel slide" data-bs-ride="carousel" style="z-index: 10; margin-left: 5px">
                         <div class="carousel-inner">
                             <?php foreach ($qBackground_personnel as $index => $rs) { ?>
@@ -430,6 +418,9 @@
             </div>
             <div class="col-5 mt-5">
                 <div class="bg-top-calender">
+                    <div class="top-calender">
+                        ปฎิทินกิจกรรม
+                    </div>
                     <div class="row">
                         <div class="col-6" style="z-index: 10; cursor: pointer;">
                             <div class="calendar">
@@ -481,17 +472,11 @@
         <img class="star-news-animation-2" src="docs/animation-star-2.png">
         <img class="star-news-animation-3" src="docs/animation-star-3.png">
         <img class="star-news-animation-4" src="docs/animation-star-3.png">
-        <img class="star-news-animation-5" src="docs/animation-star-1.png">
         <img class="star-news-animation-6" src="docs/animation-star-1.png">
         <img class="star-news-animation-7" src="docs/animation-star-2.png">
-        <img class="star-news-animation-8" src="docs/animation-star-2.png">
-        <img class="star-news-animation-9" src="docs/animation-star-1.png">
-        <img class="star-news-animation-10" src="docs/animation-star-1.png">
-        <img class="star-news-animation-11" src="docs/animation-star-2.png">
-        <img class="star-news-animation-12" src="docs/animation-star-2.png">
         <img class="star-news-animation-13" src="docs/animation-star-3.png">
-        <img class="star-news-animation-14" src="docs/animation-star-1.png">
-        <img class="star-news-animation-15" src="docs/animation-star-2.png">
+        <img class="star-news-animation-14" src="docs/animation-star-2.png">
+        <img class="star-news-animation-15" src="docs/animation-star-3.png">
     </div>
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 10px;">
@@ -579,21 +564,12 @@
     </div>
 </div>
 <div class="bg-public-news">
-    <img class="dot-news-animation-1" src="docs/lightv2.png" width="35" height="35">
-    <img class="dot-news-animation-2" src="docs/lightv2.png" width="15" height="15">
-    <img class="dot-news-animation-3" src="docs/lightv2.png" width="25" height="25">
-    <img class="dot-news-animation-4" src="docs/lightv2.png" width="25" height="25">
-    <img class="dot-news-animation-5" src="docs/lightv2.png" width="35" height="35">
-    <img class="dot-news-animation-6" src="docs/lightv2.png" width="50" height="50">
-    <img class="dot-news-animation-7" src="docs/lightv2.png" width="20" height="20">
-    <img class="dot-news-animation-8" src="docs/lightv2.png" width="20" height="20">
-    <img class="dot-news-animation-9" src="docs/lightv2.png" width="15" height="15">
-    <img class="dot-news-animation-10" src="docs/lightv2.png" width="50" height="50">
-    <img class="dot-news-animation-11" src="docs/lightv2.png" width="15" height="15">
-    <img class="dot-news-animation-12" src="docs/lightv2.png" width="25" height="25">
-    <img class="dot-news-animation-13" src="docs/lightv2.png" width="25" height="25">
-    <img class="dot-news-animation-14" src="docs/lightv2.png" width="20" height="20">
-    <img class="dot-news-animation-15" src="docs/lightv2.png" width="20" height="20">
+    <img class="wipwap dot-news-animation-1" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-2" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-3" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-5" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-6" src="docs/anime-light-home2.png">
+    <img class="wipwap dot-news-animation-15" src="docs/anime-light-home2.png">
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 3%;">
             <div class="head-activity">
@@ -854,22 +830,12 @@
 </div>
 
 <div class="bg-public-news2" id="egp">
-    <img class="dot-news-animation-1" src="docs/animation-star-1.png" width="35" height="35">
-    <img class="dot-news-animation-2" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-3" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-4" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-5" src="docs/animation-star-1.png" width="35" height="35">
-    <img class="dot-news-animation-6" src="docs/animation-star-1.png" width="50" height="50">
-    <img class="dot-news-animation-7" src="docs/animation-star-3.png" width="20" height="20">
-    <img class="dot-news-animation-8" src="docs/animation-star-3.png" width="20" height="20">
-    <img class="dot-news-animation-9" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-10" src="docs/animation-star-1.png" width="50" height="50">
-    <img class="dot-news-animation-11" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-12" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-13" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-14" src="docs/animation-star-2.png" width="20" height="20">
-    <img class="dot-news-animation-15" src="docs/animation-star-3.png" width="20" height="20">
-
+    <img class="wipwap dot-news-animation-1" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-2" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-3" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-5" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-6" src="docs/anime-light-home2.png">
+    <img class="wipwap dot-news-animation-15" src="docs/anime-light-home2.png">
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 3%; ">
             <div class="head-activity">
@@ -1182,21 +1148,8 @@
 </div>
 
 <div class="bg-news-dla-prov">
-    <img class="dot-news-animation-1" src="docs/animation-star-1.png" width="35" height="35">
-    <img class="dot-news-animation-2" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-3" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-4" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-5" src="docs/animation-star-1.png" width="35" height="35">
-    <img class="dot-news-animation-6" src="docs/animation-star-1.png" width="50" height="50">
-    <img class="dot-news-animation-7" src="docs/animation-star-3.png" width="20" height="20">
-    <img class="dot-news-animation-8" src="docs/animation-star-3.png" width="20" height="20">
-    <img class="dot-news-animation-9" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-10" src="docs/animation-star-1.png" width="50" height="50">
-    <img class="dot-news-animation-11" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-12" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-13" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-14" src="docs/animation-star-2.png" width="20" height="20">
-    <img class="dot-news-animation-15" src="docs/animation-star-3.png" width="20" height="20">
+    <img class="wipwap dot-news-animation-5" src="docs/anime-light-home2.png">
+    <img class="wipwap dot-news-animation-6" src="docs/anime-light-home2.png">
     <div class="d-flex justify-content-center">
         <div class="head-activity">
             <span class="font-header-home">ข่าวสาร สถ.</span>
@@ -1314,25 +1267,15 @@
             </a>
         </div>
     </div>
-
+    <div class="d-flex justify-content-center" style="margin-left: 45%;">
+        <span class="font-notify-home">หมายเหตุ อ้างอิงแหล่งที่มาจาก กรมส่งเสริมการปกครองส่วนท้องถิ่น  <a href="https://www.dla.go.th/" target="_blank">(https://www.dla.go.th/)</a></span>
+    </div>
 </div>
 
 <div class="bg-news-dla">
-    <img class="dot-news-animation-1" src="docs/animation-star-1.png" width="35" height="35">
-    <img class="dot-news-animation-2" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-3" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-4" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-5" src="docs/animation-star-1.png" width="35" height="35">
-    <img class="dot-news-animation-6" src="docs/animation-star-1.png" width="50" height="50">
-    <img class="dot-news-animation-7" src="docs/animation-star-3.png" width="20" height="20">
-    <img class="dot-news-animation-8" src="docs/animation-star-3.png" width="20" height="20">
-    <img class="dot-news-animation-9" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-10" src="docs/animation-star-1.png" width="50" height="50">
-    <img class="dot-news-animation-11" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-12" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-13" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-14" src="docs/animation-star-2.png" width="20" height="20">
-    <img class="dot-news-animation-15" src="docs/animation-star-3.png" width="20" height="20">
+    <img class="wipwap dot-news-animation-5" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-1" src="docs/anime-light-home1.png">
+    <img class="wipwap dot-news-animation-6" src="docs/anime-light-home2.png">
 
     <div class="bg-dla-content">
         <div style="padding-top: 10px; padding-left: 50px;">
@@ -1432,17 +1375,21 @@
             </a>
         </div>
     </div>
+    <div class="d-flex justify-content-center" style="margin-left: 45%;">
+        <span class="font-notify-home">หมายเหตุ อ้างอิงแหล่งที่มาจาก กรมส่งเสริมการปกครองส่วนท้องถิ่น <a href=" https://www.dla.go.th/" target="_blank"> (https://www.dla.go.th/)</a></span>
+    </div>
 </div>
 
 
 <div class="bg-travel">
-    <img class="cloud-animation cloud-cartoon-animation-1" src="docs/animation_cloud_cartoon3.png">
-    <img class="cloud-animation cloud-cartoon-animation-2" src="docs/animation_cloud_cartoon1.png">
-    <img class="cloud-animation cloud-cartoon-animation-3" src="docs/animation_cloud_cartoon4.png">
-    <img class="cloud-animation cloud-cartoon-animation-4" src="docs/animation_cloud_cartoon3.png">
-    <img class="cloud-animation cloud-cartoon-animation-5" src="docs/animation_cloud_cartoon3.png">
-
-
+    <div class="sun-cartoon-animation text-center">
+        <img class="wel-light-nav" src="docs/sun-cartoon-animation.png">
+    </div>
+    <img class="cloud-cartoon-animation cloud-cartoon-animation-1" src="docs/animation-cloud-cartoon1.png">
+    <img class="cloud-cartoon-animation cloud-cartoon-animation-2" src="docs/animation-cloud-cartoon2.png">
+    <img class="cloud-cartoon-animation cloud-cartoon-animation-3" src="docs/animation-cloud-cartoon1.png">
+    <img class="cloud-cartoon-animation cloud-cartoon-animation-4" src="docs/animation-cloud-cartoon1.png">
+    <img class="cloud-cartoon-animation cloud-cartoon-animation-5" src="docs/animation-cloud-cartoon2.png">
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 1%; ">
             <div class="head-travel">
@@ -1450,63 +1397,67 @@
             </div>
         </div>
         <div class="travel-content" style="padding-top: 1%; ">
-            <div class="row underline">
-                <div class="col-4">
-                    <div class="image-container">
-                        <span class="font-travel">ศาลปู่เมืองกลาง พ่อปู่เมืองไกล</span><br>
-                        <a href="<?php echo site_url('Pages/travel_detail/1'); ?>">
-                            <img src="docs/map1.png" alt="Map">
-                        </a>
-                    </div>
-                    <div class="image-container" style="margin-left: -80px; margin-top: 140px;">
-                        <span class="font-travel">ภูแผงม้า</span><br>
-                        <a href="<?php echo site_url('Pages/travel_detail/2'); ?>">
-                            <img src="docs/map9.png" alt="Map">
-                        </a>
-                    </div>
-                    <div class="" style="margin-left: 270px; margin-top: -75px;">
-                        <img src="docs/car.png" alt="Map">
-                    </div>
+            <div class="image-container text-center" style="margin-left: 1.8%; margin-top: -20px;">
+                <span class="font-travel">แหล่งเรียนรู้ในชุมชนตำบลซับพทรา</span><br>
+                <div class="mt-5">
+                    <a href="<?php echo site_url('Pages/travel_detail/1'); ?>">
+                        <img class="img-travel" src="docs/travel-mark1.png">
+                    </a>
+                    <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
                 </div>
-                <div class="col-4">
-                    <div class="image-container" style="margin-left: -180px; margin-top: -60px;">
-                        <span class="font-travel">ภูลมโล</span><br>
-                        <a href="<?php echo site_url('Pages/travel_detail/3'); ?>">
-                            <img src="docs/map2.png" alt="Map">
-                        </a>
-                    </div>
-                    <div class="image-container" style="margin-left: 230px; margin-top: -120px;">
-                        <span class="font-travel">เขาค้อ</span><br>
-                        <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
-                            <img src="docs/map3.png" alt="Map">
-                        </a>
-                    </div>
-                    <div class="image-container" style="margin-left: -300px; margin-top: 140px;">
-                        <span class="font-travel">อุทยานประวัติศาสตร์ศรีเทพ</span><br>
-                        <a href="<?php echo site_url('Pages/travel_detail/5'); ?>">
-                            <img src="docs/map8.png" alt="Map">
-                        </a>
-                    </div>
+            </div>
+            <div class="image-container text-center" style=" margin-left: 39.6%; margin-top: -5px;">
+                <span class="font-travel">อ่างเก็บน้ำซับเจริญ</span><br>
+                <div class="mt-5">
+                    <a href="<?php echo site_url('Pages/travel_detail/2'); ?>">
+                        <img class="img-travel" src="docs/travel-mark2.png" alt="Map">
+                    </a>
+                    <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
                 </div>
-                <div class="col-4">
-                    <div class="image-container" style="margin-left: -140px; margin-top: -70px;">
-                        <span class="font-travel">ภูทับเบิก</span><br>
-                        <a href="<?php echo site_url('Pages/travel_detail/6'); ?>">
-                            <img src="docs/map5.png" alt="Map">
-                        </a>
-                    </div>
-                    <div class="image-container" style="margin-left: -380px; margin-top: 15px;">
-                        <span class="font-travel">วัดพระธาตุผาซ่อนแก้ว</span><br>
-                        <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
-                            <img src="docs/map4.png" alt="Map">
-                        </a>
-                    </div>
-                    <div class="image-container" style="margin-left: 290px; margin-top: -290px;">
-                        <span class="font-travel">อุทยานแห่งชาติทุ่งแสลงหลวง</span><br>
-                        <a href="<?php echo site_url('Pages/travel_detail/8'); ?>">
-                            <img src="docs/map6.png" alt="Map">
-                        </a>
-                    </div>
+            </div>
+            <div class="image-container text-center" style="margin-left: 53.2%; margin-top: -50px;">
+                <span class="font-travel">วัดซับป่าคาย</span><br>
+                <div class="mt-5">
+                    <a href="<?php echo site_url('Pages/travel_detail/3'); ?>">
+                        <img class="img-travel" src="docs/travel-mark3.png" alt="Map">
+                    </a>
+                    <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
+                </div>
+            </div>
+            <div class="image-container text-center" style="margin-left: 66.8%; margin-top: -105px;">
+                <span class="font-travel">ภูเขาหินปะการัง</span><br>
+                <div class="mt-5">
+                    <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
+                        <img class="img-travel" src="docs/travel-mark4.png" alt="Map">
+                    </a>
+                    <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
+                </div>
+            </div>
+            <div class="image-container text-center" style="margin-left: 13.8%; margin-top: 30.7%;">
+                <a href="<?php echo site_url('Pages/travel_detail/5'); ?>">
+                    <img class="img-travel" src="docs/travel-mark5.png" alt="Map">
+                </a>
+                <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
+                <div class="mt-5">
+                    <span class="font-travel">วัดขามแดงเจริญธรรม</span><br>
+                </div>
+            </div>
+            <div class="image-container text-center" style="margin-left: 39.4%; margin-top: 30.5%;">
+                <a href="<?php echo site_url('Pages/travel_detail/6'); ?>">
+                    <img class="img-travel" src="docs/travel-mark6.png" alt="Map">
+                </a>
+                <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
+                <div class="mt-5">
+                    <span class="font-travel">วัดเขาถ้ำศรีทรงธรรม</span><br>
+                </div>
+            </div>
+            <div class="image-container text-center" style="margin-left: 70.5%; margin-top: 30.6%;">
+                <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
+                    <img class="img-travel" src="docs/travel-mark7.png" alt="Map">
+                </a>
+                <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
+                <div class="mt-5">
+                    <span class="font-travel">น้ำตกซับเจริญ</span><br>
                 </div>
             </div>
         </div>
@@ -1517,22 +1468,8 @@
 
 
 
+
 <div class="bg-service" id="oss">
-    <img class="dot-news-animation-1" src="docs/animation-star-1.png" width="35" height="35">
-    <img class="dot-news-animation-2" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-3" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-4" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-5" src="docs/animation-star-1.png" width="35" height="35">
-    <img class="dot-news-animation-6" src="docs/animation-star-1.png" width="50" height="50">
-    <img class="dot-news-animation-7" src="docs/animation-star-3.png" width="20" height="20">
-    <img class="dot-news-animation-8" src="docs/animation-star-3.png" width="20" height="20">
-    <img class="dot-news-animation-9" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-10" src="docs/animation-star-1.png" width="50" height="50">
-    <img class="dot-news-animation-11" src="docs/animation-star-3.png" width="15" height="15">
-    <img class="dot-news-animation-12" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-13" src="docs/animation-star-2.png" width="25" height="25">
-    <img class="dot-news-animation-14" src="docs/animation-star-2.png" width="20" height="20">
-    <img class="dot-news-animation-15" src="docs/animation-star-3.png" width="20" height="20">
     <div class="d-flex justify-content-center" style="padding-top: 3%; ">
         <div class="head-eservice">
             <span class="font-header-travel">One Stop e-Service</span>
@@ -1551,218 +1488,189 @@
     </div>
 
     <div class="row mt-5 underline" style="width:  1560px; margin-left: 10%;">
-            <div class="col">
-                <a href="<?php echo site_url('Pages/adding_complain'); ?>">
-                    <div class="button-e-service">
-                        <span class="font-button-e-service">แจ้งเรื่อง ร้องเรียน</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="<?php echo site_url('Pages/adding_suggestions'); ?>">
-                    <div class="button-e-service">
-                        <span class="font-button-e-service">รับฟังความคิดเห็น</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="<?php echo site_url('Pages/adding_corruption'); ?>">
-                    <div class="button-e-service">
-                        <span class="font-button-e-service">แจ้งเรื่องทุจริต</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="<?php echo site_url('Pages/e_service'); ?>">
-                    <div class="button-e-service">
-                        <span class="font-button-e-service">แบบฟอร์ม</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>">
-                    <div class="button-e-service">
-                        <span class="font-button-e-service">ยื่นเอกสารออนไลน์</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>">
-                    <div class="button-e-service">
-                        <span class="font-button-e-service">เด็กแรกเกิด</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>">
-                    <div class="button-e-service">
-                        <span class="font-button-e-service">ผู้สูงอายุ/ผู้พิการ</span>
-                    </div>
-                </a>
-            </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="service-content underline" style="padding-top: 2%;">
-        <div class="row">
-            <div class="col-8">
-                <div class="row">
-                    <div class="col-4" style="padding-left: 45px; ">
-
-                    </div>
-                    <div class="col-8">
-                        <div class="bg-qa" style="margin-left: 25px;">
-                            <div style="padding-top: 15px; padding-left: 50px;">
-                                <span class="font-header-qa">กระทู้ ถาม ตอบ</span>
-                            </div>
-                            <?php foreach ($qQ_a as $rs) { ?>
-                                <div class="bt-content-qa-list">
-                                    <div class="bg-content-qa-list mt-2">
-                                        <a href="<?php echo site_url('Pages/q_a_chat/' . $rs->q_a_id); ?>">
-                                            <div class="row">
-                                                <div class="col-9 one-line-ellipsis" style="padding-top: 7px;">
-                                                    <span class="font-qa-list-content ">
-                                                        <?= $rs->q_a_msg; ?>
-                                                    </span>
-                                                </div>
-                                                <div class="col-3 one-line-ellipsis" style="padding-top: 8px;">
-                                                    <span class="font-qa-list-content-name">ผู้ตั้งกระทู้ :
-                                                        <?= $rs->q_a_by; ?>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                            <div class="d-flex justify-content-end" style="padding-top: 100px; margin-right: 30px;">
-                                <div class="mx-4">
-                                    <a href="<?php echo site_url('pages/addding_q_a'); ?>">
-                                        <div class="bt-qa-add" style="padding: 7px">
-                                            <span class="font-bt-qa">เพิ่มกระทู้</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <a href="<?php echo site_url('pages/q_a'); ?>">
-                                    <div class="bt-qa-all" style="padding: 7px">
-                                        <span class="font-bt-qa">ดูทั้งหมด</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col">
+            <a href="<?php echo site_url('Pages/adding_complain'); ?>">
+                <div class="button-e-service">
+                    <span class="font-button-e-service">แจ้งเรื่อง ร้องเรียน</span>
                 </div>
-
-            </div>
-            <div class="col-4">
-                <div class="bg-vote" style="margin-left: -70px;">
-                    <div style="padding-top: 15px; padding-left: 10px;">
-                        <span class="font-like ">แบบสอบถามความพึงพอใจ</span>
-                    </div>
-                    <div class="content-like">
-                        <div class="row">
-                            <div class="col-6" style="margin-top: 30px; padding-left: 100px;">
-                                <form action="<?php echo site_url('home/addLike'); ?>" id="reCAPTCHA3" method="post">
-                                    <div class="form-check">
-                                        <input class="form-check-input border-like" type="radio" value="ดีมาก" id="flexCheckDefault1" name="like_name" onclick="toggleCheckbox('flexCheckDefault1')" />
-                                        <label class="form-check-label font-like-label" for="ดีมาก">&nbsp;&nbsp;&nbsp;&nbsp;ดีมาก</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input border-like" type="radio" value="ดี" id="flexCheckDefault2" name="like_name" onclick="toggleCheckbox('flexCheckDefault2')" />
-                                        <label class="form-check-label font-like-label" for="ดี">&nbsp;&nbsp;&nbsp;&nbsp;ดี</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input border-like" type="radio" value="ปานกลาง" id="flexCheckDefault3" name="like_name" onclick="toggleCheckbox('flexCheckDefault3')" />
-                                        <label class="form-check-label font-like-label" for="ปานกลาง">&nbsp;&nbsp;&nbsp;&nbsp;ปานกลาง</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input border-like" type="radio" value="พอใช้" id="flexCheckDefault4" name="like_name" onclick="toggleCheckbox('flexCheckDefault4')" />
-                                        <label class="form-check-label font-like-label" for="พอใช้">&nbsp;&nbsp;&nbsp;&nbsp;พอใช้</label>
-                                    </div>
-                                    <!-- <button style="display: none;" type="button" class="btn"><img src="docs/s.btn-sent.png"></button> -->
-                                    <div id="submitSection">
-                                        <!-- <div class="g-recaptcha" data-sitekey="6LcKoPcnAAAAAKGgUMRtkBs6chDKzC8XOoVnaZg_" data-callback="enableSubmit"></div> -->
-                                        <div class="form-group mt-3" style="margin-left: 120px;">
-                                            <div class="bt-like">
-                                                <button data-action='submit' data-callback='onSubmit' data-sitekey="6LcfiLYpAAAAAI7_U3nkRRxKF7e8B_fwOGqi7g6x" type="submit" class="bt btn g-recaptcha"><span class="font-like-new">ส่ง</span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-5" style="margin-top: 30px; margin-left: -60px;">
-                                <div class="content-like-detail" style="display: none; margin-top: 10px;">
-                                    <div style="display: flex; align-items: center;">
-                                        <div class="progress-sm mr-6" style="flex: 1; height: 20px;">
-                                            <div class="progress-bar" role="progressbar" style="width: <?= $percentExcellent; ?>%;" aria-valuenow="<?= $percentExcellent; ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <span style="font-size: 16px; margin-top: -15px;"><?= number_format($percentExcellent, 2); ?>%</span>
-                                    </div>
-                                    <div class="" style="display: flex; align-items: center; margin-top: 25px;">
-                                        <div class="progress-sm mr-6" style="flex: 1; height: 20px;">
-                                            <div class="progress-bar" role="progressbar" style="width: <?= $percentGood; ?>%;" aria-valuenow="<?= $percentGood; ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <span style="font-size: 16px; margin-top: -10px;"><?= number_format($percentGood, 2); ?>%</span>
-                                    </div>
-                                    <div class="" style="display: flex; align-items: center; margin-top: 25px;">
-                                        <div class="progress-sm mr-6" style="flex: 1; height: 20px;">
-                                            <div class="progress-bar" role="progressbar" style="width: <?= $percentAverage; ?>%;" aria-valuenow="<?= $percentAverage; ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <span style="font-size: 16px; margin-top: -10px;"><?= number_format($percentAverage, 2); ?>%</span>
-                                    </div>
-                                    <div class="" style="display: flex; align-items: center; margin-top: 25px;">
-                                        <div class="progress-sm mr-6" style="flex: 1; height: 20px;">
-                                            <div class="progress-bar" role="progressbar" style="width: <?= $percentOkay; ?>%;" aria-valuenow="<?= $percentOkay; ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <span style="font-size: 16px; margin-top: -10px;"><?= number_format($percentOkay, 2); ?>%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="font-like-new bt-like" style="margin-top: -41px; margin-left: 350px;">
-                                <a class="btn" onclick="showContentLikeDetail()"><span class="font-like-new">ดูคะแนน</span></a>
-                            </div>
-
-                        </div>
-                    </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="<?php echo site_url('Pages/adding_corruption'); ?>">
+                <div class="button-e-service">
+                    <span class="font-button-e-service">แจ้งเรื่องทุจริต</span>
                 </div>
-
-                <div style="margin-top: 35px; margin-left: -40px;">
-                    <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank">
-                        <img src="docs/b.Anti_Corruption.png" alt="">
-                    </a>
+            </a>
+        </div>
+        <div class="col">
+            <a href="<?php echo site_url('Pages/adding_suggestions'); ?>">
+                <div class="button-e-service">
+                    <span class="font-button-e-service">รับฟังความคิดเห็น</span>
                 </div>
-
-            </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>">
+                <div class="button-e-service">
+                    <span class="font-button-e-service">เด็กแรกเกิด</span>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>">
+                <div class="button-e-service">
+                    <span class="font-button-e-service">ผู้สูงอายุ/ผู้พิการ</span>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>">
+                <div class="button-e-service">
+                    <span class="font-button-e-service">ยื่นเอกสารออนไลน์</span>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="<?php echo site_url('Pages/e_service'); ?>">
+                <div class="button-e-service">
+                    <span class="font-button-e-service">แบบฟอร์ม</span>
+                </div>
+            </a>
         </div>
     </div>
 
 
+
+    <div class="service-content underline" style="padding-top: 2%;">
+        <div class="crop1440">
+            <div class="row">
+                <div class="col-6">
+                    <div class="bg-qa-list">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="font-q-a-home-head">กระดานสนทนา กระทู้ถาม-ตอบ</span>
+                        </div>
+                        <?php foreach ($qQ_a as $rs) { ?>
+                            <div class="bg-content-qa-list">
+                                <a href="<?php echo site_url('Pages/q_a_chat/' . $rs->q_a_id); ?>">
+                                    <div class="row">
+                                        <div class="col-9 one-line-ellipsis" style="padding-top: 10px;">
+                                            <span class="font-q-a-home-form">
+                                                <?= $rs->q_a_msg; ?>
+                                            </span>
+                                        </div>
+                                        <div class="col-3 one-line-ellipsis" style="padding-top: 10px;">
+                                            <span class="font-q-a-home-by">ผู้ตั้งกระทู้ :
+                                                <?= $rs->q_a_by; ?>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php } ?>
+                        <div class="d-flex justify-content-end" style="padding-top: 25px; margin-right: 70px;">
+                            <div class="mx-4">
+                                <a href="<?php echo site_url('pages/addding_q_a'); ?>">
+                                    <div class="btn-qa-add">
+                                        <span class="font-btn-qa">เพิ่มกระทู้</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="<?php echo site_url('pages/q_a'); ?>">
+                                <div class="btn-qa-add">
+                                    <span class="font-btn-qa">ดูทั้งหมด</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="bg-like">
+                        <div class="d-flex justify-content-center" style="padding-top: 15px;">
+                            <span class="font-like ">แบบสอบถามความพึงพอใจ</span>
+                        </div>
+                        <div class="content-like">
+                            <div class="row">
+                                <div class="col-6">
+                                    <form action="<?php echo site_url('home/addLike'); ?>" id="reCAPTCHA3" method="post">
+                                        <div class="form-check">
+                                            <input class="form-check-input border-like" type="radio" value="ดีมาก" id="flexCheckDefault1" name="like_name" onclick="toggleCheckbox('flexCheckDefault1')" />
+                                            <label class="form-check-label font-like-label" for="ดีมาก">&nbsp;&nbsp;&nbsp;&nbsp;ดีมาก</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input border-like" type="radio" value="ดี" id="flexCheckDefault2" name="like_name" onclick="toggleCheckbox('flexCheckDefault2')" />
+                                            <label class="form-check-label font-like-label" for="ดี">&nbsp;&nbsp;&nbsp;&nbsp;ดี</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input border-like" type="radio" value="ปานกลาง" id="flexCheckDefault3" name="like_name" onclick="toggleCheckbox('flexCheckDefault3')" />
+                                            <label class="form-check-label font-like-label" for="ปานกลาง">&nbsp;&nbsp;&nbsp;&nbsp;ปานกลาง</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input border-like" type="radio" value="พอใช้" id="flexCheckDefault4" name="like_name" onclick="toggleCheckbox('flexCheckDefault4')" />
+                                            <label class="form-check-label font-like-label" for="พอใช้">&nbsp;&nbsp;&nbsp;&nbsp;พอใช้</label>
+                                        </div>
+                                        <!-- <button style="display: none;" type="button" class="btn"><img src="docs/s.btn-sent.png"></button> -->
+                                        <div id="submitSection">
+                                            <!-- <div class="g-recaptcha" data-sitekey="6LcKoPcnAAAAAKGgUMRtkBs6chDKzC8XOoVnaZg_" data-callback="enableSubmit"></div> -->
+                                            <div class="form-group mt-4">
+                                                <div class="btn-qa-add">
+                                                    <button data-action='submit' data-callback='onSubmit' data-sitekey="6LcfiLYpAAAAAI7_U3nkRRxKF7e8B_fwOGqi7g6x" type="submit" class="bt btn g-recaptcha"><span class="font-like-new">ส่ง</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-5" style="margin-left: -30px; margin-top: 10px;">
+                                    <div class="content-like-detail" style="display: none;">
+                                        <div style="display: flex; align-items: center;">
+                                            <div class="progress-sm mr-6" style="flex: 1; height: 20px;">
+                                                <div class="progress-bar" role="progressbar" style="width: <?= $percentExcellent; ?>%;" aria-valuenow="<?= $percentExcellent; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span style="font-size: 16px; margin-top: -15px;"><?= number_format($percentExcellent, 2); ?>%</span>
+                                        </div>
+                                        <div class="" style="display: flex; align-items: center; margin-top: 10px;">
+                                            <div class="progress-sm mr-6" style="flex: 1; height: 20px;">
+                                                <div class="progress-bar" role="progressbar" style="width: <?= $percentGood; ?>%;" aria-valuenow="<?= $percentGood; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span style="font-size: 16px; margin-top: -10px;"><?= number_format($percentGood, 2); ?>%</span>
+                                        </div>
+                                        <div class="" style="display: flex; align-items: center; margin-top: 10px;">
+                                            <div class="progress-sm mr-6" style="flex: 1; height: 20px;">
+                                                <div class="progress-bar" role="progressbar" style="width: <?= $percentAverage; ?>%;" aria-valuenow="<?= $percentAverage; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span style="font-size: 16px; margin-top: -10px;"><?= number_format($percentAverage, 2); ?>%</span>
+                                        </div>
+                                        <div class="" style="display: flex; align-items: center; margin-top: 13px;">
+                                            <div class="progress-sm mr-6" style="flex: 1; height: 20px;">
+                                                <div class="progress-bar" role="progressbar" style="width: <?= $percentOkay; ?>%;" aria-valuenow="<?= $percentOkay; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span style="font-size: 16px; margin-top: -10px;"><?= number_format($percentOkay, 2); ?>%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-like-new btn-qa-add" style="margin-top: -45px; margin-left: 165px;">
+                                    <a class="btn" onclick="showContentLikeDetail()"><span class="font-like-new">ดูคะแนน</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank">
+                            <img src="docs/anti-corruption.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="bg-facebook">
+                        <div class="fb-page" data-href="https://www.facebook.com/people/%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%8B%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%B2/100064917631107/" data-tabs="timeline" data-width="241" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="bg-link">
-    <img class="dot-news-animation-1" src="docs/animation-star-1.png">
-    <img class="dot-news-animation-2" src="docs/animation-star-1.png">
-    <img class="dot-news-animation-3" src="docs/animation-star-1.png">
-    <img class="dot-news-animation-4" src="docs/animation-star-1.png">
-    <img class="dot-news-animation-5" src="docs/animation-star-2.png">
-    <img class="dot-news-animation-6" src="docs/animation-star-2.png">
-    <img class="dot-news-animation-7" src="docs/animation-star-2.png">
-    <img class="dot-news-animation-8" src="docs/animation-star-3.png">
-    <img class="dot-news-animation-9" src="docs/animation-star-3.png">
-    <img class="dot-news-animation-10" src="docs/animation-star-3.png">
-    <img class="dot-news-animation-11" src="docs/animation-star-3.png">
-    <img class="dot-news-animation-12" src="docs/animation-star-2.png">
-    <img class="dot-news-animation-13" src="docs/animation-star-1.png">
-    <img class="dot-news-animation-14" src="docs/animation-star-2.png">
-    <img class="dot-news-animation-15" src="docs/animation-star-2.png">
     <div class="crop">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -1785,23 +1693,25 @@
             <!-- <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div> -->
             <div class="custom-button-prev" style="z-index: 100;">
-                <img src="docs/s.pre-home2.png" alt="Prev">
+                <img src="docs/pre-home.png" alt="Prev">
             </div>
             <div class="custom-button-next">
-                <img src="docs/s.next-home2.png" alt="Next">
+                <img src="docs/next-home.png" alt="Next">
             </div>
 
         </div>
-        <div class="text-center" style="position: relative; z-index: 5; margin-top: -210px; margin-left: -40px">
-            <span class="font-link">องค์การบริหารส่วนตำบลบ้านกลาง อำเภอหล่มสัก จังหวัดเพชรบูรณ์ <br>
-                โทรศัพท์ 056-910-059 <a href="https://www.assystem.co.th/" target="_blank" class="underline" style="font-weight: 5000;">www.ban-klang.go.th</a> e-mail: ban_klang@hotmail.com</span>
+        <div class="text-center" style="position: relative; z-index: 5; margin-top: -203px; margin-left: -40px">
+            <span class="font-link">องค์การบริหารส่วนตำบลซับพุทรา เลขที่ 111 หมู่ 3 ถนนโคกยาว-บัววัฒนา ตำบลซับพุทรา อำเภอชนแดน จังหวัดเพชรบูรณ์ 67150<br>
+                โทรศัพท์ 056-713-895 </span>
         </div>
-        <img class="cloud-animation cloud-animation-1" src="docs/animation-cloud.png">
-        <img class="cloud-animation cloud-animation-2" src="docs/animation-cloud.png">
-        <img class="cloud-animation cloud-animation-3" src="docs/animation-cloud.png">
-        <img class="cloud-animation cloud-animation-4" src="docs/animation-cloud.png">
-        <img class="cloud-animation cloud-animation-5" src="docs/animation-cloud.png">
-        <img class="cloud-animation cloud-animation-6" src="docs/animation-cloud.png">
+        <div class="sun-cartoon-animation2 text-center">
+            <img class="wel-light-nav" src="docs/sun-cartoon-animation.png" width="144" >
+        </div>
+        <img class="cloud-cartoon-animation cloud-cartoon-animation-1" src="docs/animation-cloud-cartoon1.png">
+        <img class="cloud-cartoon-animation cloud-cartoon-animation-2" src="docs/animation-cloud-cartoon2.png">
+        <img class="cloud-cartoon-animation cloud-cartoon-animation-3" src="docs/animation-cloud-cartoon1.png">
+        <img class="cloud-cartoon-animation cloud-cartoon-animation-4" src="docs/animation-cloud-cartoon1.png">
+        <img class="cloud-cartoon-animation cloud-cartoon-animation-5" src="docs/animation-cloud-cartoon2.png">
         <!-- <div class="link-footer">
             <span class="font-footer2 underline">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle-fill" viewBox="0 0 16 16">

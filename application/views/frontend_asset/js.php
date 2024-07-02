@@ -36,6 +36,7 @@
 <script src="<?= base_url('asset/'); ?>lightbox2/src/js/lightbox.js"></script>
 
 
+
 <script>
     //********** ค่าว่างเลขหน้า ******************************************************* */
     $(document).ready(function() {
@@ -175,7 +176,7 @@
         $contents[currentIndex].style.display = 'block';
 
         // เรียกฟังก์ชัน showNextContent ทุก 10 วินาที
-        setInterval(showNextContent, 15000);
+        setInterval(showNextContent, 17000);
     });
     //  **************************************************************************************************
 
@@ -398,152 +399,152 @@
 
     // ปฏิทิน ทั้งหมด ********************************************************************************
     $(document).ready(function() {
-    const $monthYear = $('#monthYear');
-    const $daysContainer = $('#days');
-    const $prevMonthBtn = $('#prevMonth');
-    const $nextMonthBtn = $('#nextMonth');
-    const $calendar = $('.calendar');
-    $calendar.css('marginLeft', '30px');
+        const $monthYear = $('#monthYear');
+        const $daysContainer = $('#days');
+        const $prevMonthBtn = $('#prevMonth');
+        const $nextMonthBtn = $('#nextMonth');
+        const $calendar = $('.calendar');
+        $calendar.css('marginLeft', '30px');
 
-    let currentDate = new Date();
-    let selectedDayElement = null;
-    let qCalender = [];
+        let currentDate = new Date();
+        let selectedDayElement = null;
+        let qCalender = [];
 
-    function fetchEvents() {
-        return $.getJSON('<?= site_url('calender_backend/get_events') ?>')
-            .done(function(data) {
-                console.log('Fetched events:', data); // ตรวจสอบข้อมูลที่ได้รับ
-                qCalender = data;
-                renderCalendar(currentDate);
-            })
-            .fail(function(error) {
-                console.error('Error fetching events:', error);
-            });
-    }
-
-    function renderCalendar(date) {
-        const year = date.getFullYear();
-        const month = date.getMonth();
-        const today = new Date();
-
-        const firstDayOfMonth = new Date(year, month, 1).getDay();
-        const lastDateOfMonth = new Date(year, month + 1, 0).getDate();
-
-        $monthYear.text(date.toLocaleDateString('th-TH', {
-            month: 'long',
-        }));
-
-        $daysContainer.empty();
-
-        for (let i = 0; i < firstDayOfMonth; i++) {
-            $daysContainer.append(`<div class="day"></div>`);
+        function fetchEvents() {
+            return $.getJSON('<?= site_url('calender_backend/get_events') ?>')
+                .done(function(data) {
+                    console.log('Fetched events:', data); // ตรวจสอบข้อมูลที่ได้รับ
+                    qCalender = data;
+                    renderCalendar(currentDate);
+                })
+                .fail(function(error) {
+                    console.error('Error fetching events:', error);
+                });
         }
 
-        for (let i = 1; i <= lastDateOfMonth; i++) {
-            const isToday = (year === today.getFullYear() && month === today.getMonth() && i === today.getDate());
-            const dayClass = isToday ? 'day current-day' : 'day';
+        function renderCalendar(date) {
+            const year = date.getFullYear();
+            const month = date.getMonth();
+            const today = new Date();
 
-            const currentDay = new Date(year, month, i);
-            const hasEvent = qCalender.some(event => {
+            const firstDayOfMonth = new Date(year, month, 1).getDay();
+            const lastDateOfMonth = new Date(year, month + 1, 0).getDate();
+
+            $monthYear.text(date.toLocaleDateString('th-TH', {
+                month: 'long',
+            }));
+
+            $daysContainer.empty();
+
+            for (let i = 0; i < firstDayOfMonth; i++) {
+                $daysContainer.append(`<div class="day"></div>`);
+            }
+
+            for (let i = 1; i <= lastDateOfMonth; i++) {
+                const isToday = (year === today.getFullYear() && month === today.getMonth() && i === today.getDate());
+                const dayClass = isToday ? 'day current-day' : 'day';
+
+                const currentDay = new Date(year, month, i);
+                const hasEvent = qCalender.some(event => {
+                    const eventStartDate = new Date(event.calender_date);
+                    eventStartDate.setDate(eventStartDate.getDate() - 1); // ลดวันที่เริ่มต้นลงหนึ่งวัน
+                    const eventEndDate = new Date(event.calender_date_end);
+                    return (
+                        currentDay >= eventStartDate &&
+                        currentDay <= eventEndDate
+                    );
+                });
+
+                const eventDot = hasEvent ? '<span class="event-dot"></span>' : '';
+                $daysContainer.append(`<div class="${dayClass}" data-date="${year}-${month + 1}-${i}"><span>${i}</span>${eventDot}</div>`);
+            }
+
+            const totalDays = firstDayOfMonth + lastDateOfMonth;
+            const remainingDays = 7 - (totalDays % 7);
+
+            if (remainingDays < 7) {
+                for (let i = 0; i < remainingDays; i++) {
+                    $daysContainer.append(`<div class="day"></div>`);
+                }
+            }
+
+            $('.day').on('click', function() {
+                const clickedDate = $(this).data('date');
+                if (clickedDate) {
+                    const [year, month, date] = clickedDate.split('-').map(Number);
+                    const selectedDate = new Date(year, month - 1, date);
+                    console.log(`Selected date: ${selectedDate}`);
+                    updateQCalenderDisplay(selectedDate);
+
+                    if (selectedDayElement) {
+                        $(selectedDayElement).removeClass('selected-day');
+                    }
+                    $(this).addClass('selected-day');
+                    selectedDayElement = this;
+                }
+            });
+
+            updateQCalenderDisplay(today);
+        }
+
+        function updateQCalenderDisplay(selectedDate) {
+            const $qCalenderContainer = $('#qCalender');
+            $qCalenderContainer.empty();
+
+            const filteredEvents = qCalender.filter(event => {
                 const eventStartDate = new Date(event.calender_date);
                 eventStartDate.setDate(eventStartDate.getDate() - 1); // ลดวันที่เริ่มต้นลงหนึ่งวัน
                 const eventEndDate = new Date(event.calender_date_end);
                 return (
-                    currentDay >= eventStartDate &&
-                    currentDay <= eventEndDate
+                    selectedDate >= eventStartDate &&
+                    selectedDate <= eventEndDate
                 );
             });
 
-            const eventDot = hasEvent ? '<span class="event-dot"></span>' : '';
-            $daysContainer.append(`<div class="${dayClass}" data-date="${year}-${month + 1}-${i}"><span>${i}</span>${eventDot}</div>`);
-        }
+            if (filteredEvents.length > 0) {
+                filteredEvents.forEach(event => {
+                    const eventStartDate = new Date(event.calender_date);
+                    eventStartDate.setDate(eventStartDate.getDate() - 1); // ลดวันที่เริ่มต้นลงหนึ่งวัน
+                    const eventEndDate = new Date(event.calender_date_end);
 
-        const totalDays = firstDayOfMonth + lastDateOfMonth;
-        const remainingDays = 7 - (totalDays % 7);
+                    if (selectedDate >= eventStartDate && selectedDate <= eventEndDate) {
+                        const day_th = selectedDate.getDate();
+                        const month_th = selectedDate.toLocaleString('th-TH', {
+                            month: 'long'
+                        });
+                        const year_th = selectedDate.getFullYear() + 543;
 
-        if (remainingDays < 7) {
-            for (let i = 0; i < remainingDays; i++) {
-                $daysContainer.append(`<div class="day"></div>`);
-            }
-        }
-
-        $('.day').on('click', function() {
-            const clickedDate = $(this).data('date');
-            if (clickedDate) {
-                const [year, month, date] = clickedDate.split('-').map(Number);
-                const selectedDate = new Date(year, month - 1, date);
-                console.log(`Selected date: ${selectedDate}`);
-                updateQCalenderDisplay(selectedDate);
-
-                if (selectedDayElement) {
-                    $(selectedDayElement).removeClass('selected-day');
-                }
-                $(this).addClass('selected-day');
-                selectedDayElement = this;
-            }
-        });
-
-        updateQCalenderDisplay(today);
-    }
-
-    function updateQCalenderDisplay(selectedDate) {
-        const $qCalenderContainer = $('#qCalender');
-        $qCalenderContainer.empty();
-
-        const filteredEvents = qCalender.filter(event => {
-            const eventStartDate = new Date(event.calender_date);
-            eventStartDate.setDate(eventStartDate.getDate() - 1); // ลดวันที่เริ่มต้นลงหนึ่งวัน
-            const eventEndDate = new Date(event.calender_date_end);
-            return (
-                selectedDate >= eventStartDate &&
-                selectedDate <= eventEndDate
-            );
-        });
-
-        if (filteredEvents.length > 0) {
-            filteredEvents.forEach(event => {
-                const eventStartDate = new Date(event.calender_date);
-                eventStartDate.setDate(eventStartDate.getDate() - 1); // ลดวันที่เริ่มต้นลงหนึ่งวัน
-                const eventEndDate = new Date(event.calender_date_end);
-
-                if (selectedDate >= eventStartDate && selectedDate <= eventEndDate) {
-                    const day_th = selectedDate.getDate();
-                    const month_th = selectedDate.toLocaleString('th-TH', {
-                        month: 'long'
-                    });
-                    const year_th = selectedDate.getFullYear() + 543;
-
-                    const formattedDate = `${day_th} ${month_th} ${year_th}`;
-                    $qCalenderContainer.append(`
+                        const formattedDate = `${day_th} ${month_th} ${year_th}`;
+                        $qCalenderContainer.append(`
                         <span class="font-calender2">วันที่ ${formattedDate}</span><br>
                         <span class="font-calender2 detail-text">${event.calender_detail}</span><br><br>
                     `);
-                }
-            });
-        } else {
-            const day_th = selectedDate.getDate();
-            const month_th = selectedDate.toLocaleString('th-TH', {
-                month: 'long'
-            });
-            const year_th = selectedDate.getFullYear() + 543;
+                    }
+                });
+            } else {
+                const day_th = selectedDate.getDate();
+                const month_th = selectedDate.toLocaleString('th-TH', {
+                    month: 'long'
+                });
+                const year_th = selectedDate.getFullYear() + 543;
 
-            const formattedDate = `${day_th} ${month_th} ${year_th}`;
-            $qCalenderContainer.html(`<span class="font-calender2">วันที่ ${formattedDate}</span><br><span class="font-calender2">ไม่มีข้อมูลกิจกรรมในวันนี้</span>`);
+                const formattedDate = `${day_th} ${month_th} ${year_th}`;
+                $qCalenderContainer.html(`<span class="font-calender2">วันที่ ${formattedDate}</span><br><span class="font-calender2">ไม่มีข้อมูลกิจกรรมในวันนี้</span>`);
+            }
         }
-    }
 
-    $prevMonthBtn.on('click', function() {
-        currentDate.setMonth(currentDate.getMonth() - 1);
-        renderCalendar(currentDate);
+        $prevMonthBtn.on('click', function() {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar(currentDate);
+        });
+
+        $nextMonthBtn.on('click', function() {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar(currentDate);
+        });
+
+        fetchEvents(); // Fetch events and render calendar
     });
-
-    $nextMonthBtn.on('click', function() {
-        currentDate.setMonth(currentDate.getMonth() + 1);
-        renderCalendar(currentDate);
-    });
-
-    fetchEvents(); // Fetch events and render calendar
-});
 
     //   ********************************************************************************
 
@@ -561,52 +562,121 @@
     //   ********************************************************************************
 
     // สุ่มวิกระพริบ และแสดงผล ข่าวจัดซื้อจัดจ้าง  ********************************************************************************
-    // ฟังก์ชั่นสุ่มเลขสำหรับแอนิเมชันอื่นๆ
+    // ฟังก์ชันสุ่มค่าในช่วงที่กำหนด
     function getRandomIntOther(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
 
-    // ฟังก์ชั่นใช้แอนิเมชันอื่นๆ
-    function applyRandomAnimation(element) {
-        const randomLeft = getRandomIntOther(0, 1900);
-        const randomDuration = getRandomIntOther(5, 10);
+        // ฟังก์ชันเพื่อใช้แอนิเมชันอื่นๆ
+        function applyRandomAnimation(element, animationName) {
+            const randomLeft = getRandomIntOther(0, 1900); // ค่า left แบบสุ่ม
+            const randomDuration = getRandomIntOther(10, 15); // ระยะเวลาแอนิเมชันแบบสุ่ม
+            const randomDelay = getRandomIntOther(0, 5); // การหน่วงเวลาแบบสุ่ม
 
-        element.style.left = `${randomLeft}px`;
-        element.style.animation = `fadeInOut ${randomDuration}s infinite`;
-    }
+            // กำหนดตำแหน่งซ้าย
+            element.style.left = `${randomLeft}px`;
 
-    // นำฟังก์ชั่นไปใช้กับองค์ประกอบที่ต้องการแอนิเมชันอื่นๆ
-    document.querySelectorAll('.star-news-animation-1, .star-news-animation-2, .star-news-animation-3, .star-news-animation-4, .star-news-animation-5, .star-news-animation-6, .star-news-animation-7, .star-news-animation-8, .star-news-animation-9, .star-news-animation-10, .star-news-animation-11, .star-news-animation-12, .star-news-animation-13, .star-news-animation-14, .star-news-animation-15').forEach(applyRandomAnimation);
+            // กำหนดแอนิเมชันใหม่โดยใช้การหน่วงเวลา
+            element.style.animation = `${animationName} ${randomDuration}s ${randomDelay}s infinite`;
+        }
+
+        // ใช้ฟังก์ชันกับองค์ประกอบใหม่
+        document.querySelectorAll('.wel-light-animation-1, .wel-light-animation-2, .wel-light-animation-3, .wel-light-animation-4, .wel-light-animation-5, .wel-light-animation-6, .wel-light-animation-7, .wel-light-animation-8, .wel-light-animation-9, .wel-light-animation-10').forEach(element => {
+            applyRandomAnimation(element, 'fadeTopInDownOut');
+        });
+
+        // ใช้ฟังก์ชันกับองค์ประกอบเดิม
+        document.querySelectorAll('.star-news-animation-1, .star-news-animation-2, .star-news-animation-3, .star-news-animation-4, .star-news-animation-5, .star-news-animation-6, .star-news-animation-7, .star-news-animation-8, .star-news-animation-9, .star-news-animation-10, .star-news-animation-11, .star-news-animation-12, .star-news-animation-13, .star-news-animation-14, .star-news-animation-15').forEach(element => {
+            applyRandomAnimation(element, 'fadeInOut');
+        });
+    // ฟังก์ชั่นสุ่มเลขสำหรับแอนิเมชันอื่นๆ
+    // function getRandomIntOther(min, max) {
+    //     return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
+
+    // // ฟังก์ชั่นใช้แอนิเมชันอื่นๆ
+    // function applyRandomAnimation(element) {
+    //     const randomLeft = getRandomIntOther(0, 1900);
+    //     const randomDuration = getRandomIntOther(5, 10);
+
+    //     element.style.left = `${randomLeft}px`;
+    //     element.style.animation = `fadeInOut ${randomDuration}s infinite`;
+    // }
+
+    // // นำฟังก์ชั่นไปใช้กับองค์ประกอบที่ต้องการแอนิเมชันอื่นๆ
+    // document.querySelectorAll('.star-news-animation-1, .star-news-animation-2, .star-news-animation-3, .star-news-animation-4, .star-news-animation-5, .star-news-animation-6, .star-news-animation-7, .star-news-animation-8, .star-news-animation-9, .star-news-animation-10, .star-news-animation-11, .star-news-animation-12, .star-news-animation-13, .star-news-animation-14, .star-news-animation-15').forEach(applyRandomAnimation);
     //   ********************************************************************************
 
     // สุ่มวิกระพริบ และแสดงผล ข่าวประชาสัมพันธ์  ********************************************************************************
-    function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+       // ฟังก์ชันสุ่มค่าในช่วงที่กำหนด
+        // ฟังก์ชันสุ่มค่าในช่วงที่กำหนด
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
 
-    function randomizeAnimationDuration() {
-        var minSeconds = 2; // วินาทีต่ำสุดที่ต้องการ
-        var maxSeconds = 7; // วินาทีสูงสุดที่ต้องการ
-        var randomSeconds = getRandomInt(minSeconds, maxSeconds);
-        return randomSeconds + 's';
-    }
+        // ฟังก์ชันสุ่มตำแหน่งขององค์ประกอบ
+        function randomizePosition(element) {
+            var maxWidth = window.innerWidth; // ขนาดความกว้างของหน้าจอปัจจุบัน
+            var maxHeight = window.innerHeight; // ขนาดความสูงของหน้าจอปัจจุบัน
 
-    function randomizePosition(element) {
-        var maxWidth = 1920; // กำหนดขนาดความกว้างสูงสุด 1920px
-        var maxHeight = 500; // กำหนดขนาดความสูงสูงสุด 1000px
+            var randomMarginLeft = getRandomInt(0, maxWidth - element.offsetWidth);
+            var randomMarginTop = getRandomInt(0, maxHeight - element.offsetHeight);
 
-        var randomMarginLeft = getRandomInt(0, maxWidth - element.width);
-        var randomMarginTop = getRandomInt(0, maxHeight - element.height);
+            element.style.marginLeft = randomMarginLeft + 'px';
+            element.style.marginTop = randomMarginTop + 'px';
+        }
 
-        element.style.marginLeft = randomMarginLeft + 'px';
-        element.style.marginTop = randomMarginTop + 'px';
-    }
+        // ฟังก์ชันสุ่มการหน่วงเวลาเริ่มต้นแอนิเมชัน
+        function randomizeAnimationDelay(element) {
+            var randomDelay = getRandomInt(0, 3); // สุ่มการหน่วงเวลาระหว่าง 0 ถึง 5 วินาที
+            element.style.animationDelay = randomDelay + 's';
+        }
 
-    var animations = document.querySelectorAll('.dot-news-animation-1, .dot-news-animation-2, .dot-news-animation-3, .dot-news-animation-4, .dot-news-animation-5, .dot-news-animation-6, .dot-news-animation-7, .dot-news-animation-8, .dot-news-animation-9, .dot-news-animation-10, .dot-news-animation-11, .dot-news-animation-12, .dot-news-animation-13, .dot-news-animation-14, .dot-news-animation-15');
-    animations.forEach(function(animation) {
-        animation.style.animationDuration = randomizeAnimationDuration();
-        randomizePosition(animation);
-    });
+        // นำฟังก์ชันไปใช้กับองค์ประกอบที่ต้องการ
+        var animations = document.querySelectorAll('.wipwap');
+        animations.forEach(function(animation) {
+            // สุ่มการหน่วงเวลาแอนิเมชัน
+            randomizeAnimationDelay(animation);
+
+            // กำหนดค่าเริ่มต้น
+            randomizePosition(animation);
+
+            // เพิ่ม event listener เพื่อตรวจสอบการเปลี่ยนแปลงของ opacity
+            animation.addEventListener('animationiteration', function() {
+                // ตั้งเวลาเพื่อให้เกิดการเปลี่ยนแปลงตำแหน่งเมื่อ opacity = 0
+                setTimeout(function() {
+                    randomizePosition(animation);
+                }, 1500); // 50% ของเวลาแอนิเมชัน 3s
+            });
+        });
+        // วิบวับคงที่
+    // function getRandomInt(min, max) {
+    //     return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
+
+    // function randomizeAnimationDuration() {
+    //     var minSeconds = 2; // วินาทีต่ำสุดที่ต้องการ
+    //     var maxSeconds = 7; // วินาทีสูงสุดที่ต้องการ
+    //     var randomSeconds = getRandomInt(minSeconds, maxSeconds);
+    //     return randomSeconds + 's';
+    // }
+
+    // function randomizePosition(element) {
+    //     var maxWidth = 1920; // กำหนดขนาดความกว้างสูงสุด 1920px
+    //     var maxHeight = 500; // กำหนดขนาดความสูงสูงสุด 1000px
+
+    //     var randomMarginLeft = getRandomInt(0, maxWidth - element.width);
+    //     var randomMarginTop = getRandomInt(0, maxHeight - element.height);
+
+    //     element.style.marginLeft = randomMarginLeft + 'px';
+    //     element.style.marginTop = randomMarginTop + 'px';
+    // }
+
+    // var animations = document.querySelectorAll('.dot-news-animation-1, .dot-news-animation-2, .dot-news-animation-3, .dot-news-animation-4, .dot-news-animation-5, .dot-news-animation-6, .dot-news-animation-7, .dot-news-animation-8, .dot-news-animation-9, .dot-news-animation-10, .dot-news-animation-11, .dot-news-animation-12, .dot-news-animation-13, .dot-news-animation-14, .dot-news-animation-15');
+    // animations.forEach(function(animation) {
+    //     animation.style.animationDuration = randomizeAnimationDuration();
+    //     randomizePosition(animation);
+    // });
     //   ********************************************************************************
 
     // active  ********************************************************************************

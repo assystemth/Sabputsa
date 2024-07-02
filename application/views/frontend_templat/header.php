@@ -14,10 +14,12 @@
   <!-- awesome  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- font  -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'> -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Thasadith' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
   <!-- google map -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <!-- ใช้ CSS ของ Swiper -->
@@ -44,43 +46,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
   <link rel="icon" href="<?php echo base_url("docs/logo.png"); ?>" type="image/x-icon">
   <title>องค์การบริหารส่วนตำบลซับพุทรา</title>
 </head>
 
-<!-- Messenger ปลั๊กอินแชท Code -->
 <div id="fb-root"></div>
-
-<!-- Your ปลั๊กอินแชท code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "852452498161203");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-
-<!-- Your SDK code -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml: true,
-      version: 'v19.0'
-    });
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v20.0" nonce="MGD4Y8Ku"></script>
 
 <body>
 
