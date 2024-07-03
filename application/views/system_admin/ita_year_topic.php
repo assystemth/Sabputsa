@@ -61,7 +61,7 @@
                         <th style="width: 3%;">ลำดับ</th>
                         <th style="width: 20%;">หัวข้อ</th>
                         <th style="width: 30%;">ข้อความ</th>
-                        <th style="width: 13%;">อัพโหลด</th>
+                        <th style="width: 13%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 17%;">จัดการ</th>
                     </tr>

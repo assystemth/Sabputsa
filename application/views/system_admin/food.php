@@ -78,7 +78,7 @@
                         <th style="width: 20%;">ชื่อ</th>
                         <th style="width: 15%;">รายละเอียด</th>
                         <th style="width: 12%;">สถานที่</th>
-                        <th style="width: 13%;">อัพโหลด</th>
+                        <th style="width: 13%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 5%;">สถานะ</th>
                         <th style="width: 12%;">จัดการ</th>
@@ -262,8 +262,8 @@
                                <th tabindex="0" rowspan="1" colspan="1">Link youtube</th>
                                <th tabindex="0" rowspan="1" colspan="1">Google Map</th>
                                <th tabindex="0" rowspan="1" colspan="1">ความคิดเห็น</th>
-                               <th tabindex="0" rowspan="1" colspan="1">ผู้อัพโหลด</th>
-                               <th tabindex="0" rowspan="1" colspan="1">วันที่อัพโหลด</th>
+                               <th tabindex="0" rowspan="1" colspan="1">ผู้อัปโหลด</th>
+                               <th tabindex="0" rowspan="1" colspan="1">วันที่อัปโหลด</th>
                                <th tabindex="0" rowspan="1" colspan="1">สถานะ</th>
                                <th tabindex="0" rowspan="1" colspan="1">แก้ไข</th>
                                <th tabindex="0" rowspan="1" colspan="1">ลบ</th>

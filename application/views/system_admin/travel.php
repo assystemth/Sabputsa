@@ -77,7 +77,7 @@
                                 <th style="width: 17%;">ชื่อ</th>
                                 <th style="width: 20%;">รายละเอียด</th>
                                 <th style="width: 10%;">สถานที่</th>
-                                <th style="width: 13%;">อัพโหลด</th>
+                                <th style="width: 13%;">อัปโหลด</th>
                                 <th style="width: 7%;">วันที่</th>
                                 <th style="width: 5%;">สถานะ</th>
                                 <th style="width: 12%;">จัดการ</th>
@@ -266,8 +266,8 @@
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">อ้างอิง</th>
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">รายละเอียด</th>
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">สถานที่</th>
-                            <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">ผู้อัพโหลด</th>
-                            <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">วันที่อัพโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">ผู้อัปโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">วันที่อัปโหลด</th>
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">สถานะ</th>
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">จัดการ</th>
                         </tr>

@@ -132,7 +132,7 @@ class Odata_backend extends CI_Controller
         $odata_sub_file_ref_id = $this->input->post('odata_sub_file_ref_id');
         $odata_sub_file_name = $this->input->post('odata_sub_file_name');
 
-        // ตรวจสอบว่ามีไฟล์ที่อัพโหลดมาหรือไม่
+        // ตรวจสอบว่ามีไฟล์ที่อัปโหลดมาหรือไม่
         if (!empty($_FILES['odata_sub_file_doc']['name'])) {
             // ตั้งค่า upload library
             $config['upload_path'] = './docs/file'; // เปลี่ยนเป็นเส้นทางที่เหมาะสมของคุณ
@@ -141,9 +141,9 @@ class Odata_backend extends CI_Controller
             // โหลด library upload ด้วย config ที่กำหนด
             $this->upload->initialize($config);
 
-            // ทำการอัพโหลดไฟล์
+            // ทำการอัปโหลดไฟล์
             if ($this->upload->do_upload('odata_sub_file_doc')) {
-                // ถ้าอัพโหลดสำเร็จ
+                // ถ้าอัปโหลดสำเร็จ
                 $data = $this->upload->data();
                 $uploaded_filename = $data['file_name'];
 
@@ -153,12 +153,12 @@ class Odata_backend extends CI_Controller
                 // ตั้งค่า flashdata เพื่อแจ้งเตือนว่าการบันทึกสำเร็จ
                 $this->session->set_flashdata('save_success', TRUE);
             } else {
-                // ถ้าอัพโหลดล้มเหลว
+                // ถ้าอัปโหลดล้มเหลว
                 $error = $this->upload->display_errors();
                 $this->session->set_flashdata('upload_error', $error);
             }
         } else {
-            // ถ้าไม่มีไฟล์ที่อัพโหลด
+            // ถ้าไม่มีไฟล์ที่อัปโหลด
             $this->session->set_flashdata('upload_error', 'No file selected for upload.');
         }
 
@@ -190,7 +190,7 @@ class Odata_backend extends CI_Controller
 
         $uploaded_filename = null;
 
-        // ตรวจสอบว่ามีการอัพโหลดไฟล์ใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดไฟล์ใหม่หรือไม่
         if (!empty($_FILES['odata_sub_file_doc']['name'])) {
             // ตั้งค่า upload library
             $config['upload_path'] = './docs/file';
@@ -201,11 +201,11 @@ class Odata_backend extends CI_Controller
 
             // ทำการอัปโหลดไฟล์
             if ($this->upload->do_upload('odata_sub_file_doc')) {
-                // ถ้าอัพโหลดสำเร็จ
+                // ถ้าอัปโหลดสำเร็จ
                 $data = $this->upload->data();
                 $uploaded_filename = $data['file_name'];
             } else {
-                // ถ้าอัพโหลดล้มเหลว
+                // ถ้าอัปโหลดล้มเหลว
                 $error = $this->upload->display_errors();
                 $this->session->set_flashdata('upload_error', $error);
                 redirect('odata_backend/index_odata_sub_file/' . $odata_sub_file_ref_id);

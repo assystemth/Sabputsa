@@ -42,7 +42,7 @@ class Intra_news_model extends CI_Model
         $this->db->insert('tbl_intra_news', $intra_news_data);
         $intra_news_id = $this->db->insert_id();
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -360,7 +360,7 @@ class Intra_news_model extends CI_Model
         $this->db->where('intra_news_id', $intra_news_id);
         $this->db->update('tbl_intra_news', $data);
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 

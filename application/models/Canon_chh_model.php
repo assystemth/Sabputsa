@@ -19,10 +19,10 @@ class Canon_chh_model extends CI_Model
         $img_config['allowed_types'] = 'gif|jpg|png|jpeg';
         $this->load->library('upload', $img_config, 'img_upload');
 
-          // Configure Doc upload
-          $doc_config['upload_path'] = './docs/file';
-          $doc_config['allowed_types'] = 'doc|docx|xls|xlsx|ppt|pptx';
-          $this->load->library('upload', $doc_config, 'doc_upload');
+        // Configure Doc upload
+        $doc_config['upload_path'] = './docs/file';
+        $doc_config['allowed_types'] = 'doc|docx|xls|xlsx|ppt|pptx';
+        $this->load->library('upload', $doc_config, 'doc_upload');
 
         // กำหนดค่าใน $canon_chh_data
         $canon_chh_data = array(
@@ -44,7 +44,7 @@ class Canon_chh_model extends CI_Model
         $this->db->insert('tbl_canon_chh', $canon_chh_data);
         $canon_chh_id = $this->db->insert_id();
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -232,7 +232,7 @@ class Canon_chh_model extends CI_Model
         $this->space_model->update_server_current();
         $this->session->set_flashdata('del_success', TRUE);
     }
-    
+
     public function del_doc($doc_id)
     {
         // ดึงชื่อไฟล์ PDF จากฐานข้อมูลโดยใช้ $doc_id
@@ -290,7 +290,7 @@ class Canon_chh_model extends CI_Model
         $this->db->where('canon_chh_id', $canon_chh_id);
         $this->db->update('tbl_canon_chh', $data);
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 

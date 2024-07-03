@@ -81,7 +81,7 @@
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 10%;">หัวข้อกลาง</th>
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 15%;">รายละเอียดกลาง</th>
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 15%;">หัวข้อด้านล่าง</th>
-                            <th tabindex="0" rowspan="1" colspan="1" style="width: 3%;">วันที่อัพโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1" style="width: 3%;">วันที่อัปโหลด</th>
                             <th tabindex="0" rowspan="1" colspan="1" style="width: 3%;">แก้ไข</th>
                         </tr>
                     </thead>

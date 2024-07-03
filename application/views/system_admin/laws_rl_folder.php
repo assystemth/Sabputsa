@@ -27,7 +27,7 @@
                            <th style="width: 3%;">ลำดับ</th>
                            <th style="width: 50%;">ชื่อ</th>
                            <th style="width: 20%;">โฟล์เดอร์</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 7%;">จัดการ</th>
                        </tr>

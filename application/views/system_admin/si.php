@@ -17,7 +17,7 @@
                            <th style="width: 18%;">เป้าหมาย</th>
                            <th style="width: 18%;">แนวทางการพัฒนา</th>
                            <th style="width: 18%;">ตัวชี้วัด</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 3%;">จัดการ</th>
                        </tr>

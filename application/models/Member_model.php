@@ -124,7 +124,7 @@ class Member_model extends CI_Model
                 $data = $this->upload->data();
                 $filename = $data['file_name'];
             } else {
-                $filename = null; // ไม่มีการอัพโหลดรูปภาพ
+                $filename = null; // ไม่มีการอัปโหลดรูปภาพ
             }
 
             $data = array(
@@ -172,7 +172,7 @@ class Member_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['m_img']['name']) && $old_document->m_img != $_FILES['m_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->m_img;
             if (file_exists($old_file_path)) {

@@ -121,7 +121,7 @@
                         <div class="col-sm-2 control-label">รูปภาพเพิ่มเติม</div>
                         <div class="col-sm-4">
                             <input type="file" name="intra_news_img_img[]" class="form-control" accept="image/*" multiple>
-                            <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                            <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                             <br>
                             <span class="red-add">(เฉพาะไฟล์ .JPG/.JPEG/.PNG)</span>
                         </div>
@@ -131,7 +131,7 @@
                         <div class="col-sm-2 control-label">ไฟล์เอกสารเพิ่มเติม</div>
                         <div class="col-sm-4">
                             <input type="file" name="intra_news_file_pdf[]" class="form-control" accept=".pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx" multiple>
-                            <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                            <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                             <br>
                             <!-- <span class="red-add">(เฉพาะไฟล์ PDF)</span> -->
                         </div>

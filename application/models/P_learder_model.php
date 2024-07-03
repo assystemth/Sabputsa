@@ -8,7 +8,7 @@ class P_learder_model extends CI_Model
     }
 
     public function add_p_learder()
-    { 
+    {
 
         // Check used space
         $used_space_mb = $this->space_model->get_used_space();
@@ -121,7 +121,7 @@ class P_learder_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['p_learder_img']['name']) && $old_document->p_learder_img != $_FILES['p_learder_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->p_learder_img;
             if (file_exists($old_file_path)) {
@@ -311,7 +311,7 @@ class P_learder_model extends CI_Model
         return $query->result();
     }
 
-        // public function p_learder_frontend_list()
+    // public function p_learder_frontend_list()
     // {
     //     $this->db->select('*');
     //     $this->db->from('tbl_p_learder');

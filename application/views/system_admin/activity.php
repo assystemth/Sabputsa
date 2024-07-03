@@ -75,7 +75,7 @@
                             <th style="width: 13%;">รูปภาพ</th>
                             <th style="width: 25%;">ชื่อ</th>
                             <th style="width: 20%;">รายละเอียด</th>
-                            <th style="width: 15%;">อัพโหลด</th>
+                            <th style="width: 15%;">อัปโหลด</th>
                             <th style="width: 7%;">วันที่</th>
                             <th style="width: 5%;">สถานะ</th>
                             <th style="width: 10%;">จัดการ</th>
@@ -156,7 +156,7 @@
                         } ?>
 
                         <!-- <?php
-                        foreach ($quser as $rs) { ?>
+                                foreach ($quser as $rs) { ?>
                             <tr role="row">
                                 <td align="center"><?= $Index; ?></td>
                                 <td><img src="<?= base_url('docs/img/' . $rs->user_activity_img); ?>" width="120px" height="80px"></td>
@@ -224,8 +224,8 @@
                                 </td>
                             </tr>
                         <?php
-                            $Index++; // เพิ่มลำดับสำหรับ quser
-                        } ?> -->
+                                    $Index++; // เพิ่มลำดับสำหรับ quser
+                                } ?> -->
                     </tbody>
                 </table>
             </div>
@@ -247,8 +247,8 @@
                             <th tabindex="0" rowspan="1" colspan="1">รูปภาพ</th>
                             <th tabindex="0" rowspan="1" colspan="1">ชื่อ</th>
                             <th tabindex="0" rowspan="1" colspan="1">รายละเอียด</th>
-                            <th tabindex="0" rowspan="1" colspan="1">ผู้อัพโหลด</th>
-                            <th tabindex="0" rowspan="1" colspan="1">วันที่อัพโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1">ผู้อัปโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1">วันที่อัปโหลด</th>
                             <th tabindex="0" rowspan="1" colspan="1">สถานะ</th>
                             <th tabindex="0" rowspan="1" colspan="1">ความคิดเห็น</th>
                             <th tabindex="0" rowspan="1" colspan="1">แก้ไข</th>

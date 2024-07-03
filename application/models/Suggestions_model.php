@@ -197,7 +197,7 @@ class Suggestions_model extends CI_Model
         $this->db->insert('tbl_suggestions', $suggestions_data);
         $suggestions_id = $this->db->insert_id();
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 

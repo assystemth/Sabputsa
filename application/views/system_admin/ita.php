@@ -28,7 +28,7 @@
                         <th style="width: 13%;">รูปภาพ</th>
                         <th style="width: 15%;">ไฟล์ PDF</th>
                         <th style="width: 30%;">ชื่อ</th>
-                        <th style="width: 15%;">อัพโหลด</th>
+                        <th style="width: 15%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 5%;">สถานะ</th>
                         <th style="width: 10%;">จัดการ</th>

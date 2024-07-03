@@ -28,7 +28,7 @@
                            <th style="width: 18%;">รูปภาพ</th>
                            <th style="width: 28%;">ชื่อ</th>
                            <th style="width: 25%;">ลิงค์</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 7%;">จัดการ</th>
                        </tr>

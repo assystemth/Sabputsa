@@ -44,7 +44,7 @@ class Ita_model extends CI_Model
         $this->db->insert('tbl_ita', $ita_data);
         $ita_id = $this->db->insert_id();
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -226,7 +226,7 @@ class Ita_model extends CI_Model
         $this->db->where('ita_id', $ita_id);
         $this->db->update('tbl_ita', $data);
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 

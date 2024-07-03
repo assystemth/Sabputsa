@@ -111,19 +111,19 @@ class Form_esv_model extends CI_Model
             return;
         }
 
-        // การตั้งค่าสำหรับการอัพโหลดไฟล์
+        // การตั้งค่าสำหรับการอัปโหลดไฟล์
         $config['upload_path'] = './docs/file';
         $config['allowed_types'] = 'pdf|doc|docx|xls|xlsx|ppt|pptx';
         $config['max_size'] = 10240; // กำหนดขนาดไฟล์สูงสุดในหน่วย KB
         $this->load->library('upload', $config);
 
-        // ตรวจสอบว่าไฟล์ที่อัพโหลดมีอยู่หรือไม่
+        // ตรวจสอบว่าไฟล์ที่อัปโหลดมีอยู่หรือไม่
         if (empty($_FILES['form_esv_file']['name'])) {
             echo "<script>alert('No file selected for upload.');</script>";
             return;
         }
 
-        // อัพโหลดไฟล์หลัก
+        // อัปโหลดไฟล์หลัก
         if (!$this->upload->do_upload('form_esv_file')) {
             // ตรวจสอบข้อผิดพลาดและแสดงข้อความ
             $error = $this->upload->display_errors();
@@ -133,7 +133,7 @@ class Form_esv_model extends CI_Model
             return;
         }
 
-        // เก็บข้อมูลไฟล์ที่อัพโหลด
+        // เก็บข้อมูลไฟล์ที่อัปโหลด
         $data = $this->upload->data();
         $filename = $data['file_name'];
 
@@ -191,7 +191,7 @@ class Form_esv_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['form_esv_file']['name']) && $old_document->form_esv_file != $_FILES['form_esv_file']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/file/' . $old_document->form_esv_file;
             if (file_exists($old_file_path)) {

@@ -29,7 +29,7 @@ class Intra_gallery_model extends CI_Model
         $this->db->insert('tbl_intra_gallery', $intra_gallery_data);
         $intra_gallery_id = $this->db->insert_id();
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -315,7 +315,7 @@ class Intra_gallery_model extends CI_Model
         $video_config['allowed_types'] = 'mp4|webm|ogg|avi|m4v|mov|mpg|mpeg|wmv';
         $this->load->library('upload', $video_config, 'video_upload');
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 

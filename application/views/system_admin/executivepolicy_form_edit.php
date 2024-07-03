@@ -47,7 +47,7 @@
                         <a class="btn btn-info btn-sm mb-2" href="<?= base_url('docs/file/' . $rsedit->executivepolicy_pdf); ?>" target="_blank">ดูไฟล์ <?= $rsedit->executivepolicy_pdf; ?></a>
                         <br>
                         <input type="file" name="executivepolicy_pdf" class="form-control mt-1" accept="application/pdf" multiple>
-                        <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                        <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                         <br>
                         <span class="red-add">(เฉพาะไฟล์ PDF)</span>
                     </div>

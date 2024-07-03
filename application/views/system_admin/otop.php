@@ -29,7 +29,7 @@
                         <th style="width: 20%;">ชื่อ</th>
                         <th style="width: 15%;">รายละเอียด</th>
                         <th style="width: 12%;">สถานที่</th>
-                        <th style="width: 13%;">อัพโหลด</th>
+                        <th style="width: 13%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 5%;">สถานะ</th>
                         <th style="width: 12%;">จัดการ</th>

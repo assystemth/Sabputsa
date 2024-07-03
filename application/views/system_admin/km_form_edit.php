@@ -42,7 +42,7 @@
                 </div>
                 <br>
                 <div class="form-group row">
-                    <div class="col-sm-3 control-label">วันที่อัพโหลด</div>
+                    <div class="col-sm-3 control-label">วันที่อัปโหลด</div>
                     <div class="col-sm-5">
                         <input type="datetime-local" name="km_date" id="km_date" class="form-control" value="<?= $rsedit->km_date; ?>" required>
                     </div>
@@ -110,7 +110,7 @@
                         <?php } ?>
                         เลือกใหม่: <br>
                         <input type="file" name="km_img_img[]" class="form-control" accept="image/*" multiple>
-                        <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                        <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                         <br>
                         <span class="red-add">(เฉพาะไฟล์ .JPG/.JPEG/.PNG)</span>
                     </div>
@@ -150,7 +150,7 @@
                             }
                         </script>
                         <input type="file" name="km_pdf_pdf[]" class="form-control mt-1" accept="application/pdf" multiple>
-                        <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                        <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                         <br>
                         <span class="red-add">(เฉพาะไฟล์ PDF)</span>
                     </div>
@@ -190,7 +190,7 @@
                             }
                         </script>
                         <input type="file" name="km_file_doc[]" class="form-control mt-1" accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" multiple>
-                        <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                        <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                         <br>
                         <span class="red-add">(เฉพาะไฟล์ .doc .docx .ppt .pptx .xls .xlsx)</span>
                     </div>
@@ -203,7 +203,7 @@
                         <a class="btn btn-danger" href="<?= site_url('km_backend'); ?>" role="button">ยกเลิก</a>
                     </div>
                 </div>
-            </form>
+                </form>
         </div>
     </div>
 </div>

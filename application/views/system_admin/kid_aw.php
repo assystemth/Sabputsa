@@ -38,7 +38,7 @@
     <a class="btn btn-info" role="button" href="<?= base_url('docs/การเพิ่มข้อมูลเบี้ยผู้สูงอายุแบบไฟล์Excel.rar'); ?>" download>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-        </svg> ตัวอย่างการอัพโหลดไฟล์</a>
+        </svg> ตัวอย่างการอัปโหลดไฟล์</a>
     <a class="btn add-btn" href="<?= site_url('kid_aw_backend/adding_kid_aw'); ?>" role="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -74,7 +74,7 @@
                             <th style="width: 8%;">งวดเงินที่จ่าย</th>
                             <th style="width: 9%;">จำนวนเงิน</th>
                             <th style="width: 10%;">สาเหตุระงับจ่าย</th>
-                            <th style="width: 10%;">อัพโหลด</th>
+                            <th style="width: 10%;">อัปโหลด</th>
                             <th style="width: 7%;">วันที่</th>
                             <th style="width: 10%;">จัดการ</th>
                         </tr>

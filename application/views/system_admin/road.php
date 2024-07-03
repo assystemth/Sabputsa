@@ -17,7 +17,7 @@
                            <th style="width: 20%;">รหัสสายทาง</th>
                            <th style="width: 22%;">เขตรับผิดชอบ</th>
                            <th style="width: 17%;">เบอร์โทร สจ.</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 3%;">จัดการ</th>
                        </tr>

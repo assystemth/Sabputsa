@@ -12,25 +12,25 @@ class Laws_rl_file_model extends CI_Model
         // Check used space
         $used_space_mb = $this->space_model->get_used_space();
         $upload_limit_mb = $this->space_model->get_limit_storage();
-    
+
         // Calculate the total space required for all files
         $total_space_required = 0;
         if (!empty($_FILES['laws_rl_file_file']['name'])) {
             $total_space_required += $_FILES['laws_rl_file_file']['size'];
         }
-    
+
         // Check if there's enough space
         if ($used_space_mb + ($total_space_required / (1024 * 1024 * 1024)) >= $upload_limit_mb) {
             $this->session->set_flashdata('save_error', TRUE);
             redirect('laws_rl_file/adding_laws_rl_file');
             return;
         }
-    
+
         // Upload configuration
         $config['upload_path'] = './docs/file';
         $config['allowed_types'] = 'pdf';
         $this->load->library('upload', $config);
-    
+
         // Upload main file
         if (!$this->upload->do_upload('laws_rl_file_file')) {
             // If the file size exceeds the max_size, set flash data and redirect
@@ -38,11 +38,11 @@ class Laws_rl_file_model extends CI_Model
             redirect('laws_rl_file/adding_laws_rl_file');
             return;
         }
-    
+
         // Get the uploaded file data
         $data = $this->upload->data();
         $filename = pathinfo($data['file_name'], PATHINFO_FILENAME) . $this->upload->file_ext;
-    
+
         $data = array(
             'laws_rl_file_topic' => $this->input->post('laws_rl_file_topic'),
             'laws_rl_file_name' => $this->input->post('laws_rl_file_name'),
@@ -50,11 +50,11 @@ class Laws_rl_file_model extends CI_Model
             'laws_rl_file_by' => $this->session->userdata('m_fname'),
             'laws_rl_file_file' => $filename
         );
-    
+
         $query = $this->db->insert('tbl_laws_rl_file', $data);
-    
+
         $this->space_model->update_server_current();
-    
+
         if ($query) {
             $this->session->set_flashdata('save_success', TRUE);
         } else {
@@ -63,7 +63,7 @@ class Laws_rl_file_model extends CI_Model
             echo "</script>";
         }
     }
-    
+
     public function list_all()
     {
         $this->db->order_by('laws_rl_file_id', 'DESC');
@@ -89,7 +89,7 @@ class Laws_rl_file_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['laws_rl_file_file']['name']) && $old_document->laws_rl_file_file != $_FILES['laws_rl_file_file']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/file/' . $old_document->laws_rl_file_file;
             if (file_exists($old_file_path)) {

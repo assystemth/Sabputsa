@@ -18,7 +18,7 @@
                            <th style="width: 10%;">อาณาเขต</th>
                            <th style="width: 15%;">ลักษณะภูมิประเทศ</th>
                            <th style="width: 15%;">พื้นที่องค์การบริหารส่วนตำบล</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 7%;">จัดการ</th>
                        </tr>

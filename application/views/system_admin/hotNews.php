@@ -14,7 +14,7 @@
                        <tr>
                            <th style="width: 3%;">ลำดับ</th>
                            <th style="width: 65%;">เรื่อง</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 5%;">สถานะ</th>
                            <th style="width: 7%;">จัดการ</th>
@@ -43,7 +43,7 @@
                                                type: 'POST',
                                                url: 'hotNews_backend/updateHotNewsStatus',
                                                data: {
-                                                hotNews_id: hotNewsId,
+                                                   hotNews_id: hotNewsId,
                                                    new_status: newStatus
                                                },
                                                success: function(response) {

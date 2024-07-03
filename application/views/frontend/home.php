@@ -1522,7 +1522,7 @@
             </a>
         </div>
         <div class="col">
-            <a href="<?php echo site_url('Pages/elderly_aw_ods'); ?>">
+            <a href="<?php echo site_url('Pages/kid_aw_ods'); ?>">
                 <div class="button-e-service">
                     <span class="font-button-e-service">เด็กแรกเกิด</span>
                 </div>

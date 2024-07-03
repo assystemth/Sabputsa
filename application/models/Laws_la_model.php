@@ -87,7 +87,7 @@ class Laws_la_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['laws_la_img']['name']) && $old_document->laws_la_img != $_FILES['laws_la_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->laws_la_img;
             if (file_exists($old_file_path)) {

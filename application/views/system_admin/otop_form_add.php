@@ -108,7 +108,7 @@
                 </div>
                 <br>
                 <div class="form-group row">
-                    <div class="col-sm-3 control-label">วันที่อัพโหลด</div>
+                    <div class="col-sm-3 control-label">วันที่อัปโหลด</div>
                     <div class="col-sm-5">
                         <input type="datetime-local" name="otop_date" id="otop_date" class="form-control" required>
                     </div>
@@ -125,7 +125,7 @@
                     <div class="col-sm-3 control-label">รูปภาพเพิ่มเติม</div>
                     <div class="col-sm-6">
                         <input type="file" name="otop_img_img[]" class="form-control" accept="image/*" multiple>
-                        <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                        <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                         <br>
                         <span class="red-add">(เฉพาะไฟล์ .JPG/.JPEG/.PNG)</span>
                     </div>

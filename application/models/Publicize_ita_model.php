@@ -87,7 +87,7 @@ class Publicize_ita_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['publicize_ita_img']['name']) && $old_document->publicize_ita_img != $_FILES['publicize_ita_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->publicize_ita_img;
             if (file_exists($old_file_path)) {

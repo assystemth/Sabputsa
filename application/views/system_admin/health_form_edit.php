@@ -96,7 +96,7 @@
                         <br>
                         เลือกใหม่: <br>
                         <input type="file" name="health_img_img[]" class="form-control" accept="image/*" multiple>
-                        <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                        <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                         <br>
                         <span class="red-add">(เฉพาะไฟล์ .JPG/.JPEG/.PNG)</span>
                     </div>
@@ -131,7 +131,7 @@
                             }
                         </script>
                         <input type="file" name="health_file" class="form-control mt-1" accept="application/pdf">
-                        <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
+                        <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
                         <br>
                         <span class="red-add">(เฉพาะไฟล์ PDF)</span>
                     </div>

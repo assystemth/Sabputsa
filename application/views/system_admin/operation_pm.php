@@ -21,14 +21,14 @@
             <?php
             $Index = 1;
             ?>
-                        <table id="newdataTables" class="table">
+            <table id="newdataTables" class="table">
                 <thead>
                     <tr>
                         <th style="width: 5%;">ลำดับ</th>
                         <th style="width: 13%;">รูปภาพ</th>
                         <th style="width: 15%;">ไฟล์เอกสาร</th>
                         <th style="width: 30%;">ชื่อ</th>
-                        <th style="width: 15%;">อัพโหลด</th>
+                        <th style="width: 15%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 5%;">สถานะ</th>
                         <th style="width: 10%;">จัดการ</th>

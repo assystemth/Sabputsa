@@ -32,7 +32,7 @@ class Elderly_aw_form_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['elderly_aw_form_file']['name']) && $old_document->elderly_aw_form_file != $_FILES['elderly_aw_form_file']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/file/' . $old_document->elderly_aw_form_file;
             if (file_exists($old_file_path)) {

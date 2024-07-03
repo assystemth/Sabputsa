@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col-sm-12 control-label">วันที่อัพโหลด <span class="red-add">*</span></div>
+                    <div class="col-sm-12 control-label">วันที่อัปโหลด <span class="red-add">*</span></div>
                     <br>
                     <div class="col-sm-5">
                         <input type="datetime-local" name="operation_eco_type_date" class="form-control" required value="<?= $rs_type->operation_eco_type_date; ?>">

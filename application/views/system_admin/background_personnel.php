@@ -28,7 +28,7 @@
                            <th style="width: 13%;">รูปภาพ</th>
                            <th style="width: 28%;">ชื่อ</th>
                            <th style="width: 25%;">ตำแหน่ง</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 5%;">สถานะ</th>
                            <th style="width: 7%;">จัดการ</th>
@@ -77,24 +77,24 @@
                                    <a href="<?= site_url('background_personnel_backend/editing_background_personnel/' . $rs->background_personnel_id); ?>"><i class="bi bi-pencil-square fa-lg "></i></a>
                                    <a href="#" role="button" onclick="confirmDelete('<?= $rs->background_personnel_id; ?>');"><i class="bi bi-trash fa-lg "></i></a>
                                    <script>
-                                        function confirmDelete(background_personnel_id) {
-                                            Swal.fire({
-                                                title: 'กดเพื่อยืนยัน?',
-                                                text: "คุณจะไม่สามรถกู้คืนได้อีก!",
-                                                icon: 'warning',
-                                                showCancelButton: true,
-                                                confirmButtonColor: '#3085d6',
-                                                cancelButtonColor: '#d33',
-                                                confirmButtonText: 'ใช่, ต้องการลบ!',
-                                                cancelButtonText: 'ยกเลิก' // เปลี่ยนข้อความปุ่ม Cancel เป็นภาษาไทย
-                                            }).then((result) => {
-                                                if (result.isConfirmed) {
-                                                    window.location.href = "<?= site_url('background_personnel_backend/del_background_personnel/'); ?>" + background_personnel_id;
-                                                }
-                                            });
-                                        }
-                                    </script>
-                                </td>
+                                       function confirmDelete(background_personnel_id) {
+                                           Swal.fire({
+                                               title: 'กดเพื่อยืนยัน?',
+                                               text: "คุณจะไม่สามรถกู้คืนได้อีก!",
+                                               icon: 'warning',
+                                               showCancelButton: true,
+                                               confirmButtonColor: '#3085d6',
+                                               cancelButtonColor: '#d33',
+                                               confirmButtonText: 'ใช่, ต้องการลบ!',
+                                               cancelButtonText: 'ยกเลิก' // เปลี่ยนข้อความปุ่ม Cancel เป็นภาษาไทย
+                                           }).then((result) => {
+                                               if (result.isConfirmed) {
+                                                   window.location.href = "<?= site_url('background_personnel_backend/del_background_personnel/'); ?>" + background_personnel_id;
+                                               }
+                                           });
+                                       }
+                                   </script>
+                               </td>
                            </tr>
                        <?php
                             $Index++;

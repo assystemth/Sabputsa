@@ -46,7 +46,7 @@ class Otop_model extends CI_Model
         $this->db->insert('tbl_otop', $data);
         $otop_id = $this->db->insert_id();
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -252,7 +252,7 @@ class Otop_model extends CI_Model
         $this->db->where('otop_id', $otop_id);
         $this->db->update('tbl_otop', $data);
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -352,7 +352,7 @@ class Otop_model extends CI_Model
 
     //     $update_doc_file = !empty($_FILES['otop_img']['name']) && $old_document->otop_img != $_FILES['otop_img']['name'];
 
-    //     // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+    //     // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
     //     if ($update_doc_file) {
     //         $old_file_path = './docs/img/' . $old_document->otop_img;
     //         if (file_exists($old_file_path)) {
@@ -685,7 +685,7 @@ class Otop_model extends CI_Model
 
     //     $update_doc_file = !empty($_FILES['user_food_img']['name']) && $old_document->user_food_img != $_FILES['user_food_img']['name'];
 
-    //     // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+    //     // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
     //     if ($update_doc_file) {
     //         $old_file_path = './docs/img/' . $old_document->user_food_img;
     //         if (file_exists($old_file_path)) {
@@ -892,5 +892,5 @@ class Otop_model extends CI_Model
 
     // ************************************************************************************************************
 
-   
+
 }

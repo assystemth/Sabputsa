@@ -8,88 +8,88 @@ class Health_model extends CI_Model
     }
 
     public function add()
-{
-    // Check used space
-    $used_space_mb = $this->space_model->get_used_space();
-    $upload_limit_mb = $this->space_model->get_limit_storage();
+    {
+        // Check used space
+        $used_space_mb = $this->space_model->get_used_space();
+        $upload_limit_mb = $this->space_model->get_limit_storage();
 
-    $total_space_required = 0;
-    $health_img = $_FILES['health_img'];
-    $health_imgs = $_FILES['health_imgs'];
+        $total_space_required = 0;
+        $health_img = $_FILES['health_img'];
+        $health_imgs = $_FILES['health_imgs'];
 
-    $health_file = isset($_FILES['health_file']) ? $_FILES['health_file'] : null; // Check if health_file is set
+        $health_file = isset($_FILES['health_file']) ? $_FILES['health_file'] : null; // Check if health_file is set
 
-    foreach ($health_imgs['size'] as $size) {
-        $total_space_required += $size;
-    }
+        foreach ($health_imgs['size'] as $size) {
+            $total_space_required += $size;
+        }
 
-    // Check if there's enough space
-    if ($used_space_mb + ($total_space_required / (1024 * 1024 * 1024)) >= $upload_limit_mb) {
-        $this->session->set_flashdata('save_error', TRUE);
-        redirect('health/adding');
-        return;
-    }
-
-    $health_data = array(
-        'health_name' => $this->input->post('health_name'),
-        'health_detail' => $this->input->post('health_detail'),
-        'health_by' => $this->session->userdata('m_fname')
-    );
-
-    $config['upload_path'] = './docs/img';
-    $config['allowed_types'] = 'gif|jpg|png|jpeg';
-    $this->load->library('upload', $config);
-
-    $this->db->trans_start();
-    $this->db->insert('tbl_health', $health_data);
-    $health_id = $this->db->insert_id();
-
-    // Upload and update health_img
-    $_FILES['health_img']['name'] = $health_img['name'];
-    $_FILES['health_img']['type'] = $health_img['type'];
-    $_FILES['health_img']['tmp_name'] = $health_img['tmp_name'];
-    $_FILES['health_img']['error'] = $health_img['error'];
-    $_FILES['health_img']['size'] = $health_img['size'];
-
-    if (!$this->upload->do_upload('health_img')) {
-        $this->session->set_flashdata('save_maxsize', TRUE);
-        redirect('health/adding'); // กลับไปหน้าเดิม
-        return;
-    }
-
-    $upload_data = $this->upload->data();
-    $health_img_file = $upload_data['file_name'];
-
-    // Update health_img column with the uploaded image
-    $health_img_data = array('health_img' => $health_img_file);
-    $this->db->where('health_id', $health_id);
-    $this->db->update('tbl_health', $health_img_data);
-
-    // Check if a PDF file is selected
-    if ($health_file !== null && $_FILES['health_file']['error'] !== UPLOAD_ERR_NO_FILE) {
-        $pdf_config['upload_path'] = './docs/file';
-        $pdf_config['allowed_types'] = 'pdf';
-        $this->load->library('upload', $pdf_config, 'pdf_upload');
-
-        $_FILES['health_file']['name'] = $health_file['name'];
-        $_FILES['health_file']['type'] = $health_file['type'];
-        $_FILES['health_file']['tmp_name'] = $health_file['tmp_name'];
-        $_FILES['health_file']['size'] = $health_file['size'];
-
-        if (!$this->pdf_upload->do_upload('health_file')) {
-            echo $this->pdf_upload->display_errors();
-            $this->db->trans_rollback();
+        // Check if there's enough space
+        if ($used_space_mb + ($total_space_required / (1024 * 1024 * 1024)) >= $upload_limit_mb) {
+            $this->session->set_flashdata('save_error', TRUE);
+            redirect('health/adding');
             return;
         }
 
-        $upload_pdf_data = $this->pdf_upload->data();
-        $health_file_file = $upload_pdf_data['file_name'];
+        $health_data = array(
+            'health_name' => $this->input->post('health_name'),
+            'health_detail' => $this->input->post('health_detail'),
+            'health_by' => $this->session->userdata('m_fname')
+        );
 
-        // Update health_file column with the uploaded PDF
-        $healthfile_data = array('health_file' => $health_file_file);
+        $config['upload_path'] = './docs/img';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $this->load->library('upload', $config);
+
+        $this->db->trans_start();
+        $this->db->insert('tbl_health', $health_data);
+        $health_id = $this->db->insert_id();
+
+        // Upload and update health_img
+        $_FILES['health_img']['name'] = $health_img['name'];
+        $_FILES['health_img']['type'] = $health_img['type'];
+        $_FILES['health_img']['tmp_name'] = $health_img['tmp_name'];
+        $_FILES['health_img']['error'] = $health_img['error'];
+        $_FILES['health_img']['size'] = $health_img['size'];
+
+        if (!$this->upload->do_upload('health_img')) {
+            $this->session->set_flashdata('save_maxsize', TRUE);
+            redirect('health/adding'); // กลับไปหน้าเดิม
+            return;
+        }
+
+        $upload_data = $this->upload->data();
+        $health_img_file = $upload_data['file_name'];
+
+        // Update health_img column with the uploaded image
+        $health_img_data = array('health_img' => $health_img_file);
         $this->db->where('health_id', $health_id);
-        $this->db->update('tbl_health', $healthfile_data);
-    }
+        $this->db->update('tbl_health', $health_img_data);
+
+        // Check if a PDF file is selected
+        if ($health_file !== null && $_FILES['health_file']['error'] !== UPLOAD_ERR_NO_FILE) {
+            $pdf_config['upload_path'] = './docs/file';
+            $pdf_config['allowed_types'] = 'pdf';
+            $this->load->library('upload', $pdf_config, 'pdf_upload');
+
+            $_FILES['health_file']['name'] = $health_file['name'];
+            $_FILES['health_file']['type'] = $health_file['type'];
+            $_FILES['health_file']['tmp_name'] = $health_file['tmp_name'];
+            $_FILES['health_file']['size'] = $health_file['size'];
+
+            if (!$this->pdf_upload->do_upload('health_file')) {
+                echo $this->pdf_upload->display_errors();
+                $this->db->trans_rollback();
+                return;
+            }
+
+            $upload_pdf_data = $this->pdf_upload->data();
+            $health_file_file = $upload_pdf_data['file_name'];
+
+            // Update health_file column with the uploaded PDF
+            $healthfile_data = array('health_file' => $health_file_file);
+            $this->db->where('health_id', $health_id);
+            $this->db->update('tbl_health', $healthfile_data);
+        }
         // Upload and insert data into tbl_health_img
         $image_data = array();
         foreach ($health_imgs['name'] as $index => $name) {
@@ -192,7 +192,7 @@ class Health_model extends CI_Model
             return; // เพิ่ม return เพื่อหยุดการทำงานของฟังก์ชันในกรณีที่มีข้อผิดพลาด
         }
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพหรือ PDF ใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพหรือ PDF ใหม่หรือไม่
         if ($update_img_file) {
             // เช็คและลบรูปภาพเก่า
             $old_img_path = './docs/img/' . $old_health->health_img;
@@ -209,7 +209,7 @@ class Health_model extends CI_Model
             }
         }
 
-        // อัปโหลดรูปภาพใหม่ (ถ้ามีการอัพโหลด)
+        // อัปโหลดรูปภาพใหม่ (ถ้ามีการอัปโหลด)
         if (!empty($_FILES['health_img']['name'])) {
             $config['upload_path'] = './docs/img';
             $config['allowed_types'] = 'gif|jpg|png|jpeg';
@@ -227,7 +227,7 @@ class Health_model extends CI_Model
             $img_filename = $old_health->health_img;
         }
 
-        // อัปโหลดไฟล์ PDF ใหม่ (ถ้ามีการอัพโหลด)
+        // อัปโหลดไฟล์ PDF ใหม่ (ถ้ามีการอัปโหลด)
         if (!empty($_FILES['health_file']['name'])) {
             $config['upload_path'] = './docs/file';
             $config['allowed_types'] = 'pdf|doc';

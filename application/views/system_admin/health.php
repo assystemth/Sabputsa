@@ -28,7 +28,7 @@
                             <th style="width: 13%;">รูปภาพ</th>
                             <th style="width: 25%;">ชื่อ</th>
                             <th style="width: 20%;">รายละเอียด</th>
-                            <th style="width: 15%;">อัพโหลด</th>
+                            <th style="width: 15%;">อัปโหลด</th>
                             <th style="width: 7%;">วันที่</th>
                             <th style="width: 5%;">สถานะ</th>
                             <th style="width: 10%;">จัดการ</th>
@@ -45,9 +45,9 @@
                                     <?php else : ?>
                                         <img src="<?php echo base_url('docs/logo.png'); ?>" width="120px" height="80px">
                                     <?php endif; ?>
-                                <?php if (!empty($rs->health_file)) : ?>
-                                    <a class="btn btn-info btn-sm mt-1" href="<?php echo base_url('docs/file/' . $rs->health_file); ?>" target="_blank">ดูไฟล์เดิม!</a>
-                                <?php endif; ?>
+                                    <?php if (!empty($rs->health_file)) : ?>
+                                        <a class="btn btn-info btn-sm mt-1" href="<?php echo base_url('docs/file/' . $rs->health_file); ?>" target="_blank">ดูไฟล์เดิม!</a>
+                                    <?php endif; ?>
                                 </td>
                                 <td class="limited-text"><?= $rs->health_name; ?></td>
                                 <td><?= mb_substr($rs->health_detail, 0, 40, 'UTF-8'); ?>...</td>

@@ -107,7 +107,7 @@ class Operation_eco_model extends CI_Model
         $this->db->insert('tbl_operation_eco', $operation_eco_data);
         $operation_eco_id = $this->db->insert_id();
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -310,7 +310,7 @@ class Operation_eco_model extends CI_Model
         $this->space_model->update_server_current();
         $this->session->set_flashdata('del_success', TRUE);
     }
-    
+
     public function del_doc($doc_id)
     {
         // ดึงชื่อไฟล์ PDF จากฐานข้อมูลโดยใช้ $doc_id
@@ -368,7 +368,7 @@ class Operation_eco_model extends CI_Model
         $this->db->where('operation_eco_id', $operation_eco_id);
         $this->db->update('tbl_operation_eco', $data);
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -583,7 +583,7 @@ class Operation_eco_model extends CI_Model
         }
     }
 
-    
+
     public function del_type_operation_eco_type($operation_eco_type_id)
     {
         $this->db->delete('tbl_operation_eco_type', array('operation_eco_type_id' => $operation_eco_type_id));
@@ -630,7 +630,7 @@ class Operation_eco_model extends CI_Model
             }
         }
     }
-    
+
     public function del_type_operation_eco_doc($operation_eco_type_id)
     {
         $operation_eco_ids = $this->get_operation_eco_id($operation_eco_type_id);

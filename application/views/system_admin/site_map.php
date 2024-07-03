@@ -26,7 +26,7 @@
                        <tr>
                            <th style="width: 5%;">ลำดับ</th>
                            <th style="width: 71%;">รูปภาพ</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 7%;">จัดการ</th>
                        </tr>
@@ -37,12 +37,12 @@
                            <tr role="row">
                                <td align="center"><?= $Index; ?></td>
                                <td>
-                                    <?php if (!empty($rs->site_map_img)) : ?>
-                                        <img src="<?php echo base_url('docs/img/' . $rs->site_map_img); ?>" width="100%" height="50%">
-                                    <?php else : ?>
-                                        <img src="<?php echo base_url('docs/logo.png'); ?>" width="100%" height="50%">
-                                    <?php endif; ?>
-                                </td>
+                                   <?php if (!empty($rs->site_map_img)) : ?>
+                                       <img src="<?php echo base_url('docs/img/' . $rs->site_map_img); ?>" width="100%" height="50%">
+                                   <?php else : ?>
+                                       <img src="<?php echo base_url('docs/logo.png'); ?>" width="100%" height="50%">
+                                   <?php endif; ?>
+                               </td>
                                <td><?= $rs->site_map_by; ?></td>
                                <td><?= date('d/m/Y H:i', strtotime($rs->site_map_datesave . '+543 years')) ?> น.</td>
                                <td>

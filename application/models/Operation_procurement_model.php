@@ -40,7 +40,7 @@ class operation_procurement_model extends CI_Model
         $this->db->insert('tbl_operation_procurement', $operation_procurement_data);
         $operation_procurement_id = $this->db->insert_id();
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 
@@ -218,7 +218,7 @@ class operation_procurement_model extends CI_Model
         $this->db->where('operation_procurement_id', $operation_procurement_id);
         $this->db->update('tbl_operation_procurement', $data);
 
-        // หาพื้นที่ว่าง และอัพโหลดlimit จากฐานข้อมูล
+        // หาพื้นที่ว่าง และอัปโหลดlimit จากฐานข้อมูล
         $used_space = $this->space_model->get_used_space();
         $upload_limit = $this->space_model->get_limit_storage();
 

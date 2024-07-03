@@ -15,7 +15,7 @@
                            <th style="width: 5%;">ลำดับ</th>
                            <th style="width: 55%;">เรื่อง</th>
                            <th style="width: 13%;">ไฟล์เอกสาร</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 7%;">จัดการ</th>
                        </tr>

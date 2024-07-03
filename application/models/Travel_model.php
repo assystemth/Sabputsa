@@ -195,7 +195,7 @@ class Travel_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['travel_img']['name']) && $old_document->travel_img != $_FILES['travel_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->travel_img;
             if (file_exists($old_file_path)) {
@@ -445,7 +445,7 @@ class Travel_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['user_travel_img']['name']) && $old_document->user_travel_img != $_FILES['user_travel_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->user_travel_img;
             if (file_exists($old_file_path)) {

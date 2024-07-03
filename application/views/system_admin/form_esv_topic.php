@@ -49,7 +49,7 @@
                     <tr>
                         <th style="width: 3%;">ลำดับ</th>
                         <th style="width: 40%;">ชื่อ</th>
-                        <th style="width: 13%;">อัพโหลด</th>
+                        <th style="width: 13%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 17%;">จัดการ</th>
                     </tr>
@@ -63,12 +63,13 @@
                             <td><?= $rs->form_esv_topic_by; ?></td>
                             <td><?= date('d/m/Y H:i', strtotime($rs->form_esv_topic_datesave . '+543 years')) ?> น.</td>
                             <td>
-                            <?php if (!in_array($rs->form_esv_topic_id, [1, 2, 3])) : // ตรวจสอบว่า id ไม่ใช่ 1, 2 หรือ 3 ?>
-                                <a href="<?= site_url('form_esv_backend/index_content/' . $rs->form_esv_topic_id); ?>"><i class="bi bi-plus-square fa-lg"></i></a>
-                                <a href="<?= site_url('form_esv_backend/editing_topic/' . $rs->form_esv_topic_id); ?>"><i class="bi bi-pencil-square fa-lg "></i></a>
-                                <a href="#" role="button" onclick="confirmDelete('<?= $rs->form_esv_topic_id; ?>');"><i class="bi bi-trash fa-lg "></i></a>
+                                <?php if (!in_array($rs->form_esv_topic_id, [1, 2, 3])) : // ตรวจสอบว่า id ไม่ใช่ 1, 2 หรือ 3 
+                                ?>
+                                    <a href="<?= site_url('form_esv_backend/index_content/' . $rs->form_esv_topic_id); ?>"><i class="bi bi-plus-square fa-lg"></i></a>
+                                    <a href="<?= site_url('form_esv_backend/editing_topic/' . $rs->form_esv_topic_id); ?>"><i class="bi bi-pencil-square fa-lg "></i></a>
+                                    <a href="#" role="button" onclick="confirmDelete('<?= $rs->form_esv_topic_id; ?>');"><i class="bi bi-trash fa-lg "></i></a>
                                 <?php endif; ?>
-                              <script>
+                                <script>
                                     function confirmDelete(form_esv_topic_id) {
                                         Swal.fire({
                                             title: 'กดเพื่อยืนยัน?',

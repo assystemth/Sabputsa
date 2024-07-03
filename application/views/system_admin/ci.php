@@ -28,7 +28,7 @@
                         <th style="width: 17%;">จำนวนประชากรชาย</th>
                         <th style="width: 20%;">จำนวนประชากรหญิง</th>
                         <th style="width: 17%;">จำนวนบ้าน</th>
-                        <th style="width: 13%;">อัพโหลด</th>
+                        <th style="width: 13%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 3%;">จัดการ</th>
                     </tr>

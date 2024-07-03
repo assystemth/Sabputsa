@@ -16,7 +16,7 @@
                            <th style="width: 13%;">รูปภาพ</th>
                            <th style="width: 25%;">วิสัยทัศน์</th>
                            <th style="width: 30%;">พันธกิจ</th>
-                           <th style="width: 13%;">อัพโหลด</th>
+                           <th style="width: 13%;">อัปโหลด</th>
                            <th style="width: 7%;">วันที่</th>
                            <th style="width: 7%;">จัดการ</th>
                        </tr>

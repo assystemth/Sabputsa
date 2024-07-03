@@ -1,6 +1,6 @@
 <?php
 class P_public_model extends CI_Model
-{ 
+{
     public function __construct()
     {
         parent::__construct();
@@ -106,7 +106,7 @@ class P_public_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['p_public_img']['name']) && $old_document->p_public_img != $_FILES['p_public_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->p_public_img;
             if (file_exists($old_file_path)) {

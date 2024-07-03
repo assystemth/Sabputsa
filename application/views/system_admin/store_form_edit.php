@@ -148,9 +148,9 @@
                             <br>
                             เลือกใหม่: <br>
                             <input type="file" name="store_img_img[]" class="form-control" accept="image/*" multiple>
-                            <span class="black-add">สามารถอัพโหลดได้หลายไฟล์</span>
-                        <br>
-                        <span class="red-add">(เฉพาะไฟล์ .JPG/.JPEG/.PNG)</span>
+                            <span class="black-add">สามารถอัปโหลดได้หลายไฟล์</span>
+                            <br>
+                            <span class="red-add">(เฉพาะไฟล์ .JPG/.JPEG/.PNG)</span>
                         </div>
                     </div>
                     <br>

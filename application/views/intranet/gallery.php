@@ -207,7 +207,7 @@
                             <span>วันที่</span>
                         </div>
                         <div class="col-sm-2 text-center" style="margin-left: -10px;">
-                            <span>ผู้อัพโหลด</span><br>
+                            <span>ผู้อัปโหลด</span><br>
                         </div>
                         <div class="col-sm-1 text-center" style="margin-left: -7px;">
                             ลบ

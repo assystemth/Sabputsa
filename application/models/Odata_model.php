@@ -192,7 +192,7 @@ class Odata_model extends CI_Model
             'odata_sub_file_name' => $odata_sub_file_name,
         );
 
-        // ถ้ามีการอัพโหลดไฟล์ใหม่ ให้เพิ่มข้อมูลไฟล์ใหม่ในฐานข้อมูล
+        // ถ้ามีการอัปโหลดไฟล์ใหม่ ให้เพิ่มข้อมูลไฟล์ใหม่ในฐานข้อมูล
         if ($odata_sub_file_doc) {
             $data['odata_sub_file_doc'] = $odata_sub_file_doc;
         }
@@ -269,15 +269,15 @@ class Odata_model extends CI_Model
         $this->db->where('odata_sub_ref_id', $odata_id);
         $query = $this->db->get('tbl_odata_sub');
         $results = $query->result();
-    
+
         // วนลูปผ่านแต่ละผลลัพธ์
         foreach ($results as $result) {
             $odata_sub_id = $result->odata_sub_id;
-    
+
             // ดึงข้อมูลไฟล์จาก tbl_odata_sub_file ที่เชื่อมโยงกับ odata_sub_id
             $file_query = $this->db->get_where('tbl_odata_sub_file', array('odata_sub_file_ref_id' => $odata_sub_id));
             $files = $file_query->result();
-    
+
             // วนลูปผ่านข้อมูลเพื่อลบไฟล์แต่ละไฟล์
             foreach ($files as $file) {
                 $file_path = './docs/file/' . $file->odata_sub_file_doc;
@@ -285,24 +285,24 @@ class Odata_model extends CI_Model
                     unlink($file_path); // ลบไฟล์จากระบบ
                 }
             }
-    
+
             // ลบข้อมูลใน tbl_odata_sub_file ที่เชื่อมโยงกับ odata_sub_id
             $this->db->where('odata_sub_file_ref_id', $odata_sub_id);
             $this->db->delete('tbl_odata_sub_file');
         }
-    
+
         // ลบข้อมูลใน tbl_odata_sub ที่เชื่อมโยงกับ odata_id
         $this->db->where('odata_sub_ref_id', $odata_id);
         $this->db->delete('tbl_odata_sub');
-    
+
         // ลบข้อมูลใน tbl_odata
         $this->db->where('odata_id', $odata_id);
         $this->db->delete('tbl_odata');
-    
+
         // อัปเดตสถานะของเซิร์ฟเวอร์ปัจจุบัน (ถ้าจำเป็น)
         $this->space_model->update_server_current();
     }
-    
+
     public function odata_frontend()
     {
         $this->db->select('*');

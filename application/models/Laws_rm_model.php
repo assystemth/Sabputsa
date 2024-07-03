@@ -87,7 +87,7 @@ class Laws_rm_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['laws_rm_pdf']['name']) && $old_document->laws_rm_pdf != $_FILES['laws_rm_pdf']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/file/' . $old_document->laws_rm_pdf;
             if (file_exists($old_file_path)) {

@@ -337,10 +337,11 @@
                           <!-- <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
                           <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a> -->
                           <a href="<?php echo site_url('Pages/p_welfare'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสวัสดิการ</span></a></a>
-                      </div>
-                      <div class="dropdown-right">
                           <a href="<?php echo site_url('Pages/p_learder'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กำนันผู้ใหญ่บ้าน</span></a></a>
                           <a href="<?php echo site_url('Pages/p_audit'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</span></a></a>
+                        </div>
+                      <div class="dropdown-right">
+                         
                       </div>
                   </ul>
               </div>

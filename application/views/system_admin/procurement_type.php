@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="form-group row">
-                <div class="col-sm-12 control-label">วันที่อัพโหลด <span class="red-add">*</span></div>
+                <div class="col-sm-12 control-label">วันที่อัปโหลด <span class="red-add">*</span></div>
                 <br>
                 <div class="col-sm-3">
                     <input type="datetime-local" name="procurement_type_date" class="form-control" required>
@@ -57,7 +57,7 @@
                     <tr>
                         <th style="width: 3%;">ลำดับ</th>
                         <th style="width: 55%;">หัวข้อ</th>
-                        <th style="width: 20%;">อัพโหลด</th>
+                        <th style="width: 20%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 15%;">จัดการ</th>
                     </tr>
@@ -119,8 +119,8 @@
                             <th tabindex="0" rowspan="1" colspan="1">รูปภาพ</th>
                             <th tabindex="0" rowspan="1" colspan="1">ชื่อ</th>
                             <th tabindex="0" rowspan="1" colspan="1">รายละเอียด</th>
-                            <th tabindex="0" rowspan="1" colspan="1">ผู้อัพโหลด</th>
-                            <th tabindex="0" rowspan="1" colspan="1">วันที่อัพโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1">ผู้อัปโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1">วันที่อัปโหลด</th>
                             <th tabindex="0" rowspan="1" colspan="1">สถานะ</th>
                             <th tabindex="0" rowspan="1" colspan="1">ความคิดเห็น</th>
                             <th tabindex="0" rowspan="1" colspan="1">แก้ไข</th>

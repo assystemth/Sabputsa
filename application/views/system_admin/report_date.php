@@ -104,7 +104,7 @@
                             <tr>
                                 <th style="color: black;">ลำดับ</th>
                                 <th style="color: black;">ชื่อข่าว</th>
-                                <th style="color: black;">ผู้อัพโหลด</th>
+                                <th style="color: black;">ผู้อัปโหลด</th>
                                 <th style="color: black;">วันที่บันทึก</th>
                             </tr>
                         </thead>
@@ -136,7 +136,7 @@
                             <tr>
                                 <th style="color: black;">ลำดับ</th>
                                 <th style="color: black;">ชื่อกิจกรรม</th>
-                                <th style="color: black;">ผู้อัพโหลด</th>
+                                <th style="color: black;">ผู้อัปโหลด</th>
                                 <th style="color: black;">วันที่บันทึก</th>
                             </tr>
                         </thead>
@@ -168,7 +168,7 @@
                             <tr>
                                 <th style="color: black;">ลำดับ</th>
                                 <th style="color: black;">ชื่อกิจกรรม</th>
-                                <th style="color: black;">ผู้อัพโหลด</th>
+                                <th style="color: black;">ผู้อัปโหลด</th>
                                 <th style="color: black;">วันที่บันทึก</th>
                             </tr>
                         </thead>
@@ -200,7 +200,7 @@
                             <tr>
                                 <th style="color: black;">ลำดับ</th>
                                 <th style="color: black;">ชื่อสถานที่</th>
-                                <th style="color: black;">ผู้อัพโหลด</th>
+                                <th style="color: black;">ผู้อัปโหลด</th>
                                 <th style="color: black;">วันที่บันทึก</th>
                             </tr>
                         </thead>
@@ -232,7 +232,7 @@
                             <tr>
                                 <th style="color: black;">ลำดับ</th>
                                 <th style="color: black;">ชื่อร้านอาหาร</th>
-                                <th style="color: black;">ผู้อัพโหลด</th>
+                                <th style="color: black;">ผู้อัปโหลด</th>
                                 <th style="color: black;">วันที่บันทึก</th>
                             </tr>
                         </thead>
@@ -264,7 +264,7 @@
                             <tr>
                                 <th style="color: black;">ลำดับ</th>
                                 <th style="color: black;">ชื่อร้านอาหาร</th>
-                                <th style="color: black;">ผู้อัพโหลด</th>
+                                <th style="color: black;">ผู้อัปโหลด</th>
                                 <th style="color: black;">วันที่บันทึก</th>
                             </tr>
                         </thead>
@@ -283,7 +283,7 @@
             </div>
         </div>
     <?php } ?>
-    
+
     <?php if (!empty($store_detail)) { ?>
         <div class="card shadow mb-4" id="store" style="display: none;">
             <div class="card-header py-3">
@@ -296,7 +296,7 @@
                             <tr>
                                 <th style="color: black;">ลำดับ</th>
                                 <th style="color: black;">ชื่อร้านอาหาร</th>
-                                <th style="color: black;">ผู้อัพโหลด</th>
+                                <th style="color: black;">ผู้อัปโหลด</th>
                                 <th style="color: black;">วันที่บันทึก</th>
                             </tr>
                         </thead>
@@ -328,7 +328,7 @@
                             <tr>
                                 <th style="color: black;">ลำดับ</th>
                                 <th style="color: black;">ชื่อร้านอาหาร</th>
-                                <th style="color: black;">ผู้อัพโหลด</th>
+                                <th style="color: black;">ผู้อัปโหลด</th>
                                 <th style="color: black;">วันที่บันทึก</th>
                             </tr>
                         </thead>

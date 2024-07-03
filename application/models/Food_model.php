@@ -204,7 +204,7 @@ class Food_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['food_img']['name']) && $old_document->food_img != $_FILES['food_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->food_img;
             if (file_exists($old_file_path)) {
@@ -453,7 +453,7 @@ class Food_model extends CI_Model
 
     //     $update_doc_file = !empty($_FILES['user_food_img']['name']) && $old_document->user_food_img != $_FILES['user_food_img']['name'];
 
-    //     // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+    //     // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
     //     if ($update_doc_file) {
     //         $old_file_path = './docs/img/' . $old_document->user_food_img;
     //         if (file_exists($old_file_path)) {

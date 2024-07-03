@@ -25,7 +25,7 @@
                         <th style="width: 25%;">ชื่อ</th>
                         <th style="width: 30%;">รายละเอียด</th>
                         <th style="width: 10%;">ไฟล์ PDF</th>
-                        <th style="width: 10%;">อัพโหลด</th>
+                        <th style="width: 10%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 5%;">สถานะ</th>
                         <th style="width: 10%;">จัดการ</th>
@@ -127,8 +127,8 @@
                             <th tabindex="0" rowspan="1" colspan="1">รูปภาพ</th>
                             <th tabindex="0" rowspan="1" colspan="1">ชื่อ</th>
                             <th tabindex="0" rowspan="1" colspan="1">รายละเอียด</th>
-                            <th tabindex="0" rowspan="1" colspan="1">ผู้อัพโหลด</th>
-                            <th tabindex="0" rowspan="1" colspan="1">วันที่อัพโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1">ผู้อัปโหลด</th>
+                            <th tabindex="0" rowspan="1" colspan="1">วันที่อัปโหลด</th>
                             <th tabindex="0" rowspan="1" colspan="1">สถานะ</th>
                             <th tabindex="0" rowspan="1" colspan="1">ความคิดเห็น</th>
                             <th tabindex="0" rowspan="1" colspan="1">แก้ไข</th>

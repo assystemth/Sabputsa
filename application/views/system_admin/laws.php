@@ -25,7 +25,7 @@
             </div>
             <br>
             <div class="form-group row">
-                <div class="col-sm-2 control-label">วันที่อัพโหลด <span class="red-add">*</span></div>
+                <div class="col-sm-2 control-label">วันที่อัปโหลด <span class="red-add">*</span></div>
                 <div class="col-sm-6">
                     <input type="datetime-local" name="laws_date" id="laws_date" class="form-control" required>
                 </div>
@@ -69,7 +69,7 @@
                         <th style="width: 3%;">ลำดับ</th>
                         <th style="width: 40%;">ชื่อ</th>
                         <th style="width: 20%;">ไฟล์ PDF</th>
-                        <th style="width: 13%;">อัพโหลด</th>
+                        <th style="width: 13%;">อัปโหลด</th>
                         <th style="width: 7%;">วันที่</th>
                         <th style="width: 7%;">จัดการ</th>
                     </tr>

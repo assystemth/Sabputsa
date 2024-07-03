@@ -204,7 +204,7 @@ class Store_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['store_img']['name']) && $old_document->store_img != $_FILES['store_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->store_img;
             if (file_exists($old_file_path)) {
@@ -467,7 +467,7 @@ class Store_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['user_store_img']['name']) && $old_document->user_store_img != $_FILES['user_store_img']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->user_store_img;
             if (file_exists($old_file_path)) {
@@ -612,7 +612,7 @@ class Store_model extends CI_Model
         $message .= "พิกัด: ($map_link)\n";
         // เรียกใช้ฟังก์ชันส่งข้อมูล LINE Notify โดยใส่ $message
         $this->sendLineNotify($message);
-        
+
         $this->space_model->update_server_current();
         $this->session->set_flashdata('save_success', TRUE);
     }

@@ -83,57 +83,57 @@ class Site_map_model extends CI_Model
     public function edit_site_map($site_map_id)
     {
         $old_document = $this->db->get_where('tbl_site_map', array('site_map_id' => $site_map_id))->row();
-    
+
         $update_doc_file = !empty($_FILES['site_map_img']['name']) && $old_document->site_map_img != $_FILES['site_map_img']['name'];
-    
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/img/' . $old_document->site_map_img;
             if (file_exists($old_file_path)) {
                 unlink($old_file_path);
             }
-    
+
             // Check used space
             $used_space_mb = $this->space_model->get_used_space();
             $upload_limit_mb = $this->space_model->get_limit_storage();
-    
+
             $total_space_required = 0;
             if (!empty($_FILES['site_map_img']['name'])) {
                 $total_space_required += $_FILES['site_map_img']['size'];
             }
-    
+
             if ($used_space_mb + ($total_space_required / (1024 * 1024 * 1024)) >= $upload_limit_mb) {
                 $this->session->set_flashdata('save_error', TRUE);
                 redirect('site_map/editing_site_map');
                 return;
             }
-    
+
             $config['upload_path'] = './docs/img';
             $config['allowed_types'] = 'gif|jpg|png|jpeg';
             $this->load->library('upload', $config);
-    
+
             if (!$this->upload->do_upload('site_map_img')) {
                 echo $this->upload->display_errors();
                 return;
             }
-    
+
             $data = $this->upload->data();
             $filename = $data['file_name'];
         } else {
             // ใช้รูปภาพเดิม
             $filename = $old_document->site_map_img;
         }
-    
+
         $data = array(
             'site_map_by' => $this->session->userdata('m_fname'), // เพิ่มชื่อคนที่แก้ไขข้อมูล
             'site_map_img' => $filename
         );
-    
+
         $this->db->where('site_map_id', $site_map_id);
         $query = $this->db->update('tbl_site_map', $data);
-    
+
         $this->space_model->update_server_current();
-    
+
         if ($query) {
             $this->session->set_flashdata('save_success', TRUE);
         } else {
@@ -142,7 +142,7 @@ class Site_map_model extends CI_Model
             echo "</script>";
         }
     }
-    
+
 
     public function del_site_map($site_map_id)
     {

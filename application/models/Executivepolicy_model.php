@@ -32,7 +32,7 @@ class Executivepolicy_model extends CI_Model
 
         $update_doc_file = !empty($_FILES['executivepolicy_pdf']['name']) && $old_document->executivepolicy_pdf != $_FILES['executivepolicy_pdf']['name'];
 
-        // ตรวจสอบว่ามีการอัพโหลดรูปภาพใหม่หรือไม่
+        // ตรวจสอบว่ามีการอัปโหลดรูปภาพใหม่หรือไม่
         if ($update_doc_file) {
             $old_file_path = './docs/file/' . $old_document->executivepolicy_pdf;
             if (file_exists($old_file_path)) {
