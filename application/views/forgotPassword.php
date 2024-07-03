@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="<?php echo base_url("docs/b-logo.png"); ?>" type="image/x-icon">
-    <title>อบต.บ้านกลาง ระบบอินทราเน็ต</title>
+    <link rel="icon" href="<?php echo base_url("docs/logo.png"); ?>" type="image/x-icon">
+    <title>อบต.ซับพุทรา</title>
     <!-- icon -->
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -41,7 +41,7 @@
         }
 
         .bg {
-            background-image: url('<?php echo base_url("docs/b.bg-login1.png"); ?>');
+            background-image: url('<?php echo base_url("docs/bg-login.png"); ?>');
             height: 100vh;
             background-position: center center;
             background-repeat: no-repeat;
@@ -674,21 +674,12 @@
 <body>
     <main>
         <div class="bg">
-            <img class="dot-news-animation dot-news-animation-1" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-2" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-3" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-4" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-5" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-6" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-7" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-8" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-9" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-10" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-11" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-12" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-13" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-14" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-            <img class="dot-news-animation dot-news-animation-15" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
+        <img class="wipwap dot-news-animation-1" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+        <img class="wipwap dot-news-animation-2" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+        <img class="wipwap dot-news-animation-3" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+        <img class="wipwap dot-news-animation-5" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+        <img class="wipwap dot-news-animation-6" src="<?php echo base_url('docs/anime-light-home2.png'); ?>">
+        <img class="wipwap dot-news-animation-15" src="<?php echo base_url('docs/anime-light-home2.png'); ?>">
             <div class="bg-content">
                 <div class="logo-header">
                     <img src="<?php echo base_url("docs/logo.png"); ?>" width="180" height="180">
@@ -697,18 +688,7 @@
                     <span class="font-header-back">ลืมรหัสผ่าน</span>
                 </div>
 
-                <form id="reCAPTCHA3" action="<?php echo site_url('Login_intranet/check2'); ?>" method="post">
-                    <!-- ตรวจสอบว่ามีค่าในคุกกี้ remember หรือไม่ -->
-                    <?php
-                    if (isset($_COOKIE['remember'])) {
-                        $remember_data = json_decode($_COOKIE['remember'], true);
-                        $remember_id = $remember_data['id'];
-                        $remember_password = $remember_data['data'];
-                    } else {
-                        $remember_id = '';
-                        $remember_password = '';
-                    }
-                    ?>
+                <form id="reCAPTCHA3" action="<?php echo site_url('user/sendEmail'); ?>" method="post">
                     <div class="input-group from-login" style="margin: auto; margin-top: 30px;">
                         <div class="input-icon">
                             <input type="text" name="email" id="email" placeholder="กรอกอีเมล" required>
@@ -719,8 +699,8 @@
                     </div>
 
                     <div class="bg-submit-login">
-                        <!-- <button data-action="submit" data-callback="onSubmit" data-sitekey="6LcfiLYpAAAAAI7_U3nkRRxKF7e8B_fwOGqi7g6x" type="submit" class="loginBtn g-recaptcha" id="loginBtn">เข้าสู่ระบบ</button> -->
-                        <button type="submit" class="loginBtn" id="loginBtn">ยืนยัน</button>
+                        <button data-action="submit" data-callback="onSubmit" data-sitekey="6LcfiLYpAAAAAI7_U3nkRRxKF7e8B_fwOGqi7g6x" type="submit" class="loginBtn g-recaptcha" id="loginBtn">เข้าสู่ระบบ</button>
+                        <!-- <button type="submit" class="loginBtn" id="loginBtn">ยืนยัน</button> -->
                     </div>
 
                     <div class="center-text" style="padding-top: 40px;">
@@ -762,35 +742,41 @@
         document.getElementById("reCAPTCHA3").submit();
     }
 
-    function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+   // ฟังก์ชันสุ่มตำแหน่งขององค์ประกอบ
+   function randomizePosition(element) {
+        var maxWidth = window.innerWidth; // ขนาดความกว้างของหน้าจอปัจจุบัน
+        var maxHeight = window.innerHeight; // ขนาดความสูงของหน้าจอปัจจุบัน
 
-    function randomizeAnimationDuration() {
-        var minSeconds = 1; // Minimum seconds
-        var maxSeconds = 6; // Maximum seconds
-        var randomSeconds = getRandomInt(minSeconds, maxSeconds);
-        return randomSeconds + 's';
-    }
-
-    function randomizePosition(element) {
-        var maxWidth = 1920; // กำหนดขนาดความกว้างสูงสุด 1920px
-        var maxHeight = 500; // กำหนดขนาดความสูงสูงสุด 1000px
-
-        var randomMarginLeft = getRandomInt(0, maxWidth - element.width);
-        var randomMarginTop = getRandomInt(0, maxHeight - element.height);
+        var randomMarginLeft = getRandomInt(0, maxWidth - element.offsetWidth);
+        var randomMarginTop = getRandomInt(0, maxHeight - element.offsetHeight);
 
         element.style.marginLeft = randomMarginLeft + 'px';
         element.style.marginTop = randomMarginTop + 'px';
     }
 
-    window.onload = function() {
-        var animations = document.querySelectorAll('.dot-news-animation');
-        animations.forEach(function(animation) {
-            animation.style.animationDuration = randomizeAnimationDuration();
-            randomizePosition(animation);
-        });
+    // ฟังก์ชันสุ่มการหน่วงเวลาเริ่มต้นแอนิเมชัน
+    function randomizeAnimationDelay(element) {
+        var randomDelay = getRandomInt(0, 5); // สุ่มการหน่วงเวลาระหว่าง 0 ถึง 5 วินาที
+        element.style.animationDelay = randomDelay + 's';
     }
+
+    // นำฟังก์ชันไปใช้กับองค์ประกอบที่ต้องการ
+    var animations = document.querySelectorAll('.wipwap');
+    animations.forEach(function(animation) {
+        // สุ่มการหน่วงเวลาแอนิเมชัน
+        randomizeAnimationDelay(animation);
+
+        // กำหนดค่าเริ่มต้น
+        randomizePosition(animation);
+
+        // เพิ่ม event listener เพื่อตรวจสอบการเปลี่ยนแปลงของ opacity
+        animation.addEventListener('animationiteration', function() {
+            // ตั้งเวลาเพื่อให้เกิดการเปลี่ยนแปลงตำแหน่งเมื่อ opacity = 0
+            setTimeout(function() {
+                randomizePosition(animation);
+            }, 1500); // 50% ของเวลาแอนิเมชัน 3s
+        });
+    });
 
     let slideIndex = 0;
     let isDown = false;

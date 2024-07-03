@@ -3,7 +3,7 @@
 
 <head>
     <!-- Design by foolishdeveloper.com -->
-    <link rel="icon" href="<?php echo base_url("docs/b-logo.png"); ?>" type="image/x-icon">
+    <link rel="icon" href="<?php echo base_url("docs/logo.png"); ?>" type="image/x-icon">
 
     <title>องค์การบริหารส่วนตำบลซับพุทรา</title>
     <!-- icon -->

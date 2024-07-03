@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="<?php echo base_url("docs/b-logo.png"); ?>" type="image/x-icon">
-    <title>อบต.บ้านกลาง ระบบแอดมิน</title>
+    <link rel="icon" href="<?php echo base_url("docs/logo.png"); ?>" type="image/x-icon">
+    <title>อบต.ซับพุทรา </title>
     <!-- icon -->
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -41,7 +41,7 @@
         }
 
         .bg {
-            background-image: url('<?php echo base_url("docs/b.bg-login1.png"); ?>');
+            background-image: url('<?php echo base_url("docs/bg-login.png"); ?>');
             height: 100vh;
             background-position: center center;
             background-repeat: no-repeat;
