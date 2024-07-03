@@ -94,16 +94,16 @@
 
                 <div class="row">
                     <div class="col-6">
-                        <div class="wel-image-container text-center" style="margin-left: -58%;">
-                            <a href="<?php echo site_url('Pages/travel_detail/1'); ?>">
+                        <div class="wel-image-container text-center" style="margin-left: -580px;">
+                            <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
                                 <img src="docs/wel-mark-travel1.png" alt="Map">
                             </a>
                             <span class="wel-font-travel">ภูเขาหินปะการัง</span><br>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="wel-image-container text-center" style="margin-left: 34%;">
-                            <a href="<?php echo site_url('Pages/travel_detail/1'); ?>">
+                        <div class="wel-image-container text-center" style="margin-left: 340px;">
+                            <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
                                 <img src="docs/wel-mark-travel2.png" alt="Map">
                             </a>
                             <span class="wel-font-travel">อ่างเก็บน้ำซับเจริญ</span><br>
@@ -1409,7 +1409,7 @@
             </div>
         </div>
         <div class="travel-content" style="padding-top: 1%; ">
-            <div class="image-container text-center" style="margin-left: 1.8%; margin-top: -20px;">
+            <div class="image-container text-center" style="margin-left: 35.8px; margin-top: -20px;">
                 <span class="font-travel">แหล่งเรียนรู้ในชุมชนตำบลซับพทรา</span><br>
                 <div class="mt-5">
                     <a href="<?php echo site_url('Pages/travel_detail/1'); ?>">
@@ -1418,7 +1418,7 @@
                     <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
                 </div>
             </div>
-            <div class="image-container text-center" style=" margin-left: 39.6%; margin-top: -5px;">
+            <div class="image-container text-center" style=" margin-left: 750px;">
                 <span class="font-travel">อ่างเก็บน้ำซับเจริญ</span><br>
                 <div class="mt-5">
                     <a href="<?php echo site_url('Pages/travel_detail/2'); ?>">
@@ -1427,7 +1427,7 @@
                     <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
                 </div>
             </div>
-            <div class="image-container text-center" style="margin-left: 53.2%; margin-top: -50px;">
+            <div class="image-container text-center" style="margin-left: 1020px; margin-top: -50px;">
                 <span class="font-travel">วัดซับป่าคาย</span><br>
                 <div class="mt-5">
                     <a href="<?php echo site_url('Pages/travel_detail/3'); ?>">
@@ -1436,7 +1436,7 @@
                     <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
                 </div>
             </div>
-            <div class="image-container text-center" style="margin-left: 66.8%; margin-top: -105px;">
+            <div class="image-container text-center" style="margin-left: 1276px; margin-top: -105px;">
                 <span class="font-travel">ภูเขาหินปะการัง</span><br>
                 <div class="mt-5">
                     <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
@@ -1445,7 +1445,7 @@
                     <img class="img-travel-180" src="docs/bg-anime-travel.png" style="margin-left: -174px; margin-top: -22px; ">
                 </div>
             </div>
-            <div class="image-container text-center" style="margin-left: 13.8%; margin-top: 30.7%;">
+            <div class="image-container text-center" style="margin-left: 262px; margin-top: 585px;">
                 <a href="<?php echo site_url('Pages/travel_detail/5'); ?>">
                     <img class="img-travel" src="docs/travel-mark5.png" alt="Map">
                 </a>
@@ -1454,7 +1454,7 @@
                     <span class="font-travel">วัดขามแดงเจริญธรรม</span><br>
                 </div>
             </div>
-            <div class="image-container text-center" style="margin-left: 39.4%; margin-top: 30.5%;">
+            <div class="image-container text-center" style="margin-left: 750px; margin-top: 580px;">
                 <a href="<?php echo site_url('Pages/travel_detail/6'); ?>">
                     <img class="img-travel" src="docs/travel-mark6.png" alt="Map">
                 </a>
@@ -1463,7 +1463,7 @@
                     <span class="font-travel">วัดเขาถ้ำศรีทรงธรรม</span><br>
                 </div>
             </div>
-            <div class="image-container text-center" style="margin-left: 70.5%; margin-top: 30.6%;">
+            <div class="image-container text-center" style="margin-left: 1345px; margin-top: 585px;">
                 <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
                     <img class="img-travel" src="docs/travel-mark7.png" alt="Map">
                 </a>
