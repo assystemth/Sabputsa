@@ -219,101 +219,140 @@
             line-height: normal;
         }
 
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .dot-news-animation {
-            position: absolute;
-            animation-name: blink;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-        }
-
         .dot-news-animation-1 {
-            width: 35px;
-            height: 35px;
-        }
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 370px; */
+    /* margin-left: 20px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-2 {
-            width: 15px;
-            height: 15px;
-        }
+  .dot-news-animation-2 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 720px; */
+    /* margin-left: 68px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-3 {
-            width: 25px;
-            height: 25px;
-        }
+  .dot-news-animation-3 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 40px; */
+    /* margin-left: 115px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-4 {
-            width: 25px;
-            height: 25px;
-        }
+  .dot-news-animation-4 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 120px; */
+    /* margin-left: 300px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-5 {
-            width: 35px;
-            height: 35px;
-        }
+  .dot-news-animation-5 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 732px; */
+    /* margin-left: 720px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-6 {
-            width: 50px;
-            height: 50px;
-        }
+  .dot-news-animation-6 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 423px; */
+    /* margin-left: 1030px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-7 {
-            width: 20px;
-            height: 20px;
-        }
+  .dot-news-animation-7 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 305px; */
+    /* margin-left: 1120px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-8 {
-            width: 20px;
-            height: 20px;
-        }
+  .dot-news-animation-8 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 717px; */
+    /* margin-left: 1180px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-9 {
-            width: 15px;
-            height: 15px;
-        }
+  .dot-news-animation-9 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 745px; */
+    /* margin-left: 1500px; */
+  }
 
-        .dot-news-animation-10 {
-            width: 50px;
-            height: 50px;
-        }
+  .dot-news-animation-10 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 730px; */
+    /* margin-left: 1740px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-11 {
-            width: 15px;
-            height: 15px;
-        }
+  .dot-news-animation-11 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 370px; */
+    /* margin-left: 1810px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-12 {
-            width: 25px;
-            height: 25px;
-        }
+  .dot-news-animation-12 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 60px; */
+    /* margin-left: 1880px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-13 {
-            width: 25px;
-            height: 25px;
-        }
+  .dot-news-animation-13 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 605px; */
+    /* margin-left: 1870px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-14 {
-            width: 20px;
-            height: 20px;
-        }
+  .dot-news-animation-14 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 605px; */
+    /* margin-left: 1870px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-15 {
-            width: 20px;
-            height: 20px;
-        }
+  .dot-news-animation-15 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 605px; */
+    /* margin-left: 1870px; */
+    z-index: 1;
+  }
+
+  /* แสงวิบวับ fade in fade out  */
+  @-webkit-keyframes blink-2 {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+      /* ให้หายไปทั้งหมด */
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
         .slideshow-wrapper {
             display: flex;
