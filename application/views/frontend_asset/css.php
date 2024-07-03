@@ -6424,7 +6424,7 @@
   }
 
   .wel-light-nav {
-    animation: rotate-animation360 25s infinite linear;
+    animation: rotate-animation360 50s infinite linear;
   }
 
   @keyframes rotate-animation360 {

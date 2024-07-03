@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>องค์การบริหารส่วนตำบลสว่าง</title>
+    <title>องค์การบริหารส่วนตำบลซับพุทรา</title>
     <link rel="icon" href="<?php echo base_url("docs/logo.png"); ?>" type="image/x-icon">
 </head>
 <style>
@@ -303,8 +303,8 @@
 
                 <body>
                     <?php
-                    $url = "https://assystem.co.th/Day/demoassystem/main.php";
-                    $base_url = "https://assystem.co.th/Day/demoassystem/";
+                    $url = "https://assystem.co.th/Day/Sabputsa/main.php";
+                    $base_url = "https://assystem.co.th/Day/Sabputsa/";
 
                     $ch = curl_init();
                     curl_setopt($ch, CURLOPT_URL, $url);

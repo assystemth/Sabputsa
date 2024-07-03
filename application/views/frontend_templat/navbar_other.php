@@ -3,7 +3,7 @@
   <a id="scroll-to-back" title="Go to back"></a>
   <style>
       #navbar2 {
-          background: linear-gradient(180deg, #472582 0%, #7869BF 100%);
+        background: linear-gradient(92deg, #ACFE9E -3.07%, #3B91C7 138.09%);
           /* background-image: url('<?php echo base_url("docs/s.navbar-stick2.png"); ?>');
         background-repeat: no-repeat;
         background-size: 100%; */
@@ -102,7 +102,7 @@
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1; */
 
-          background-image: url('<?php echo base_url("docs/b.bg-nav-content.png"); ?>');
+        background-image: url('<?php echo base_url("docs/bg-nav-content.png"); ?>');
           background-repeat: no-repeat;
           background-size: 100%;
           display: none;
@@ -540,11 +540,11 @@
       <div style="position: absolute; margin: 25px 25px; z-index: 101;">
           <div class="row">
               <div class="col-4">
-                  <img style="margin-left: 10px;" src="<?php echo base_url('docs/logo-nav.png'); ?>">
+                  <img style="margin-left: 10px;" src="<?php echo base_url('docs/logo.png'); ?>" width="116px" height="113px" >
               </div>
               <div class="col-8" style="margin-top: 5px;">
-                  <span class="font-head-navbar-letf-logo1" style="margin-left: 20px;">อบต.บ้านกลาง</span><br>
-                  <span class="font-head-navbar-letf-logo2" style="margin-left: 20px;">อ.หล่มสัก จ.เพชรบูรณ์</span>
+                  <span class="font-head-navbar-letf-logo1" style="margin-left: 20px;">อบต. ซับพุทรา</span><br>
+                  <span class="font-head-navbar-letf-logo2" style="margin-left: 20px;">อ.ชนแดน จ.เพรชบูรณ์</span>
               </div>
           </div>
       </div>

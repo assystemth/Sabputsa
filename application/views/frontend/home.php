@@ -163,7 +163,7 @@
 <div class="welcome-btm2"> </div>
 <div class="welcome-btm-ontop" style="padding-top: 165px;">
     <div class="text-center" style="position: absolute; margin-top: -110px; margin-left: 33%; ">
-        <span class="font-welcome-btm-other1">องค์การบริหารส่วนตำบลบ้านกลาง</span>
+        <span class="font-welcome-btm-other1">องค์การบริหารส่วนตำบลซับพุทรา</span>
         <!-- <span class="font-welcome-btm-other2">องค์การบริหารส่วนตำบลบ้านกลาง</span> -->
     </div>
     <div class="d-flex justify-content-center">
