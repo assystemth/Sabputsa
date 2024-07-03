@@ -109,7 +109,7 @@
           position: fixed;
           width: 1920px;
           height: 480px;
-          z-index: 2;
+          z-index: 11;
           left: 50%;
           /* ย้าย dropdown ไปที่กึ่งกลางตามแนวนอน */
           top: 250px;
@@ -335,14 +335,15 @@
                       <div class="dropdown-center">
                           <a href="<?php echo site_url('Pages/p_treasury'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองคลัง</span></a></a>
                           <a href="<?php echo site_url('Pages/p_maintenance'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองช่าง</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
-                          <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a>
+                          <!-- <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
+                          <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a> -->
                           <a href="<?php echo site_url('Pages/p_welfare'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสวัสดิการ</span></a></a>
-                      </div>
-                      <div class="dropdown-right">
                           <a href="<?php echo site_url('Pages/p_learder'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กำนันผู้ใหญ่บ้าน</span></a></a>
                           <a href="<?php echo site_url('Pages/p_audit'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</span></a></a>
                       </div>
+                      <!-- <div class="dropdown-right">
+
+                      </div> -->
                   </ul>
               </div>
           </li>
@@ -601,14 +602,15 @@
                           <div class="dropdown-center">
                               <a href="<?php echo site_url('Pages/p_treasury'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองคลัง</span></a></a>
                               <a href="<?php echo site_url('Pages/p_maintenance'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองช่าง</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
-                              <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a>
+                              <!-- <a href="<?php echo site_url('Pages/p_education'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองการศึกษา</span></a></a>
+                              <a href="<?php echo site_url('Pages/p_public'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสาธารณสุข</span></a></a> -->
                               <a href="<?php echo site_url('Pages/p_welfare'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กองสวัสดิการ</span></a></a>
-                          </div>
-                          <div class="dropdown-right">
                               <a href="<?php echo site_url('Pages/p_learder'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กำนันผู้ใหญ่บ้าน</span></a></a>
                               <a href="<?php echo site_url('Pages/p_audit'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หน่วยตรวจสอบภายใน</span></a></a>
                           </div>
+                          <!-- <div class="dropdown-right">
+    
+                          </div> -->
                       </ul>
                   </div>
               </li>
@@ -755,18 +757,17 @@
 
   <div class="welcome-other">
       <!-- <div class="fade-content active" id="div1"> -->
-      <div class="wel-nav-sky">
-          <div class="light-nav-haeder">
-              <img class="wel-light-nav" src="<?php echo base_url("docs/b.light-nav2.png"); ?>">
+      <div class="bg-nav-sky-other">
+          <img class="wel-g2-animation-cloud-1" src="<?php echo base_url("docs/b.wel-g2-cloud1.png"); ?>">
+          <img class="wel-g2-animation-cloud-2" src="<?php echo base_url("docs/b.wel-g2-cloud2.png"); ?>">
+          <img class="wel-g2-animation-cloud-3" src="<?php echo base_url("docs/b.wel-g2-cloud2.png"); ?>">
+          <img class="wel-g2-animation-cloud-4" src="<?php echo base_url("docs/b.wel-g2-cloud4.png"); ?>">
+          <div class="wel-text-other-all">
+              <img class="wel-text-other1" src="<?php echo base_url("docs/wel-text-other-1.png"); ?>">
+              <img class="wel-text-other2" src="<?php echo base_url("docs/wel-text-other-2.png"); ?>">
           </div>
       </div>
-
-      <div class="wel-nav-home"></div>
-      <img class="wel-g2-animation-cloud-1" src="<?php echo base_url("docs/b.wel-g2-cloud1.png"); ?>">
-      <img class="wel-g2-animation-cloud-2" src="<?php echo base_url("docs/b.wel-g2-cloud2.png"); ?>">
-      <img class="wel-g2-animation-cloud-3" src="<?php echo base_url("docs/b.wel-g2-cloud2.png"); ?>">
-      <img class="wel-g2-animation-cloud-4" src="<?php echo base_url("docs/b.wel-g2-cloud4.png"); ?>">
-
+      <div class="bg-nav-home-other"></div>
   </div>
   <div class="welcome-btm-other">
       <img class="dot-updown-animation-1" src="<?php echo base_url('docs/lightv2.png'); ?>" width="25" height="25">
@@ -779,10 +780,10 @@
       <img class="dot-updown-animation-8" src="<?php echo base_url('docs/lightv2.png'); ?>" width="15" height="15">
       <img class="dot-updown-animation-9" src="<?php echo base_url('docs/lightv2.png'); ?>" width="45" height="45">
       <img class="dot-updown-animation-10" src="<?php echo base_url('docs/lightv2.png'); ?>" width="65" height="65">
-      <div class="text-center" style="padding-top: 140px;">
+      <!-- <div class="text-center" style="padding-top: 140px;">
           <span class="font-welcome-btm-other1">องค์การบริหารส่วนตำบลบ้านกลาง</span>
           <span class="font-welcome-btm-other2">องค์การบริหารส่วนตำบลบ้านกลาง</span>
-      </div>
+      </div> -->
 
       <?php
         // ฟังก์ชัน setThaiMonth อยู่นอก foreach loop

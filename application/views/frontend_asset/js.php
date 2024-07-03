@@ -333,22 +333,19 @@
     //   ***************************************************************************************************************
 
     // ไฟลอยขึ้น หน้าเพิ่มเติม  ********************************************************************************
-    // ฟังก์ชั่นสุ่มเลขสำหรับการลอยขึ้น-ลง
-    function getRandomIntUpDown(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+    // function getRandomIntUpDown(min, max) {
+    //     return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
 
-    // ฟังก์ชั่นใช้แอนิเมชันลอยขึ้น-ลง
-    function applyRandomAnimationUpdown(element) {
-        const randomLeft = getRandomIntUpDown(0, 1900);
-        const randomDuration = getRandomIntUpDown(6, 10);
+    // function applyRandomAnimationUpdown(element) {
+    //     const randomLeft = getRandomIntUpDown(0, 1900);
+    //     const randomDuration = getRandomIntUpDown(6, 10);
 
-        element.style.left = `${randomLeft}px`;
-        element.style.animation = `fadeInOutDownUp ${randomDuration}s infinite`;
-    }
+    //     element.style.left = `${randomLeft}px`;
+    //     element.style.animation = `fadeInOutDownUp ${randomDuration}s infinite`;
+    // }
 
-    // นำฟังก์ชั่นไปใช้กับองค์ประกอบที่ต้องการลอยขึ้น-ลง
-    document.querySelectorAll('.dot-updown-animation-1, .dot-updown-animation-2, .dot-updown-animation-3, .dot-updown-animation-4, .dot-updown-animation-5, .dot-updown-animation-6, .dot-updown-animation-7, .dot-updown-animation-8, .dot-updown-animation-9, .dot-updown-animation-10').forEach(applyRandomAnimationUpdown);
+    // document.querySelectorAll('.dot-updown-animation-1, .dot-updown-animation-2, .dot-updown-animation-3, .dot-updown-animation-4, .dot-updown-animation-5, .dot-updown-animation-6, .dot-updown-animation-7, .dot-updown-animation-8, .dot-updown-animation-9, .dot-updown-animation-10').forEach(applyRandomAnimationUpdown);
 
     //   ********************************************************************************
 
@@ -562,33 +559,64 @@
     //   ********************************************************************************
 
     // สุ่มวิกระพริบ และแสดงผล ข่าวจัดซื้อจัดจ้าง  ********************************************************************************
-    // ฟังก์ชันสุ่มค่าในช่วงที่กำหนด
+    // ฟังก์ชันสำหรับสุ่มตัวเลขระหว่าง min และ max รวมถึงทั้ง min และ max
     function getRandomIntOther(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
-        // ฟังก์ชันเพื่อใช้แอนิเมชันอื่นๆ
-        function applyRandomAnimation(element, animationName) {
-            const randomLeft = getRandomIntOther(0, 1900); // ค่า left แบบสุ่ม
-            const randomDuration = getRandomIntOther(10, 15); // ระยะเวลาแอนิเมชันแบบสุ่ม
-            const randomDelay = getRandomIntOther(0, 5); // การหน่วงเวลาแบบสุ่ม
+    // ฟังก์ชันสำหรับใช้สุ่มตำแหน่งและแสดงผลการแอนิเมชัน
+    function applyRandomAnimation(element, animationName, randomDuration) {
+        const randomLeft = getRandomIntOther(0, 1900); // ค่า left แบบสุ่ม
+        const randomDelay = getRandomIntOther(0, 5); // การหน่วงเวลาแบบสุ่ม
 
-            // กำหนดตำแหน่งซ้าย
-            element.style.left = `${randomLeft}px`;
+        // กำหนดตำแหน่งซ้าย
+        element.style.left = `${randomLeft}px`;
 
-            // กำหนดแอนิเมชันใหม่โดยใช้การหน่วงเวลา
-            element.style.animation = `${animationName} ${randomDuration}s ${randomDelay}s infinite`;
-        }
+        // กำหนดแอนิเมชันใหม่โดยใช้การหน่วงเวลาและระยะเวลาที่สุ่ม
+        element.style.animation = `${animationName} ${randomDuration}s ${randomDelay}s infinite`;
+    }
 
-        // ใช้ฟังก์ชันกับองค์ประกอบใหม่
-        document.querySelectorAll('.wel-light-animation-1, .wel-light-animation-2, .wel-light-animation-3, .wel-light-animation-4, .wel-light-animation-5, .wel-light-animation-6, .wel-light-animation-7, .wel-light-animation-8, .wel-light-animation-9, .wel-light-animation-10').forEach(element => {
-            applyRandomAnimation(element, 'fadeTopInDownOut');
-        });
+    // เลือกองค์ประกอบที่ต้องการให้มีการแสดงผลแอนิเมชัน moveBall
+    document.querySelectorAll('.ball-animation').forEach(element => {
+        const randomDuration = getRandomIntOther(10, 15); // ระยะเวลาแอนิเมชันแบบสุ่ม
+        applyRandomAnimation(element, 'moveBall', randomDuration);
+    });
 
-        // ใช้ฟังก์ชันกับองค์ประกอบเดิม
-        document.querySelectorAll('.star-news-animation-1, .star-news-animation-2, .star-news-animation-3, .star-news-animation-4, .star-news-animation-5, .star-news-animation-6, .star-news-animation-7, .star-news-animation-8, .star-news-animation-9, .star-news-animation-10, .star-news-animation-11, .star-news-animation-12, .star-news-animation-13, .star-news-animation-14, .star-news-animation-15').forEach(element => {
-            applyRandomAnimation(element, 'fadeInOut');
-        });
+
+    // ฟังก์ชันสำหรับใช้สุ่มตำแหน่งและแสดงผลการแอนิเมชัน
+    function applyRandomAnimation(element, animationName, randomDuration) {
+        const randomLeft = getRandomIntOther(0, 1900); // ค่า left แบบสุ่ม
+        const randomDelay = getRandomIntOther(0, 10); // การหน่วงเวลาแบบสุ่ม
+
+        // กำหนดตำแหน่งซ้าย
+        element.style.left = `${randomLeft}px`;
+
+        // กำหนดแอนิเมชันใหม่โดยใช้การหน่วงเวลาและระยะเวลาที่สุ่ม
+        element.style.animation = `${animationName} ${randomDuration}s ${randomDelay}s infinite`;
+    }
+
+    // เลือกองค์ประกอบที่ต้องการให้มีการแสดงผลแอนิเมชัน movebaimai
+    document.querySelectorAll('.baimai-animation1, .baimai-animation2, .baimai-animation3, .baimai-animation4, .baimai-animation5, .baimai-animation6, .baimai-animation7').forEach(element => {
+        const randomDuration = getRandomIntOther(30, 50); // ระยะเวลาแอนิเมชันแบบสุ่ม
+        applyRandomAnimation(element, 'movebaimai', randomDuration);
+    });
+
+    // เลือกองค์ประกอบที่ต้องการให้มีการแสดงผลแอนิเมชัน fadeTopInDownOut
+    document.querySelectorAll('.wel-light-animation-1, .wel-light-animation-2, .wel-light-animation-3, .wel-light-animation-4, .wel-light-animation-5, .wel-light-animation-6, .wel-light-animation-7, .wel-light-animation-8, .wel-light-animation-9, .wel-light-animation-10').forEach(element => {
+        const randomDuration = getRandomIntOther(10, 15); // ระยะเวลาแอนิเมชันแบบสุ่ม
+        applyRandomAnimation(element, 'fadeTopInDownOut', randomDuration);
+    });
+
+    // เลือกองค์ประกอบที่ต้องการให้มีการแสดงผลแอนิเมชัน fadeInOut
+    document.querySelectorAll('.star-news-animation-1, .star-news-animation-2, .star-news-animation-3, .star-news-animation-4, .star-news-animation-5, .star-news-animation-6, .star-news-animation-7, .star-news-animation-8, .star-news-animation-9, .star-news-animation-10, .star-news-animation-11, .star-news-animation-12, .star-news-animation-13, .star-news-animation-14, .star-news-animation-15').forEach(element => {
+        const randomDuration = getRandomIntOther(6, 12); // ระยะเวลาแอนิเมชันแบบสุ่ม
+        applyRandomAnimation(element, 'fadeInOut', randomDuration);
+    });
+
+    document.querySelectorAll('.dot-updown-animation-1, .dot-updown-animation-2, .dot-updown-animation-3, .dot-updown-animation-4, .dot-updown-animation-5, .dot-updown-animation-6, .dot-updown-animation-7, .dot-updown-animation-8, .dot-updown-animation-9, .dot-updown-animation-10').forEach(element => {
+        const randomDuration = getRandomIntOther(6, 12); // ระยะเวลาแอนิเมชันแบบสุ่ม
+        applyRandomAnimation(element, 'fadeInOutDownUp', randomDuration);
+    });
     // ฟังก์ชั่นสุ่มเลขสำหรับแอนิเมชันอื่นๆ
     // function getRandomIntOther(min, max) {
     //     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -608,48 +636,47 @@
     //   ********************************************************************************
 
     // สุ่มวิกระพริบ และแสดงผล ข่าวประชาสัมพันธ์  ********************************************************************************
-       // ฟังก์ชันสุ่มค่าในช่วงที่กำหนด
-        // ฟังก์ชันสุ่มค่าในช่วงที่กำหนด
-        function getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
+    // ฟังก์ชันสุ่มค่าในช่วงที่กำหนด
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
-        // ฟังก์ชันสุ่มตำแหน่งขององค์ประกอบ
-        function randomizePosition(element) {
-            var maxWidth = window.innerWidth; // ขนาดความกว้างของหน้าจอปัจจุบัน
-            var maxHeight = window.innerHeight; // ขนาดความสูงของหน้าจอปัจจุบัน
+    // ฟังก์ชันสุ่มตำแหน่งขององค์ประกอบ
+    function randomizePosition(element) {
+        var maxWidth = window.innerWidth; // ขนาดความกว้างของหน้าจอปัจจุบัน
+        var maxHeight = window.innerHeight; // ขนาดความสูงของหน้าจอปัจจุบัน
 
-            var randomMarginLeft = getRandomInt(0, maxWidth - element.offsetWidth);
-            var randomMarginTop = getRandomInt(0, maxHeight - element.offsetHeight);
+        var randomMarginLeft = getRandomInt(0, maxWidth - element.offsetWidth);
+        var randomMarginTop = getRandomInt(0, maxHeight - element.offsetHeight);
 
-            element.style.marginLeft = randomMarginLeft + 'px';
-            element.style.marginTop = randomMarginTop + 'px';
-        }
+        element.style.marginLeft = randomMarginLeft + 'px';
+        element.style.marginTop = randomMarginTop + 'px';
+    }
 
-        // ฟังก์ชันสุ่มการหน่วงเวลาเริ่มต้นแอนิเมชัน
-        function randomizeAnimationDelay(element) {
-            var randomDelay = getRandomInt(0, 3); // สุ่มการหน่วงเวลาระหว่าง 0 ถึง 5 วินาที
-            element.style.animationDelay = randomDelay + 's';
-        }
+    // ฟังก์ชันสุ่มการหน่วงเวลาเริ่มต้นแอนิเมชัน
+    function randomizeAnimationDelay(element) {
+        var randomDelay = getRandomInt(0, 3); // สุ่มการหน่วงเวลาระหว่าง 0 ถึง 5 วินาที
+        element.style.animationDelay = randomDelay + 's';
+    }
 
-        // นำฟังก์ชันไปใช้กับองค์ประกอบที่ต้องการ
-        var animations = document.querySelectorAll('.wipwap');
-        animations.forEach(function(animation) {
-            // สุ่มการหน่วงเวลาแอนิเมชัน
-            randomizeAnimationDelay(animation);
+    // นำฟังก์ชันไปใช้กับองค์ประกอบที่ต้องการ
+    var animations = document.querySelectorAll('.wipwap');
+    animations.forEach(function(animation) {
+        // สุ่มการหน่วงเวลาแอนิเมชัน
+        randomizeAnimationDelay(animation);
 
-            // กำหนดค่าเริ่มต้น
-            randomizePosition(animation);
+        // กำหนดค่าเริ่มต้น
+        randomizePosition(animation);
 
-            // เพิ่ม event listener เพื่อตรวจสอบการเปลี่ยนแปลงของ opacity
-            animation.addEventListener('animationiteration', function() {
-                // ตั้งเวลาเพื่อให้เกิดการเปลี่ยนแปลงตำแหน่งเมื่อ opacity = 0
-                setTimeout(function() {
-                    randomizePosition(animation);
-                }, 1500); // 50% ของเวลาแอนิเมชัน 3s
-            });
+        // เพิ่ม event listener เพื่อตรวจสอบการเปลี่ยนแปลงของ opacity
+        animation.addEventListener('animationiteration', function() {
+            // ตั้งเวลาเพื่อให้เกิดการเปลี่ยนแปลงตำแหน่งเมื่อ opacity = 0
+            setTimeout(function() {
+                randomizePosition(animation);
+            }, 1500); // 50% ของเวลาแอนิเมชัน 3s
         });
-        // วิบวับคงที่
+    });
+    // วิบวับคงที่
     // function getRandomInt(min, max) {
     //     return Math.floor(Math.random() * (max - min + 1)) + min;
     // }

@@ -5,7 +5,7 @@
     <!-- Design by foolishdeveloper.com -->
     <link rel="icon" href="<?php echo base_url("docs/b-logo.png"); ?>" type="image/x-icon">
 
-    <title>องค์การบริหารส่วนตำบลบ้านกลาง</title>
+    <title>องค์การบริหารส่วนตำบลซับพุทรา</title>
     <!-- icon -->
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,7 +43,7 @@
 
         .bg {
             /* The image used */
-            background-image: url('<?php echo base_url("docs/b.bg-login1.png"); ?>');
+            background-image: url('<?php echo base_url("docs/bg-login.png"); ?>');
             /* width: 1920px; */
             /* height: 1000px; */
             /* Full height */
@@ -145,101 +145,140 @@
             line-height: normal;
         }
 
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .dot-news-animation {
-            position: absolute;
-            animation-name: blink;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-        }
-
         .dot-news-animation-1 {
-            width: 35px;
-            height: 35px;
-        }
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 370px; */
+    /* margin-left: 20px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-2 {
-            width: 15px;
-            height: 15px;
-        }
+  .dot-news-animation-2 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 720px; */
+    /* margin-left: 68px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-3 {
-            width: 25px;
-            height: 25px;
-        }
+  .dot-news-animation-3 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 40px; */
+    /* margin-left: 115px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-4 {
-            width: 25px;
-            height: 25px;
-        }
+  .dot-news-animation-4 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 120px; */
+    /* margin-left: 300px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-5 {
-            width: 35px;
-            height: 35px;
-        }
+  .dot-news-animation-5 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 732px; */
+    /* margin-left: 720px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-6 {
-            width: 50px;
-            height: 50px;
-        }
+  .dot-news-animation-6 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 423px; */
+    /* margin-left: 1030px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-7 {
-            width: 20px;
-            height: 20px;
-        }
+  .dot-news-animation-7 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 305px; */
+    /* margin-left: 1120px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-8 {
-            width: 20px;
-            height: 20px;
-        }
+  .dot-news-animation-8 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 717px; */
+    /* margin-left: 1180px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-9 {
-            width: 15px;
-            height: 15px;
-        }
+  .dot-news-animation-9 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 745px; */
+    /* margin-left: 1500px; */
+  }
 
-        .dot-news-animation-10 {
-            width: 50px;
-            height: 50px;
-        }
+  .dot-news-animation-10 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 730px; */
+    /* margin-left: 1740px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-11 {
-            width: 15px;
-            height: 15px;
-        }
+  .dot-news-animation-11 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 370px; */
+    /* margin-left: 1810px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-12 {
-            width: 25px;
-            height: 25px;
-        }
+  .dot-news-animation-12 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 60px; */
+    /* margin-left: 1880px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-13 {
-            width: 25px;
-            height: 25px;
-        }
+  .dot-news-animation-13 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 605px; */
+    /* margin-left: 1870px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-14 {
-            width: 20px;
-            height: 20px;
-        }
+  .dot-news-animation-14 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 605px; */
+    /* margin-left: 1870px; */
+    z-index: 1;
+  }
 
-        .dot-news-animation-15 {
-            width: 20px;
-            height: 20px;
-        }
+  .dot-news-animation-15 {
+    animation: blink-2 4s both infinite;
+    position: absolute;
+    /* margin-top: 605px; */
+    /* margin-left: 1870px; */
+    z-index: 1;
+  }
+
+  /* แสงวิบวับ fade in fade out  */
+  @-webkit-keyframes blink-2 {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+      /* ให้หายไปทั้งหมด */
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
         .slideshow-wrapper {
             display: flex;
@@ -409,22 +448,12 @@
 
 <body>
     <div class="bg">
-        <img class="dot-news-animation dot-news-animation-1" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-2" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-3" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-4" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-5" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-6" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-7" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-8" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-9" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-10" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-11" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-12" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-13" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-14" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-        <img class="dot-news-animation dot-news-animation-15" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-
+        <img class="wipwap dot-news-animation-1" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+        <img class="wipwap dot-news-animation-2" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+        <img class="wipwap dot-news-animation-3" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+        <img class="wipwap dot-news-animation-5" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+        <img class="wipwap dot-news-animation-6" src="<?php echo base_url('docs/anime-light-home2.png'); ?>">
+        <img class="wipwap dot-news-animation-15" src="<?php echo base_url('docs/anime-light-home2.png'); ?>">
         <div class="bg-content">
             <div class="logo-header">
                 <img src="<?php echo base_url("docs/logo.png"); ?>" width="180" height="180">
@@ -485,31 +514,41 @@
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    function randomizeAnimationDuration() {
-        var minSeconds = 1; // Minimum seconds
-        var maxSeconds = 6; // Maximum seconds
-        var randomSeconds = getRandomInt(minSeconds, maxSeconds);
-        return randomSeconds + 's';
-    }
-
+    // ฟังก์ชันสุ่มตำแหน่งขององค์ประกอบ
     function randomizePosition(element) {
-        var maxWidth = 1920; // กำหนดขนาดความกว้างสูงสุด 1920px
-        var maxHeight = 500; // กำหนดขนาดความสูงสูงสุด 1000px
+        var maxWidth = window.innerWidth; // ขนาดความกว้างของหน้าจอปัจจุบัน
+        var maxHeight = window.innerHeight; // ขนาดความสูงของหน้าจอปัจจุบัน
 
-        var randomMarginLeft = getRandomInt(0, maxWidth - element.width);
-        var randomMarginTop = getRandomInt(0, maxHeight - element.height);
+        var randomMarginLeft = getRandomInt(0, maxWidth - element.offsetWidth);
+        var randomMarginTop = getRandomInt(0, maxHeight - element.offsetHeight);
 
         element.style.marginLeft = randomMarginLeft + 'px';
         element.style.marginTop = randomMarginTop + 'px';
     }
 
-    window.onload = function() {
-        var animations = document.querySelectorAll('.dot-news-animation');
-        animations.forEach(function(animation) {
-            animation.style.animationDuration = randomizeAnimationDuration();
-            randomizePosition(animation);
-        });
+    // ฟังก์ชันสุ่มการหน่วงเวลาเริ่มต้นแอนิเมชัน
+    function randomizeAnimationDelay(element) {
+        var randomDelay = getRandomInt(0, 5); // สุ่มการหน่วงเวลาระหว่าง 0 ถึง 5 วินาที
+        element.style.animationDelay = randomDelay + 's';
     }
+
+    // นำฟังก์ชันไปใช้กับองค์ประกอบที่ต้องการ
+    var animations = document.querySelectorAll('.wipwap');
+    animations.forEach(function(animation) {
+        // สุ่มการหน่วงเวลาแอนิเมชัน
+        randomizeAnimationDelay(animation);
+
+        // กำหนดค่าเริ่มต้น
+        randomizePosition(animation);
+
+        // เพิ่ม event listener เพื่อตรวจสอบการเปลี่ยนแปลงของ opacity
+        animation.addEventListener('animationiteration', function() {
+            // ตั้งเวลาเพื่อให้เกิดการเปลี่ยนแปลงตำแหน่งเมื่อ opacity = 0
+            setTimeout(function() {
+                randomizePosition(animation);
+            }, 1500); // 50% ของเวลาแอนิเมชัน 3s
+        });
+    });
 
     let slideIndex = 0;
     let isDown = false;

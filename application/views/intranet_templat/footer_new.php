@@ -1,35 +1,29 @@
 </div>
 
 <div class="bg-link-other">
-    <img class="dot-news-animation-1" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-    <img class="dot-news-animation-2" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-    <img class="dot-news-animation-3" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-    <img class="dot-news-animation-4" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-    <img class="dot-news-animation-5" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-    <img class="dot-news-animation-6" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-    <img class="dot-news-animation-7" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-    <img class="dot-news-animation-8" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-    <img class="dot-news-animation-9" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-    <img class="dot-news-animation-10" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-    <img class="dot-news-animation-11" src="<?php echo base_url('docs/animation-star-3.png'); ?>">
-    <img class="dot-news-animation-12" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-    <img class="dot-news-animation-13" src="<?php echo base_url('docs/animation-star-1.png'); ?>">
-    <img class="dot-news-animation-14" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
-    <img class="dot-news-animation-15" src="<?php echo base_url('docs/animation-star-2.png'); ?>">
+    <img class="wipwap dot-news-animation-1" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+    <img class="wipwap dot-news-animation-2" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+    <img class="wipwap dot-news-animation-3" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+    <img class="wipwap dot-news-animation-5" src="<?php echo base_url('docs/anime-light-home1.png'); ?>">
+    <img class="wipwap dot-news-animation-6" src="<?php echo base_url('docs/anime-light-home2.png'); ?>">
+    <img class="wipwap dot-news-animation-15" src="<?php echo base_url('docs/anime-light-home2.png'); ?>">
     <div class="crop">
-        <div class="text-center" style="position: relative; z-index: 5; margin-left: -40px; padding-top: 130px;">
-            <span class="font-link">
-                องค์การบริหารส่วนตำบลบ้านกลาง อำเภอหล่มสัก จังหวัดเพชรบูรณ์ <br>
-                โทรศัพท์ 056-910-059 <a href="https://www.assystem.co.th/" target="_blank" class="underline" style="font-weight: 600; color: #fff !important;">www.ban-klang.go.th</a> e-mail: ban_klang@hotmail.com</span>
-
-            </span>
+        <div class="text-center" style="position: relative; z-index: 5; margin-left: -40px; padding-top: 95px;">
+            <span class="font-link">องค์การบริหารส่วนตำบลซับพุทรา เลขที่ 111 หมู่ 3 ถนนโคกยาว-บัววัฒนา ตำบลซับพุทรา อำเภอชนแดน จังหวัดเพชรบูรณ์ 67150<br>
+                โทรศัพท์ 056-713-895 </span>
         </div>
-        <img class="cloud-animation cloud-animation-1" src="<?php echo base_url('docs/animation-cloud.png'); ?>">
-        <img class="cloud-animation cloud-animation-2" src="<?php echo base_url('docs/animation-cloud.png'); ?>">
-        <img class="cloud-animation cloud-animation-3" src="<?php echo base_url('docs/animation-cloud.png'); ?>">
-        <img class="cloud-animation cloud-animation-4" src="<?php echo base_url('docs/animation-cloud.png'); ?>">
-        <img class="cloud-animation cloud-animation-5" src="<?php echo base_url('docs/animation-cloud.png'); ?>">
-        <img class="cloud-animation cloud-animation-6" src="<?php echo base_url('docs/animation-cloud.png'); ?>">
+        <div class="sun-cartoon-animation-other text-center">
+            <img class="wel-light-nav" src="<?php echo base_url('docs/sun-cartoon-animation.png'); ?>" width="144">
+        </div>
+        <img class="cloud-cartoon-animation-other cloud-cartoon-animation-1" src="<?php echo base_url('docs/animation-cloud-cartoon1.png'); ?>">
+        <img class="cloud-cartoon-animation-other cloud-cartoon-animation-2" src="<?php echo base_url('docs/animation-cloud-cartoon2.png'); ?>">
+        <img class="cloud-cartoon-animation-other cloud-cartoon-animation-3" src="<?php echo base_url('docs/animation-cloud-cartoon1.png'); ?>">
+        <img class="cloud-cartoon-animation-other cloud-cartoon-animation-4" src="<?php echo base_url('docs/animation-cloud-cartoon1.png'); ?>">
+        <img class="cloud-cartoon-animation-other cloud-cartoon-animation-5" src="<?php echo base_url('docs/animation-cloud-cartoon2.png'); ?>">
+
+        <img class="egg-anime egg-other-1" src="<?php echo base_url('docs/egg.png'); ?>">
+        <img class="egg-anime egg-other-2" src="<?php echo base_url('docs/egg.png'); ?>">
+        <img class="egg-anime egg-other-3" src="<?php echo base_url('docs/egg.png'); ?>">
     </div>
 </div>
 

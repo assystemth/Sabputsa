@@ -11,7 +11,7 @@
             <img src="<?= base_url('docs/logo.png'); ?>" alt="" width="64px" height="64px">
         </div>
 
-        <div class="sidebar-brand-text mx-3">อบต.<br>บ้านกลาง</div>
+        <div class="sidebar-brand-text mx-3">อบต.<br>ซับพุทรา</div>
     </a>
 
     <!-- Divider -->
@@ -99,8 +99,8 @@
                 <a class="collapse-item" href="<?php echo site_url('P_deputy_backend'); ?>">สำนักปลัด อบต.</a>
                 <a class="collapse-item" href="<?php echo site_url('P_treasury_backend'); ?>">กองคลัง</a>
                 <a class="collapse-item" href="<?php echo site_url('P_maintenance_backend'); ?>">กองช่าง</a>
-                <a class="collapse-item" href="<?php echo site_url('P_education_backend'); ?>">กองการศึกษา</a>
-                <a class="collapse-item" href="<?php echo site_url('P_public_backend'); ?>">กองสาธารณสุข</a>
+                <!-- <a class="collapse-item" href="<?php echo site_url('P_education_backend'); ?>">กองการศึกษา</a>
+                <a class="collapse-item" href="<?php echo site_url('P_public_backend'); ?>">กองสาธารณสุข</a> -->
                 <a class="collapse-item" href="<?php echo site_url('p_welfare_backend'); ?>">กองสวัสดิการ</a>
                 <a class="collapse-item" href="<?php echo site_url('p_learder_backend'); ?>">กำนันผู้ใหญ่บ้าน</a>
                 <a class="collapse-item" href="<?php echo site_url('p_audit_backend'); ?>">หน่วยตรวจสอบภายใน</a>
@@ -529,9 +529,14 @@
 
                 <!-- Nav Item - User Information -->
                 <li class="nav-item dropdown no-arrow">
+                    <?php
+                    $user_img = $this->session->userdata('m_img');
+                    $img_src = base_url('docs/img/' . (!empty($user_img) ? $user_img : 'default_user.png'));
+                    ?>
+
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $this->session->userdata('m_fname'); ?></span>
-                        <img class="img-profile rounded-circle" src="<?php echo base_url('docs/img/') . $this->session->userdata('m_img'); ?>">
+                        <img class="img-profile rounded-circle" src="<?php echo $img_src; ?>">
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -778,7 +783,7 @@
                     </li>
                 </a>
 
-                <a href="<?php echo site_url('P_education_backend'); ?>" class="link">
+                <!-- <a href="<?php echo site_url('P_education_backend'); ?>" class="link">
 
                     <li class="hide">
                         <span>ข้อมูลกองการศึกษา</span>
@@ -790,7 +795,7 @@
                     <li class="hide">
                         <span>ข้อมูลกองสวัสดิการ</span>
                     </li>
-                </a>
+                </a> -->
 
                 <a href="<?php echo site_url('p_welfare_backend'); ?>" class="link">
 

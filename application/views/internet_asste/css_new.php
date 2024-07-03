@@ -501,7 +501,7 @@
         background-size: 100% 1000px;
         /* ขนาดเต็ม 1920px x 600px */
         width: 1920px;
-        height: 600px;
+        height: 700px;
         /* แสดงความสูงที่คุณต้องการ */
         overflow: hidden;
         position: absolute;
@@ -509,20 +509,144 @@
         /* เริ่มจากด้านบน */
     }
 
-    .wel-nav-sky {
-        background-image: url('<?php echo base_url("docs/bg-nav-sky1.png"); ?>');
+    .bg-nav-sky-other {
+        background-image: url('<?php echo base_url("docs/bg-nav-sky-other.png"); ?>');
         position: absolute;
         background-repeat: no-repeat;
-        background-size: 100% 700px;
+        background-size: 100% 100%;
         /* ขนาดเต็ม 1920px x 600px */
         width: 1920px;
-        height: 534px;
+        height: 555px;
         /* แสดงความสูงที่คุณต้องการ */
         overflow: hidden;
         position: absolute;
         background-position: top;
         /* เริ่มจากด้านบน */
     }
+
+    .wel-g2-animation-cloud-1 {
+        position: absolute;
+        z-index: 1;
+        top: 25px;
+        animation: wel-g2-anima-cloud 40s linear infinite;
+        animation-delay: 12s;
+    }
+
+    .wel-g2-animation-cloud-2 {
+        position: absolute;
+        z-index: 1;
+        top: 15px;
+        animation: wel-g2-anima-cloud 35s linear infinite;
+        animation-delay: 8s;
+    }
+
+    .wel-g2-animation-cloud-3 {
+        position: absolute;
+        z-index: 1;
+        top: 15px;
+        animation: wel-g2-anima-cloud 35s linear infinite;
+        animation-delay: 5s;
+    }
+
+    .wel-g2-animation-cloud-4 {
+        position: absolute;
+        z-index: 1;
+        margin-top: 210px;
+        animation: wel-g2-anima-cloud 35s linear infinite;
+    }
+
+    @keyframes wel-g2-anima-cloud {
+        0% {
+            opacity: 0;
+            left: 0;
+            visibility: visible;
+
+        }
+
+        25% {
+            opacity: 1;
+            /* จุดเริ่มต้นของเมฆ */
+        }
+
+        75% {
+            opacity: 1;
+            /* จุดเริ่มต้นของเมฆ */
+        }
+
+        100% {
+            left: 100%;
+            opacity: 1;
+            /* จุดสิ้นสุดของเมฆ */
+        }
+    }
+
+    .wel-text-other-all {
+        position: relative;
+        height: 220px;
+    }
+
+    .wel-text-other1 {
+        position: absolute;
+        left: 33%;
+        transform: translateX(-33%);
+    }
+
+    .wel-text-other2 {
+        position: absolute;
+        left: 62%;
+        transform: translateX(-62%);
+        margin-top: -10px;
+    }
+
+    .wel-text-other1 {
+        animation: topToCenter 9s forwards;
+    }
+
+    @keyframes topToCenter {
+        0% {
+            opacity: 1;
+            top: -10%;
+            /* Start outside the top of the container */
+        }
+
+        50% {
+            top: 50%;
+            /* Move to the center */
+            opacity: 1;
+        }
+
+        100% {
+            top: 50%;
+            /* Stay in the center */
+            opacity: 1;
+        }
+    }
+
+    .wel-text-other2 {
+        animation: bottomToCenter 9s forwards;
+    }
+
+    @keyframes bottomToCenter {
+        0% {
+            opacity: 1;
+            top: 110%;
+            /* Start outside the bottom of the container */
+        }
+
+        50% {
+            top: 50%;
+            /* Move to the center */
+            opacity: 1;
+        }
+
+        100% {
+            top: 50%;
+            /* Stay in the center */
+            opacity: 1;
+        }
+    }
+
+
 
     .light-nav-haeder {
         /* background-color: #000; */
@@ -550,12 +674,15 @@
         }
     }
 
-    .wel-nav-home {
-        background-image: url('<?php echo base_url("docs/b.wel-home-center.png"); ?>');
+    .bg-nav-home-other {
+        background-image: url('<?php echo base_url("docs/bg-nav-home-other.png"); ?>');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         position: relative;
         z-index: 3;
         width: 1920px;
-        height: 534px;
+        height: 700px;
+        animation: zoomOut 9s forwards;
     }
 
     .wel-g2-animation-cloud-1 {
@@ -614,15 +741,16 @@
     }
 
     .welcome-btm-other {
-        background-image: url('<?php echo base_url("docs/b.welcome-btm-other3.png"); ?>');
+        background-image: url('<?php echo base_url("docs/welcome-btm-other2.png"); ?>');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         z-index: 3;
         width: 1920px;
-        height: 527px;
+        height: 384px;
         position: relative;
-        margin-top: 390px;
+        margin-top: 572px;
     }
+
 
     .dot-updown-animation-1,
     .dot-updown-animation-2,
@@ -651,18 +779,17 @@
     }
 
     .font-welcome-btm-other1 {
-        background: var(--Gold2, linear-gradient(90deg, #D9AA58 4.04%, #F2B940 27.1%, #DEAE3F 46.15%, #E0B344 52.16%, #E7C354 61.19%, #F2DE6F 70.21%, #FFFC8D 78.23%, #FFE875 82.24%, #FFD55E 88.25%, #AA7100 100.28%));
-        background-size: 1000% 1000%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 36px;
+        color: #3D3D16;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -webkit-text-stroke-width: 1;
+        -webkit-text-stroke-color: var(--, #FFF);
+        font-family: "Noto Looped Thai UI";
+        font-size: 48px;
         font-style: normal;
-        font-weight: 800;
+        font-weight: 600;
         line-height: normal;
-        z-index: 2;
-        position: relative;
-        animation: gradient-move-font 20s linear infinite;
+        /* animation: gradient-move-font 20s linear infinite; */
     }
 
     .font-welcome-btm-other2 {
@@ -788,17 +915,17 @@
     }
 
     .font-head-top {
-        color: #6C3A13;
+        color: #FFF;
         text-align: center;
-        font-family: "Noto Looped Thai";
+        font-family: "Noto Looped Thai UI";
         font-size: 36px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 50px;
-        /* 138.889% */
+        font-weight: 500;
+        line-height: 33.366px;
+        /* 92.682% */
         position: relative;
         z-index: 4;
-        padding-top: 45px;
+        padding-top: 55px;
     }
 
     /* .font-head-top1 {
@@ -1590,254 +1717,397 @@
     }
 
     .bg-link-other {
-    background-image: url('<?php echo base_url("docs/b.bg-footer-other.png"); ?>');
+        background-image: url('<?php echo base_url("docs/bg-link-other.png"); ?>');
     background-repeat: no-repeat;
     background-size: cover;
     height: 925px;
     width: 1920px;
     margin: auto;
-    z-index: 1;
-    /* นี้จะทำให้ element อยู่ตรงกลางตามแนวนอน */
-    /* margin-top: 200px; */
 
-  }
-
-  .dot-news-animation-1 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 370px; */
-    /* margin-left: 20px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-2 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 720px; */
-    /* margin-left: 68px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-3 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 40px; */
-    /* margin-left: 115px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-4 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 120px; */
-    /* margin-left: 300px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-5 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 732px; */
-    /* margin-left: 720px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-6 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 423px; */
-    /* margin-left: 1030px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-7 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 305px; */
-    /* margin-left: 1120px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-8 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 717px; */
-    /* margin-left: 1180px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-9 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 745px; */
-    /* margin-left: 1500px; */
-  }
-
-  .dot-news-animation-10 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 730px; */
-    /* margin-left: 1740px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-11 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 370px; */
-    /* margin-left: 1810px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-12 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 60px; */
-    /* margin-left: 1880px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-13 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 605px; */
-    /* margin-left: 1870px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-14 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 605px; */
-    /* margin-left: 1870px; */
-    z-index: 3;
-  }
-
-  .dot-news-animation-15 {
-    animation: blink-2 4s both infinite;
-    position: absolute;
-    /* margin-top: 605px; */
-    /* margin-left: 1870px; */
-    z-index: 3;
-  }
-
-  /* แสงวิบวับ fade in fade out  */
-  @-webkit-keyframes blink-2 {
-    0% {
-      opacity: 1;
     }
 
-    50% {
-      opacity: 0.1;
+    .dot-news-animation-1 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 370px; */
+        /* margin-left: 20px; */
+        z-index: 3;
     }
 
-    100% {
-      opacity: 1;
+    .dot-news-animation-2 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 720px; */
+        /* margin-left: 68px; */
+        z-index: 3;
     }
+
+    .dot-news-animation-3 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 40px; */
+        /* margin-left: 115px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-4 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 120px; */
+        /* margin-left: 300px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-5 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 732px; */
+        /* margin-left: 720px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-6 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 423px; */
+        /* margin-left: 1030px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-7 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 305px; */
+        /* margin-left: 1120px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-8 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 717px; */
+        /* margin-left: 1180px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-9 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 745px; */
+        /* margin-left: 1500px; */
+    }
+
+    .dot-news-animation-10 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 730px; */
+        /* margin-left: 1740px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-11 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 370px; */
+        /* margin-left: 1810px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-12 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 60px; */
+        /* margin-left: 1880px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-13 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 605px; */
+        /* margin-left: 1870px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-14 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 605px; */
+        /* margin-left: 1870px; */
+        z-index: 3;
+    }
+
+    .dot-news-animation-15 {
+        animation: blink-2 4s both infinite;
+        position: absolute;
+        /* margin-top: 605px; */
+        /* margin-left: 1870px; */
+        z-index: 3;
+    }
+
+    /* แสงวิบวับ fade in fade out  */
+    @-webkit-keyframes blink-2 {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .font-link {
+        color: #fff;
+        text-align: center;
+        font-family: "Noto Looped Thai UI";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 33.366px;
+        /* 139.024% */
+    }
+
+    @keyframes fadeinleftoutright {
+        0% {
+            left: -100px;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        5% {
+            left: 5%;
+            opacity: 0;
+            visibility: visible;
+        }
+
+        50% {
+            left: 50%;
+            opacity: 1;
+        }
+
+        90% {
+            left: 90%;
+            opacity: 0;
+        }
+
+        100% {
+            left: 100%;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .cloud-animation {
+        position: absolute;
+        white-space: nowrap;
+        animation: fadeinleftoutright 30s linear infinite;
+        z-index: 1;
+        visibility: hidden;
+    }
+
+    .cloud-animation-1 {
+        margin-top: -20px;
+    }
+
+    .cloud-animation-2 {
+        margin-top: 30px;
+        animation-delay: 2.5s;
+    }
+
+    .cloud-animation-3 {
+        margin-top: 95px;
+        animation-delay: 6s;
+    }
+
+    .cloud-animation-4 {
+        margin-top: -50px;
+        animation-delay: 7.9s;
+    }
+
+    .cloud-animation-5 {
+        margin-top: 100px;
+        animation-delay: 11.6s;
+    }
+
+    .cloud-animation-6 {
+        margin-top: 80px;
+        animation-delay: 15s;
+    }
+
+
+    .footer {
+        background-image: url('<?php echo base_url("docs/b.bg-bar-footer.png"); ?>');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 75px;
+        width: 1920px;
+        position: absolute;
+        z-index: 1;
+        padding-top: 25px;
+        padding-left: 350px;
+    }
+
+    .font-footer {
+        color: #fff;
+        text-align: center;
+
+        font-size: 20px;
+        font-style: normal;
+        line-height: 33.366px;
+        /* 178.571% */
+    }
+
+    .red-add {
+        color: red;
+    }
+
+    .sun-cartoon-animation-other {
+    z-index: 2;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 150px;
   }
 
-  .font-link {
-    color: #fff;
-    text-align: center;
-    font-family: "Noto Looped Thai UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 33.366px;
-    /* 139.024% */
-  }
-
-  @keyframes fadeinleftoutright {
-    0% {
-      left: -100px;
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    5% {
-      left: 5%;
-      opacity: 0;
-      visibility: visible;
-    }
-
-    50% {
-      left: 50%;
-      opacity: 1;
-    }
-
-    90% {
-      left: 90%;
-      opacity: 0;
-    }
-
-    100% {
-      left: 100%;
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-
-  .cloud-animation {
+  .cloud-cartoon-animation-other {
     position: absolute;
     white-space: nowrap;
-    animation: fadeinleftoutright 30s linear infinite;
+    animation: fadeinleftoutright 50s linear infinite;
     z-index: 1;
     visibility: hidden;
+    padding-top: 160px;
   }
 
-  .cloud-animation-1 {
-    margin-top: -20px;
+  .cloud-cartoon-animation {
+    position: absolute;
+    white-space: nowrap;
+    animation: fadeinleftoutright 50s linear infinite;
+    z-index: 1;
+    visibility: hidden;
+    /* ซ่อนภาพก่อนเริ่มแอนิเมชั่น */
   }
 
-  .cloud-animation-2 {
-    margin-top: 30px;
-    animation-delay: 2.5s;
+  .cloud-cartoon-animation-1 {
+    margin-top: 120px;
   }
 
-  .cloud-animation-3 {
-    margin-top: 95px;
-    animation-delay: 6s;
+  .cloud-cartoon-animation-2 {
+    margin-top: 50px;
+    animation-delay: 5s;
+
   }
 
-  .cloud-animation-4 {
-    margin-top: -50px;
-    animation-delay: 7.9s;
+  .cloud-cartoon-animation-3 {
+    margin-top: 140px;
+    animation-delay: 10s;
+
   }
 
-  .cloud-animation-5 {
-    margin-top: 100px;
-    animation-delay: 11.6s;
-  }
-
-  .cloud-animation-6 {
-    margin-top: 80px;
+  .cloud-cartoon-animation-4 {
+    margin-top: 60px;
     animation-delay: 15s;
+
   }
 
-  
-  .footer {
-    background-image: url('<?php echo base_url("docs/b.bg-bar-footer.png"); ?>');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 75px;
-    width: 1920px;
+  .cloud-cartoon-animation-5 {
+    margin-top: 160px;
+    animation-delay: 15.2s;
+  }
+
+  .egg-1{
     position: absolute;
     z-index: 1;
-    padding-top: 25px;
-    padding-left: 350px;
+    margin-top: 28.7%;
+    margin-left: 0.7%;
+    animation: sway-left 7s ease-in-out infinite; /* Add the sway animation */
+
+
+  }
+  .egg-2{
+    position: absolute;
+    z-index: 1;
+    margin-top: 29.5%;
+    margin-left: 21.9%;
+    animation: sway-left 7s ease-in-out infinite; /* Add the sway animation */
+
+  }
+  .egg-3{
+    position: absolute;
+    z-index: 1;
+    margin-top: 29.5%;
+    margin-left: 63%;
+    animation: sway-right 7s ease-in-out infinite; /* Add the sway animation */
+
+
+  }
+  .egg-4{
+    position: absolute;
+    z-index: 1;
+    margin-top: 28.2%;
+    margin-left: 80%;
+    animation: sway-right 7s ease-in-out infinite; /* Add the sway animation */
+
+
+  }
+  .egg-other-1{
+    position: absolute;
+    z-index: 1;
+    margin-top: 32.5%;
+    margin-left: 0.7%;
+    animation: sway-left 7s ease-in-out infinite; /* Add the sway animation */
+
+  }
+  .egg-other-2{
+    position: absolute;
+    z-index: 1;
+    margin-top: 33.3%;
+    margin-left: 21.9%;
+    animation-delay: 3s;
+    animation: sway-right 7s ease-in-out infinite; /* Add the sway animation */
+
+  }
+  .egg-other-3{
+    position: absolute;
+    z-index: 1;
+    margin-top: 33.3%;
+    margin-left: 63%;
+    animation: sway-left 7s ease-in-out infinite; /* Add the sway animation */
+
   }
 
-  .font-footer {
-    color: #fff;
-    text-align: center;
+  /* Keyframes for swaying */
+@keyframes sway-left {
+    0% {
+        transform: translateX(0); /* Start at original position */
+    }
+    25% {
+        transform: translateX(-10px); /* Move 10px to the left */
+    }
+ 
+    75% {
+        transform: translateX(10px); /* Move 10px to the right */
+    }
+    100% {
+        transform: translateX(0); /* Move back to original position */
+    }
+}
 
-    font-size: 20px;
-    font-style: normal;
-    line-height: 33.366px;
-    /* 178.571% */
-  }
-
-.red-add{
-    color: red;
+@keyframes sway-right {
+    0% {
+        transform: translateX(0); /* Start at original position */
+    }
+    25% {
+        transform: translateX(10px); /* Move 10px to the left */
+    }
+ 
+    75% {
+        transform: translateX(-10px); /* Move 10px to the right */
+    }
+    100% {
+        transform: translateX(0); /* Move back to original position */
+    }
 }
 </style>

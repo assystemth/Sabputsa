@@ -13,7 +13,7 @@
 <script src="https://kit.fontawesome.com/9d1d9a82d2.js" crossorigin="anonymous"></script> -->
     <link rel="icon" href="<?php echo base_url("docs/logo.png"); ?>" type="image/x-icon">
 
-    <title>องค์การบริหารส่วนตำบลบ้านกลาง - ระบบ Back office</title>
+    <title>องค์การบริหารส่วนตำบลซับพุทรา - ระบบ Back office</title>
     <!-- boostrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- icon -->
@@ -93,7 +93,7 @@
                                         } else {
                                             echo "ตำแหน่งไม่ถูกต้อง";
                                         }
-                                        
+
                                         ?>
                                     </span>
                                 </div>
@@ -110,7 +110,11 @@
     </a> -->
                             <div class="row">
                                 <div class="col-3" style="padding-left: 15px;">
-                                    <img class="img-profile rounded-circle" src="<?php echo base_url('docs/img/') . $this->session->userdata('m_img'); ?>">
+                                    <?php
+                                    $user_img = $this->session->userdata('m_img');
+                                    $img_src = base_url('docs/img/' . (!empty($user_img) ? $user_img : 'default_user.png'));
+                                    ?>
+                                    <img class="img-profile rounded-circle" src="<?php echo $img_src; ?>">
                                 </div>
                                 <div class="col-9">
                                     <span class="font-dropdown-name"><?php echo $this->session->userdata('m_fname'); ?>&nbsp;<?php echo $this->session->userdata('m_lname'); ?></span>
@@ -165,16 +169,17 @@
         </div>
         <div class="welcome-other">
             <!-- <div class="fade-content active" id="div1"> -->
-            <div class="wel-nav-sky">
-                <div class="light-nav-haeder">
-                    <img class="wel-light-nav" src="<?php echo base_url("docs/b.light-nav2.png"); ?>">
+            <div class="bg-nav-sky-other">
+                <img class="wel-g2-animation-cloud-1" src="<?php echo base_url("docs/b.wel-g2-cloud1.png"); ?>">
+                <img class="wel-g2-animation-cloud-2" src="<?php echo base_url("docs/b.wel-g2-cloud2.png"); ?>">
+                <img class="wel-g2-animation-cloud-3" src="<?php echo base_url("docs/b.wel-g2-cloud2.png"); ?>">
+                <img class="wel-g2-animation-cloud-4" src="<?php echo base_url("docs/b.wel-g2-cloud4.png"); ?>">
+                <div class="wel-text-other-all">
+                    <img class="wel-text-other1" src="<?php echo base_url("docs/wel-text-other-1.png"); ?>">
+                    <img class="wel-text-other2" src="<?php echo base_url("docs/wel-text-other-2.png"); ?>">
                 </div>
             </div>
-            <div class="wel-nav-home"></div>
-            <img class="wel-g2-animation-cloud-1" src="<?php echo base_url("docs/b.wel-g2-cloud1.png"); ?>">
-            <img class="wel-g2-animation-cloud-2" src="<?php echo base_url("docs/b.wel-g2-cloud2.png"); ?>">
-            <img class="wel-g2-animation-cloud-3" src="<?php echo base_url("docs/b.wel-g2-cloud2.png"); ?>">
-            <img class="wel-g2-animation-cloud-4" src="<?php echo base_url("docs/b.wel-g2-cloud4.png"); ?>">
+            <div class="bg-nav-home-other"></div>
         </div>
         <div class="welcome-btm-other">
             <img class="dot-updown-animation-1" src="<?php echo base_url('docs/lightv2.png'); ?>" width="25" height="25">
@@ -187,7 +192,7 @@
             <img class="dot-updown-animation-8" src="<?php echo base_url('docs/lightv2.png'); ?>" width="15" height="15">
             <img class="dot-updown-animation-9" src="<?php echo base_url('docs/lightv2.png'); ?>" width="45" height="45">
             <img class="dot-updown-animation-10" src="<?php echo base_url('docs/lightv2.png'); ?>" width="65" height="65">
-            <div class="text-center" style="padding-top: 150px;">
-                <span class="font-welcome-btm-other1">องค์การบริหารส่วนตำบลบ้านกลาง</span>
-                <span class="font-welcome-btm-other2">องค์การบริหารส่วนตำบลบ้านกลาง</span>
-            </div>
+            <!-- <div class="text-center" style="padding-top: 140px;">
+          <span class="font-welcome-btm-other1">องค์การบริหารส่วนตำบลบ้านกลาง</span>
+          <span class="font-welcome-btm-other2">องค์การบริหารส่วนตำบลบ้านกลาง</span>
+      </div> -->

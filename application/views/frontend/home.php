@@ -10,7 +10,7 @@
 <?php } ?>
 
 <div id="messenger-icon">
-    <a href="" target="_blank">
+    <a href="https://m.me/1509021309342485" target="_blank">
         <img src="<?php echo base_url('docs/messenger_facebook.png'); ?>" alt="Messenger Icon">
     </a>
     <span class="tooltip">Messenger</span>
@@ -31,43 +31,49 @@
             </div>
         </div>
         <div class="col-8">
-            <div class="wel-navbar-list">
+            <div class="wel-navbar-list underline">
                 <a href="#">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-home.png'); ?>">
+                        <img src="<?php echo base_url('docs/menubar-home.png'); ?>" width="65" >
                         <span class="font-text-icon-wel">หน้าหลัก</span>
+                    </div>
+                </a>
+                <a href="#activity">
+                    <div class="navbar-item">
+                        <img src="<?php echo base_url('docs/menubar-activity.png'); ?>"width="65" >
+                        <span class="font-text-icon-wel">กิจกรรม</span>
                     </div>
                 </a>
                 <a href="#egp">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-egp.png'); ?>">
+                        <img src="<?php echo base_url('docs/menubar-egp.png'); ?>"width="65" >
                         <span class="font-text-icon-wel">ข่าว e-GP</span>
                     </div>
                 </a>
                 <a href="#oss">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-eservice.png'); ?>">
+                        <img src="<?php echo base_url('docs/menubar-eservice.png'); ?>"width="65" >
                         <span class="font-text-icon-wel">e-Service</span>
                     </div>
                 </a>
-                <a href="https://www.facebook.com/people/%E0%B8%AD%E0%B8%9A%E0%B8%95-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87-%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B8%81-%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C/pfbid0QrCQ8hnZV1Sgw1kosgKZX6y8aUHMWBA6EEs9k8mHvF7Wp4f8cbxbvhCkVHho3iRRl/" target="_blank">
+                <!-- <a href="https://www.facebook.com/people/%E0%B8%AD%E0%B8%9A%E0%B8%95-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87-%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B8%81-%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C/pfbid0QrCQ8hnZV1Sgw1kosgKZX6y8aUHMWBA6EEs9k8mHvF7Wp4f8cbxbvhCkVHho3iRRl/" target="_blank">
                     <div class="navbar-item">
                         <img src="<?php echo base_url('docs/menubar-facebook.png'); ?>">
                         <span class="font-text-icon-wel">FACEBOOK</span>
-                    </div>
+                    </div> -->
                 </a>
                 <a href="https://webmail.ban-klang.go.th/" target="_blank">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-email.png'); ?>">
+                        <img src="<?php echo base_url('docs/menubar-email.png'); ?>"width="65" >
                         <span class="font-text-icon-wel">E-Mail</span>
                     </div>
                 </a>
-                <a href="<?php echo site_url('Pages/contact'); ?>" target="_blank">
+                <!-- <a href="<?php echo site_url('Pages/contact'); ?>" target="_blank">
                     <div class="navbar-item">
                         <img src="<?php echo base_url('docs/menubar-contact.png'); ?>">
                         <span class="font-text-icon-wel">ติดต่อเรา</span>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
@@ -480,7 +486,7 @@
     </div>
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 10px;">
-            <div class="head-activity">
+            <div class="head-activity" >
                 <span class="font-header-home">ข่าวสาร / กิจกรรม</span>
             </div>
         </div>
@@ -564,12 +570,7 @@
     </div>
 </div>
 <div class="bg-public-news">
-    <img class="wipwap dot-news-animation-1" src="docs/anime-light-home1.png">
-    <img class="wipwap dot-news-animation-2" src="docs/anime-light-home1.png">
-    <img class="wipwap dot-news-animation-3" src="docs/anime-light-home1.png">
-    <img class="wipwap dot-news-animation-5" src="docs/anime-light-home1.png">
-    <img class="wipwap dot-news-animation-6" src="docs/anime-light-home2.png">
-    <img class="wipwap dot-news-animation-15" src="docs/anime-light-home2.png">
+     
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 3%;">
             <div class="head-activity">
@@ -836,6 +837,17 @@
     <img class="wipwap dot-news-animation-5" src="docs/anime-light-home1.png">
     <img class="wipwap dot-news-animation-6" src="docs/anime-light-home2.png">
     <img class="wipwap dot-news-animation-15" src="docs/anime-light-home2.png">
+
+    <div class="baimai-container">
+    <img class="baimai-animation baimai-animation1" src="docs/baimai-animation1.png" alt="Ball 1">
+    <img class="baimai-animation baimai-animation2" src="docs/baimai-animation2.png" alt="Ball 2">
+    <img class="baimai-animation baimai-animation3" src="docs/baimai-animation3.png" alt="Ball 3">
+    <img class="baimai-animation baimai-animation4" src="docs/baimai-animation4.png" alt="Ball 4">
+    <img class="baimai-animation baimai-animation5" src="docs/baimai-animation5.png" alt="Ball 5">
+    <img class="baimai-animation baimai-animation6" src="docs/baimai-animation6.png" alt="Ball 6">
+    <img class="baimai-animation baimai-animation7" src="docs/baimai-animation7.png" alt="Ball 7">
+</div>
+
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 3%; ">
             <div class="head-activity">
@@ -1712,6 +1724,11 @@
         <img class="cloud-cartoon-animation cloud-cartoon-animation-3" src="docs/animation-cloud-cartoon1.png">
         <img class="cloud-cartoon-animation cloud-cartoon-animation-4" src="docs/animation-cloud-cartoon1.png">
         <img class="cloud-cartoon-animation cloud-cartoon-animation-5" src="docs/animation-cloud-cartoon2.png">
+      
+        <img class="egg-anime egg-1" src="<?php echo base_url('docs/egg.png'); ?>">
+        <img class="egg-anime egg-2" src="<?php echo base_url('docs/egg.png'); ?>">
+        <img class="egg-anime egg-3" src="<?php echo base_url('docs/egg.png'); ?>">
+        <img class="egg-anime egg-4" src="<?php echo base_url('docs/egg.png'); ?>">
         <!-- <div class="link-footer">
             <span class="font-footer2 underline">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle-fill" viewBox="0 0 16 16">

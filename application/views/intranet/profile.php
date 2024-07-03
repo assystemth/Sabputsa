@@ -82,7 +82,9 @@
                                     <div class="col-sm-3 control-label">โปรไฟล์</div>
                                     <div class="col-sm-5">
                                         ภาพเก่า <br>
-                                        <img src="<?= base_url('docs/img/' . $rsedit->m_img); ?>" width="220px" height="180">
+                                        <?php $img_path = !empty($rsedit->m_img) ? 'docs/img/' . $rsedit->m_img : 'docs/img/default_user.png';
+                                        ?>
+                                        <img src="<?= base_url($img_path); ?>" width="220px" height="180">
                                         <br>
                                         เลือกใหม่
                                         <br>
