@@ -1280,7 +1280,7 @@
         </div>
     </div>
     <div class="d-flex justify-content-center" style="margin-left: 45%;">
-        <span class="font-notify-home">หมายเหตุ อ้างอิงแหล่งที่มาจาก กรมส่งเสริมการปกครองส่วนท้องถิ่น  <a href="https://www.dla.go.th/" target="_blank">(https://www.dla.go.th/)</a></span>
+        <span class="font-notify-home">หมายเหตุ อ้างอิงแหล่งที่มาจาก กรมส่งเสริมการปกครองส่วนท้องถิ่น จังหวัดเพรชบูรณ์  <a href="http://www.phetchabunlocal.go.th/" target="_blank">(http://www.phetchabunlocal.go.th/)</a></span>
     </div>
 </div>
 
