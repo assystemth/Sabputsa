@@ -590,7 +590,7 @@
                         <span class="font-public-button">ข้อบัญญัติ</span>
                     </div>
                 </div>
-                <div class="tab-link-two">
+                <div class="tab-link-two" onclick="openTabTwo('tabtwo3')">
                     <!-- <img src="docs/public_button.png" alt="Tab 3"> -->
                     <div class="public-button">
                         <span class="font-public-button">คำสั่ง</span>
