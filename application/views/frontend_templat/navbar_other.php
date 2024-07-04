@@ -356,7 +356,7 @@
                           <a href="<?php echo site_url('Pages/pbsv_cjc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ยุติธรรมชุมชน</span></a></a>
                           <a href="<?php echo site_url('Pages/pbsv_cac'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ช่วยเหลือประชาชน</span></a></a>
                           <a href="<?php echo site_url('Pages/pbsv_cig'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารทางราชการ</span></a></a>
-                          <a href="https://www.oic.go.th/INFOCENTER78/7852/" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</span></a></a>
+                          <a href="#" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</span></a></a>
                           <a href="<?php echo site_url('Pages/pbsv_ahs'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หลักประกันสุขภาพตำบล</span></a></a>
                           <a href="<?php echo site_url('Pages/odata'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ฐานข้อมูลเปิดภาครัฐ (Open Data)</span></a></a>
                           <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยกระดับเจตจำนงทางการเมืองในการต่อต้านการทุจริต</span></a></a>
@@ -623,7 +623,7 @@
                               <a href="<?php echo site_url('Pages/pbsv_cjc'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ยุติธรรมชุมชน</span></a></a>
                               <a href="<?php echo site_url('Pages/pbsv_cac'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ช่วยเหลือประชาชน</span></a></a>
                               <a href="<?php echo site_url('Pages/pbsv_cig'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารทางราชการ</span></a></a>
-                              <a href="https://www.oic.go.th/INFOCENTER78/7852/" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</span></a></a>
+                              <a href="#" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</span></a></a>
                               <a href="<?php echo site_url('Pages/pbsv_ahs'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;หลักประกันสุขภาพตำบล</span></a></a>
                               <a href="<?php echo site_url('Pages/odata'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ฐานข้อมูลเปิดภาครัฐ (Open Data)</span></a></a>
                               <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยกระดับเจตจำนงทางการเมืองในการต่อต้านการทุจริต</span></a></a>

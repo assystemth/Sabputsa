@@ -1,5 +1,5 @@
 <div class="text-center pages-head">
-    <span class="font-pages-head">หลักประกันสุขภาพตำบลสว่าง</span>
+    <span class="font-pages-head">หลักประกันสุขภาพตำบล</span>
 </div>
 </div>
 
