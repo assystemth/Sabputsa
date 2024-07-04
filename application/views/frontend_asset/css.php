@@ -4667,6 +4667,8 @@
     background-repeat: no-repeat;
     width: 282px;
     height: 566px;
+    padding-left: 21px;
+    padding-top: 85px;
   }
 
   .bg-view {

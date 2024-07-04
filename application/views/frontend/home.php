@@ -1674,7 +1674,7 @@
                 </div>
                 <div class="col-3">
                     <div class="bg-facebook">
-                        <div class="fb-page" data-href="https://www.facebook.com/people/%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%8B%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%B2/100064917631107/" data-tabs="timeline" data-width="241" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100064917631107" data-tabs="timeline" data-width="247" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100064917631107" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100064917631107">องค์การบริหารส่วนตำบลซับพุทรา</a></blockquote></div>
                     </div>
                 </div>
             </div>
