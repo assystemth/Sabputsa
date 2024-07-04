@@ -2,7 +2,7 @@
 ?>
     <div class="image-slide-stick-mid">
 
-        <a href="https://itas.nacc.go.th/go/eit/6bq910" target="_blank" rel="noopener noreferrer">
+        <a href="https://itas.nacc.go.th/go/eit/pvzgf9" target="_blank" rel="noopener noreferrer">
             <img src="<?php echo base_url('docs/img/' . $rs->publicize_ita_img); ?>">
         </a>
         <img src="docs/eit-slide-close.png" class="close-button-slide-mid" onclick="closeImageSlideMid()">
@@ -322,7 +322,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://itas.nacc.go.th/go/iit/6bq910" target="_blank">
+                        <a href="https://itas.nacc.go.th/go/iit/pvzgf9" target="_blank">
                             <div class="banner-button-green">
                                 <div class="row">
                                     <div class="col-3 six-menu-left">
@@ -334,7 +334,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://itas.nacc.go.th/go/eit/6bq910" target="_blank">
+                        <a href="https://itas.nacc.go.th/go/eit/pvzgf9" target="_blank">
                             <div class="banner-button-green">
                                 <div class="row">
                                     <div class="col-3 six-menu-left">
