@@ -45,7 +45,7 @@
       li a,
       .dropbtn {
           display: inline-block;
-          color: white;
+          color: #00494F;
           text-align: center;
           padding: 14px 16px;
           text-decoration: none;

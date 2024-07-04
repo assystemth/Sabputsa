@@ -4921,12 +4921,12 @@
   }
 
   .font-nav {
-    color: #FFF;
+    color: #00494F;
     font-size: 22px;
   }
 
   .font-nav:hover {
-    color: #696969;
+    color: #fff;
     font-size: 22px;
   }
 

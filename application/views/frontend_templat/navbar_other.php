@@ -46,7 +46,7 @@
       li a,
       .dropbtn {
           display: inline-block;
-          color: white;
+          color: #00494F;
           text-align: center;
           padding: 14px 16px;
           text-decoration: none;
@@ -553,7 +553,7 @@
   <div class="d-flex justify-content-end">
       <div style="position: absolute; margin-top:25px; z-index: 100;">
           <!-- <img src="<?php echo base_url("docs/s.navbar-fixed.png"); ?>"> -->
-          <ul style="font-size: 24px;">
+          <ul style="font-size: 24px;"> 
               <li><a href="<?php echo site_url('Home'); ?>" style="color: #00494F;">หน้าหลัก</a></li>
               <li class="dropdown">
                   <a href="javascript:void(0)" class="dropbtn" style="color: #00494F;">ข้อมูลทั่วไป</a>
