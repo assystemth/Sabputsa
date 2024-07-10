@@ -7042,36 +7042,28 @@
 
   /** ************************************************************************ */
 
-  .bg-messenger {
-    background-image: url('<?php echo base_url("docs/messenger.png"); ?>');
-    left: 10px;
-    width: 100px;
-    height: 101px;
+  .messenger-container {
     position: fixed;
     bottom: 190px;
+    left: 10px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+  }
+
+  .bg-messenger {
+    background-image: url('<?php echo base_url("docs/messenger.png"); ?>');
+    width: 100px;
+    height: 101px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    transition: background-image 0.6s ease;
-    z-index: 999;
+    transition: transform 0.3s ease, background-image 0.6s ease;
   }
 
   .bg-messenger:hover {
     background-image: url('<?php echo base_url("docs/messenger_hover.png"); ?>');
-    left: 10px;
-    width: 100px;
-    height: 101px;
-    position: fixed;
-    bottom: 190px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    transition: background-image 0.6s ease;
-    z-index: 999;
   }
 
   .font-messenger {
@@ -7097,13 +7089,14 @@
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease;
-    /* เพิ่ม transition เพื่อให้เอฟเฟกต์นุ่มนวล */
+    z-index: 1000;
+    /* เพิ่ม z-index */
   }
 
   .close-button-slide-messenger:hover {
     background-image: url('docs/close_messenger_hover.png');
-    /* เปลี่ยน background-image เมื่อ hover */
   }
+
 
   #messenger-icon {
     position: fixed;

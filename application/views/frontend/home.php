@@ -15,12 +15,16 @@
     </a>
     <span class="tooltip">Messenger</span>
 </div> -->
-<a href="https://m.me/1509021309342485" target="_blank">
-    <div class="bg-messenger underline">
-        <span class="font-messenger">แชทเลย</span>
-        <div class="close-button-slide-messenger" onclick="closeImageSlideMid()"></div>
-    </div>
-</a>
+<div class="messenger-container underline">
+    <a href="https://m.me/1509021309342485" target="_blank">
+        <div class="bg-messenger">
+            <span class="font-messenger">แชทเลย</span>
+        </div>
+    </a>
+    <div class="close-button-slide-messenger" onclick="closeImageSlideMid()"></div>
+</div>
+
+
 
 
 <!-- <div class="welcome" ></div> -->

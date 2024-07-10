@@ -1168,6 +1168,6 @@
     }
 
     function closeImageSlideMid() {
-        document.querySelector('.bg-messenger').style.display = 'none';
+        document.querySelector('.messenger-container').style.display = 'none';
     }
 </script>
