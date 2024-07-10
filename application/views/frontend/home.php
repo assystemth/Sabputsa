@@ -9,12 +9,18 @@
     </div>
 <?php } ?>
 
-<div id="messenger-icon">
+<!-- <div id="messenger-icon">
     <a href="https://m.me/1509021309342485" target="_blank">
         <img src="<?php echo base_url('docs/messenger_facebook.png'); ?>" alt="Messenger Icon">
     </a>
     <span class="tooltip">Messenger</span>
-</div>
+</div> -->
+<a href="https://m.me/1509021309342485" target="_blank">
+    <div class="bg-messenger underline">
+        <span class="font-messenger">แชทเลย</span>
+        <div class="close-button-slide-messenger" onclick="closeImageSlideMid()"></div>
+    </div>
+</a>
 
 
 <!-- <div class="welcome" ></div> -->
@@ -133,7 +139,7 @@
                     <img src="docs/wel-g1-bird.gif">
                 </div>
 
-                <div class="row" style="margin-top: 40px;" >
+                <div class="row" style="margin-top: 40px;">
                     <div class="col-6">
                         <div class="wel-image-container text-center" style="margin-left: -580px;">
                             <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
@@ -174,26 +180,26 @@
                         มุ่งพัฒนาแหล่งท่องเที่ยวให้มีชื่อเสียง ”</span>
                 </div>
 
-                <div class="row" style="margin-top: 350px;" >
-                <div class="col-6">
-                    <div class="wel-image-container text-center" style="margin-left: -580px;">
-                        <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
-                            <img src="docs/wel-mark-travel1.png" alt="Map">
-                        </a>
-                        <span class="wel-font-travel">ภูเขาหินปะการัง</span><br>
+                <div class="row" style="margin-top: 350px;">
+                    <div class="col-6">
+                        <div class="wel-image-container text-center" style="margin-left: -580px;">
+                            <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
+                                <img src="docs/wel-mark-travel1.png" alt="Map">
+                            </a>
+                            <span class="wel-font-travel">ภูเขาหินปะการัง</span><br>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="wel-image-container text-center" style="margin-left: 340px;">
-                        <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
-                            <img src="docs/wel-mark-travel2.png" alt="Map">
-                        </a>
-                        <span class="wel-font-travel">อ่างเก็บน้ำซับเจริญ</span><br>
+                    <div class="col-6">
+                        <div class="wel-image-container text-center" style="margin-left: 340px;">
+                            <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
+                                <img src="docs/wel-mark-travel2.png" alt="Map">
+                            </a>
+                            <span class="wel-font-travel">อ่างเก็บน้ำซับเจริญ</span><br>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-           
+
         </div>
     </div>
 </div>

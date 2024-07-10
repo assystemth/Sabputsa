@@ -1166,4 +1166,8 @@
     function closeImageSlideMid() {
         document.querySelector('.image-slide-stick-mid').style.display = 'none';
     }
+
+    function closeImageSlideMid() {
+        document.querySelector('.bg-messenger').style.display = 'none';
+    }
 </script>

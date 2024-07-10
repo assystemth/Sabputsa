@@ -6845,7 +6845,7 @@
   }
 
   .wel-navbar-list {
-    margin-top: 70px; 
+    margin-top: 70px;
     margin-left: -16px;
     display: flex;
     flex-direction: column;
@@ -6863,9 +6863,11 @@
   }
 
   .navbar-item:hover .font-text-icon-wel {
-    color: #214A1B; /* เปลี่ยนสีของข้อความเมื่อ hover */
-    transition: color 0.5s ease; /* เพิ่มการเปลี่ยนสีอย่างนุ่มนวล */
-}
+    color: #214A1B;
+    /* เปลี่ยนสีของข้อความเมื่อ hover */
+    transition: color 0.5s ease;
+    /* เพิ่มการเปลี่ยนสีอย่างนุ่มนวล */
+  }
 
   /* .navbar-item:hover {
     transform: scale(1.10);
@@ -7040,6 +7042,69 @@
 
   /** ************************************************************************ */
 
+  .bg-messenger {
+    background-image: url('<?php echo base_url("docs/messenger.png"); ?>');
+    left: 10px;
+    width: 100px;
+    height: 101px;
+    position: fixed;
+    bottom: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transition: background-image 0.6s ease;
+    z-index: 999;
+  }
+
+  .bg-messenger:hover {
+    background-image: url('<?php echo base_url("docs/messenger_hover.png"); ?>');
+    left: 10px;
+    width: 100px;
+    height: 101px;
+    position: fixed;
+    bottom: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transition: background-image 0.6s ease;
+    z-index: 999;
+  }
+
+  .font-messenger {
+    color: #3454A5;
+    text-align: center;
+    font-family: "Noto Looped Thai";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 150px;
+  }
+
+  .close-button-slide-messenger {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    background-image: url('docs/close_messenger.png');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+    /* เพิ่ม transition เพื่อให้เอฟเฟกต์นุ่มนวล */
+  }
+
+  .close-button-slide-messenger:hover {
+    background-image: url('docs/close_messenger_hover.png');
+    /* เปลี่ยน background-image เมื่อ hover */
+  }
+
   #messenger-icon {
     position: fixed;
     bottom: 70px;
@@ -7183,11 +7248,12 @@
     height: 220px;
   }
 
-  .wel-text-other1{
+  .wel-text-other1 {
     position: absolute;
     left: 33%;
     transform: translateX(-33%);
   }
+
   .wel-text-other2 {
     position: absolute;
     left: 62%;
@@ -7243,101 +7309,126 @@
     }
   }
 
-  .egg-1{
+  .egg-1 {
     position: absolute;
     z-index: 1;
     margin-top: 28.7%;
     margin-left: 0.7%;
-    animation: sway-left 7s ease-in-out infinite; /* Add the sway animation */
+    animation: sway-left 7s ease-in-out infinite;
+    /* Add the sway animation */
 
 
   }
-  .egg-2{
+
+  .egg-2 {
     position: absolute;
     z-index: 1;
     margin-top: 29.5%;
     margin-left: 21.9%;
-    animation: sway-left 7s ease-in-out infinite; /* Add the sway animation */
+    animation: sway-left 7s ease-in-out infinite;
+    /* Add the sway animation */
 
   }
-  .egg-3{
+
+  .egg-3 {
     position: absolute;
     z-index: 1;
     margin-top: 29.5%;
     margin-left: 63%;
-    animation: sway-right 7s ease-in-out infinite; /* Add the sway animation */
+    animation: sway-right 7s ease-in-out infinite;
+    /* Add the sway animation */
 
 
   }
-  .egg-4{
+
+  .egg-4 {
     position: absolute;
     z-index: 1;
     margin-top: 28.2%;
     margin-left: 80%;
-    animation: sway-right 7s ease-in-out infinite; /* Add the sway animation */
+    animation: sway-right 7s ease-in-out infinite;
+    /* Add the sway animation */
 
 
   }
-  .egg-other-1{
+
+  .egg-other-1 {
     position: absolute;
     z-index: 1;
     margin-top: 32.5%;
     margin-left: 0.7%;
-    animation: sway-left 7s ease-in-out infinite; /* Add the sway animation */
+    animation: sway-left 7s ease-in-out infinite;
+    /* Add the sway animation */
 
   }
-  .egg-other-2{
+
+  .egg-other-2 {
     position: absolute;
     z-index: 1;
     margin-top: 33.3%;
     margin-left: 21.9%;
     animation-delay: 3s;
-    animation: sway-right 7s ease-in-out infinite; /* Add the sway animation */
+    animation: sway-right 7s ease-in-out infinite;
+    /* Add the sway animation */
 
   }
-  .egg-other-3{
+
+  .egg-other-3 {
     position: absolute;
     z-index: 1;
     margin-top: 33.3%;
     margin-left: 63%;
-    animation: sway-left 7s ease-in-out infinite; /* Add the sway animation */
+    animation: sway-left 7s ease-in-out infinite;
+    /* Add the sway animation */
 
   }
 
   /* Keyframes for swaying */
-@keyframes sway-left {
+  @keyframes sway-left {
     0% {
-        transform: translateX(0); /* Start at original position */
+      transform: translateX(0);
+      /* Start at original position */
     }
-    25% {
-        transform: translateX(-10px); /* Move 10px to the left */
-    }
- 
-    75% {
-        transform: translateX(10px); /* Move 10px to the right */
-    }
-    100% {
-        transform: translateX(0); /* Move back to original position */
-    }
-}
 
-@keyframes sway-right {
+    25% {
+      transform: translateX(-10px);
+      /* Move 10px to the left */
+    }
+
+    75% {
+      transform: translateX(10px);
+      /* Move 10px to the right */
+    }
+
+    100% {
+      transform: translateX(0);
+      /* Move back to original position */
+    }
+  }
+
+  @keyframes sway-right {
     0% {
-        transform: translateX(0); /* Start at original position */
+      transform: translateX(0);
+      /* Start at original position */
     }
-    25% {
-        transform: translateX(10px); /* Move 10px to the left */
-    }
- 
-    75% {
-        transform: translateX(-10px); /* Move 10px to the right */
-    }
-    100% {
-        transform: translateX(0); /* Move back to original position */
-    }
-}
 
-.btn-queue {
+    25% {
+      transform: translateX(10px);
+      /* Move 10px to the left */
+    }
+
+    75% {
+      transform: translateX(-10px);
+      /* Move 10px to the right */
+    }
+
+    100% {
+      transform: translateX(0);
+      /* Move back to original position */
+    }
+  }
+
+  .btn-queue {
     background-image: url('<?php echo base_url("docs/btn-queue.png"); ?>');
     width: 140px;
     height: 50px;
