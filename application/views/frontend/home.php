@@ -34,25 +34,25 @@
             <div class="wel-navbar-list underline">
                 <a href="#">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-home.png'); ?>" width="65" >
+                        <img src="<?php echo base_url('docs/menubar-home.png'); ?>" width="65">
                         <span class="font-text-icon-wel">หน้าหลัก</span>
                     </div>
                 </a>
                 <a href="#activity">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-activity.png'); ?>"width="65" >
+                        <img src="<?php echo base_url('docs/menubar-activity.png'); ?>" width="65">
                         <span class="font-text-icon-wel">กิจกรรม</span>
                     </div>
                 </a>
                 <a href="#egp">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-egp.png'); ?>"width="65" >
+                        <img src="<?php echo base_url('docs/menubar-egp.png'); ?>" width="65">
                         <span class="font-text-icon-wel">ข่าว e-GP</span>
                     </div>
                 </a>
                 <a href="#oss">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-eservice.png'); ?>"width="65" >
+                        <img src="<?php echo base_url('docs/menubar-eservice.png'); ?>" width="65">
                         <span class="font-text-icon-wel">e-Service</span>
                     </div>
                 </a>
@@ -64,7 +64,7 @@
                 </a>
                 <a href="https://webmail.ban-klang.go.th/" target="_blank">
                     <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-email.png'); ?>"width="65" >
+                        <img src="<?php echo base_url('docs/menubar-email.png'); ?>" width="65">
                         <span class="font-text-icon-wel">E-Mail</span>
                     </div>
                 </a>
@@ -132,6 +132,25 @@
                 <div style="position: relative; z-index: 4; margin-top: 12%; margin-left: 58%; ">
                     <img src="docs/wel-g1-bird.gif">
                 </div>
+
+                <div class="row" style="margin-top: 40px;" >
+                    <div class="col-6">
+                        <div class="wel-image-container text-center" style="margin-left: -580px;">
+                            <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
+                                <img src="docs/wel-mark-travel1.png" alt="Map">
+                            </a>
+                            <span class="wel-font-travel">ภูเขาหินปะการัง</span><br>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="wel-image-container text-center" style="margin-left: 340px;">
+                            <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
+                                <img src="docs/wel-mark-travel2.png" alt="Map">
+                            </a>
+                            <span class="wel-font-travel">อ่างเก็บน้ำซับเจริญ</span><br>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -154,7 +173,27 @@
                         ส่งเสริมการรวมกลุ่มเศรษฐกิจ ยกระดับคุณภาพชีวิตและการศึกษา<br>
                         มุ่งพัฒนาแหล่งท่องเที่ยวให้มีชื่อเสียง ”</span>
                 </div>
+
+                <div class="row" style="margin-top: 350px;" >
+                <div class="col-6">
+                    <div class="wel-image-container text-center" style="margin-left: -580px;">
+                        <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
+                            <img src="docs/wel-mark-travel1.png" alt="Map">
+                        </a>
+                        <span class="wel-font-travel">ภูเขาหินปะการัง</span><br>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="wel-image-container text-center" style="margin-left: 340px;">
+                        <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
+                            <img src="docs/wel-mark-travel2.png" alt="Map">
+                        </a>
+                        <span class="wel-font-travel">อ่างเก็บน้ำซับเจริญ</span><br>
+                    </div>
+                </div>
             </div>
+            </div>
+           
         </div>
     </div>
 </div>
@@ -486,7 +525,7 @@
     </div>
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 10px;">
-            <div class="head-activity" >
+            <div class="head-activity">
                 <span class="font-header-home">ข่าวสาร / กิจกรรม</span>
             </div>
         </div>
@@ -570,7 +609,7 @@
     </div>
 </div>
 <div class="bg-public-news">
-     
+
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 3%;">
             <div class="head-activity">
@@ -839,14 +878,14 @@
     <img class="wipwap dot-news-animation-15" src="docs/anime-light-home2.png">
 
     <div class="baimai-container">
-    <img class="baimai-animation baimai-animation1" src="docs/baimai-animation1.png" alt="Ball 1">
-    <img class="baimai-animation baimai-animation2" src="docs/baimai-animation2.png" alt="Ball 2">
-    <img class="baimai-animation baimai-animation3" src="docs/baimai-animation3.png" alt="Ball 3">
-    <img class="baimai-animation baimai-animation4" src="docs/baimai-animation4.png" alt="Ball 4">
-    <img class="baimai-animation baimai-animation5" src="docs/baimai-animation5.png" alt="Ball 5">
-    <img class="baimai-animation baimai-animation6" src="docs/baimai-animation6.png" alt="Ball 6">
-    <img class="baimai-animation baimai-animation7" src="docs/baimai-animation7.png" alt="Ball 7">
-</div>
+        <img class="baimai-animation baimai-animation1" src="docs/baimai-animation1.png" alt="Ball 1">
+        <img class="baimai-animation baimai-animation2" src="docs/baimai-animation2.png" alt="Ball 2">
+        <img class="baimai-animation baimai-animation3" src="docs/baimai-animation3.png" alt="Ball 3">
+        <img class="baimai-animation baimai-animation4" src="docs/baimai-animation4.png" alt="Ball 4">
+        <img class="baimai-animation baimai-animation5" src="docs/baimai-animation5.png" alt="Ball 5">
+        <img class="baimai-animation baimai-animation6" src="docs/baimai-animation6.png" alt="Ball 6">
+        <img class="baimai-animation baimai-animation7" src="docs/baimai-animation7.png" alt="Ball 7">
+    </div>
 
     <div class="crop">
         <div class="d-flex justify-content-center" style="padding-top: 3%; ">
@@ -1597,7 +1636,7 @@
                 </div>
                 <div class="col-3">
                     <div class="bg-like">
-                        <div class="d-flex justify-content-center" style="padding-top: 15px;">
+                        <div class="d-flex justify-content-center" style="padding-left: 30px; padding-top: 10px;">
                             <span class="font-like ">แบบสอบถามความพึงพอใจ</span>
                         </div>
                         <div class="content-like">
@@ -1662,7 +1701,6 @@
                                 <div class="font-like-new btn-qa-add" style="margin-top: -45px; margin-left: 165px;">
                                     <a class="btn" onclick="showContentLikeDetail()"><span class="font-like-new">ดูคะแนน</span></a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -1674,7 +1712,9 @@
                 </div>
                 <div class="col-3">
                     <div class="bg-facebook">
-                    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100064917631107" data-tabs="timeline" data-width="247" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100064917631107" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100064917631107">องค์การบริหารส่วนตำบลซับพุทรา</a></blockquote></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100064917631107" data-tabs="timeline" data-width="247" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/profile.php?id=100064917631107" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100064917631107">องค์การบริหารส่วนตำบลซับพุทรา</a></blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1717,14 +1757,14 @@
                 โทรศัพท์ 056-713-895 </span>
         </div>
         <div class="sun-cartoon-animation2 text-center">
-            <img class="wel-light-nav" src="docs/sun-cartoon-animation.png" width="144" >
+            <img class="wel-light-nav" src="docs/sun-cartoon-animation.png" width="144">
         </div>
         <img class="cloud-cartoon-animation cloud-cartoon-animation-1" src="docs/animation-cloud-cartoon1.png">
         <img class="cloud-cartoon-animation cloud-cartoon-animation-2" src="docs/animation-cloud-cartoon2.png">
         <img class="cloud-cartoon-animation cloud-cartoon-animation-3" src="docs/animation-cloud-cartoon1.png">
         <img class="cloud-cartoon-animation cloud-cartoon-animation-4" src="docs/animation-cloud-cartoon1.png">
         <img class="cloud-cartoon-animation cloud-cartoon-animation-5" src="docs/animation-cloud-cartoon2.png">
-      
+
         <img class="egg-anime egg-1" src="<?php echo base_url('docs/egg.png'); ?>">
         <img class="egg-anime egg-2" src="<?php echo base_url('docs/egg.png'); ?>">
         <img class="egg-anime egg-3" src="<?php echo base_url('docs/egg.png'); ?>">

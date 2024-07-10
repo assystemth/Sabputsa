@@ -971,6 +971,7 @@
     height: 55px;
     padding-top: 8px;
     transition: background-image 0.6s ease;
+    padding-left: 3%;
   }
 
   .button-activity-all:hover {
@@ -5979,7 +5980,7 @@
   }
 
   .wel-g2-bg2 {
-    background-image: url('<?php echo base_url("docs/wel-g2-bg4.png"); ?>');
+    background-image: url('<?php echo base_url("docs/wel-g2-bg5.png"); ?>');
     position: absolute;
     width: 1920px;
     height: 804px;
@@ -6562,7 +6563,7 @@
   }
 
   .wel-g3-bg1 {
-    background-image: url('<?php echo base_url("docs/wel-g3-bg.png"); ?>');
+    background-image: url('<?php echo base_url("docs/wel-g3-bg1.png"); ?>');
     position: absolute;
     width: 1920px;
     height: 804px;
