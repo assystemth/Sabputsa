@@ -99,6 +99,7 @@ class Pages extends CI_Controller
 		$this->load->model('newsletter_model');
 		$this->load->model('q_a_model');
 		$this->load->model('complain_model');
+		$this->load->model('queue_model');
 		$this->load->model('corruption_model');
 		$this->load->model('suggestions_model');
 		$this->load->model('questions_model');
@@ -3230,6 +3231,136 @@ class Pages extends CI_Controller
 		$this->load->view('frontend_asset/js');
 		$this->load->view('frontend_templat/footer_other');
 	}
+	public function adding_queue()
+	{
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar_other');
+		$this->load->view('frontend/queue');
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer_other');
+	}
+
+	public function add_queue()
+	{
+		$this->form_validation->set_rules(
+			'queue_topic',
+			'เรื่องที่ต้องการติดต่อ',
+			'trim|required|min_length[4]',
+			array('required' => 'กรุณากรอกข้อมูล %s.', 'min_length' => 'กรุณากรอกข้อมูลขั้นต่ำ 4 ตัว')
+		);
+		$this->form_validation->set_rules(
+			'queue_by',
+			'ชื่อ-นามสกุล',
+			'trim|required|min_length[4]',
+			array('required' => 'กรุณากรอกข้อมูล %s.', 'min_length' => 'กรุณากรอกข้อมูลขั้นต่ำ 4 ตัว')
+		);
+		$this->form_validation->set_rules(
+			'queue_phone',
+			'เบอร์โทรศัพท์',
+			'trim|required|min_length[9]|max_length[10]',
+			array('required' => 'กรุณากรอกข้อมูล %s.', 'min_length' => 'กรุณากรอกข้อมูลขั้นต่ำ 9 ตัว', 'max_length' => 'กรุณากรอกข้อมูลไม่เกิน 10 ตัว')
+		);
+		$this->form_validation->set_rules(
+			'queue_number',
+			'หมายเลขประจำตัวประชาชน',
+			'trim|required|min_length[13]',
+			array('required' => 'กรุณากรอกข้อมูล %s.', 'min_length' => 'กรุณากรอกให้ครบ 13 หลัก')
+		);
+		$this->form_validation->set_rules(
+			'queue_date',
+			'วันที่และเวลา',
+			'required',
+			array('required' => 'กรุณากรอกข้อมูล %s.')
+		);
+		$this->form_validation->set_rules(
+			'queue_detail',
+			'รายละเอียด',
+			'trim|required|min_length[4]',
+			array('required' => 'กรุณากรอกข้อมูล %s.', 'min_length' => 'กรุณากรอกข้อมูลขั้นต่ำ 4 ตัว')
+		);
+
+
+		if ($this->form_validation->run() == FALSE) {
+			$this->load->view('frontend_templat/header');
+			$this->load->view('frontend_asset/css');
+			$this->load->view('frontend_templat/navbar_other');
+			$this->load->view('frontend/queue');
+			$this->load->view('frontend_asset/js');
+			$this->load->view('frontend_templat/footer_other');
+			$this->load->library('form_validation');
+		} else {
+			$queue_id = $this->queue_model->add_queue();
+			$this->queue_model->add_queue_detail($queue_id);
+
+			// ตั้งค่า flash data สำหรับ queue_id
+			$this->session->set_flashdata('queue_id', $queue_id);
+			$this->session->set_flashdata('queue_by', $this->input->post('queue_by'));
+			$this->session->set_flashdata('queue_date', $this->input->post('queue_date'));
+
+			redirect('Pages/adding_queue');
+		}
+	}
+	public function follow_queue()
+	{
+		// รับค่าจากฟอร์ม
+		$search_term = $this->input->post('search_term');
+
+		// ตรวจสอบว่ามีค่าที่จะค้นหาหรือไม่
+		if (empty($search_term)) {
+			// ถ้าไม่มีค่าที่ค้นหา ให้ส่งข้อความแสดงข้อผิดพลาดกลับไปยัง View
+			$data = array(
+				'error_message' => 'กรุณากรอกหมายเลขคิวหรือเบอร์โทรศัพท์',
+				'queue_data' => [],
+				'queue_details' => [],
+			);
+
+			// โหลด View
+			$this->load->view('frontend_templat/header');
+			$this->load->view('frontend_asset/css');
+			$this->load->view('frontend_templat/navbar_other');
+			$this->load->view('frontend/follow_queue', $data);
+			$this->load->view('frontend_asset/js');
+			$this->load->view('frontend_templat/footer_other');
+			return;
+		}
+
+		// Initialize variables
+		$queue_data = [];
+		$queue_details = [];
+
+		// Determine if search term is a queue_id or queue_phone
+		if (is_numeric($search_term) && strlen($search_term) == 10) {
+			// Search by phone number
+			$queue_data = $this->db->get_where('tbl_queue', array('queue_phone' => $search_term))->result_array();
+		} else {
+			// Search by queue ID
+			$queue_data = $this->db->get_where('tbl_queue', array('queue_id' => $search_term))->result_array();
+		}
+
+		// Query เพื่อดึงข้อมูลจาก tbl_queue_detail
+		if (!empty($queue_data)) {
+			foreach ($queue_data as $queue) {
+				$queue_id = $queue['queue_id'];
+				$details = $this->db->get_where('tbl_queue_detail', array('queue_detail_case_id' => $queue_id))->result_array();
+				$queue_details = array_merge($queue_details, $details);
+			}
+		}
+
+		// ส่งข้อมูลไปยัง View
+		$data = array(
+			'queue_data' => $queue_data,
+			'queue_details' => $queue_details,
+		);
+
+		// โหลด View
+		$this->load->view('frontend_templat/header');
+		$this->load->view('frontend_asset/css');
+		$this->load->view('frontend_templat/navbar_other');
+		$this->load->view('frontend/follow_queue', $data);
+		$this->load->view('frontend_asset/js');
+		$this->load->view('frontend_templat/footer_other');
+	}
 	public function adding_corruption()
 	{
 		$this->load->view('frontend_templat/header');
@@ -3352,7 +3483,7 @@ class Pages extends CI_Controller
 	public function e_service()
 	{
 		$topics = $this->form_esv_model->list_all_topic_with_details();
-	
+
 		$data['grouped_topics'] = [];
 		foreach ($topics as $topic) {
 			$topic_name = $topic->form_esv_topic_name;
@@ -3364,7 +3495,7 @@ class Pages extends CI_Controller
 				'form_esv_file' => $topic->form_esv_file,
 			];
 		}
-	
+
 		$this->load->view('frontend_templat/header');
 		$this->load->view('frontend_asset/css');
 		$this->load->view('frontend_templat/navbar_other');
@@ -3372,7 +3503,7 @@ class Pages extends CI_Controller
 		$this->load->view('frontend_asset/js');
 		$this->load->view('frontend_templat/footer_other');
 	}
-	
+
 
 	public function adding_esv_ods()
 	{

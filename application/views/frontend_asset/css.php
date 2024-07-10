@@ -6472,7 +6472,7 @@
   }
 
   .bg-btn-head-elderly-aw:hover {
-    background-image: url('<?php echo base_url("docs/head-elderly-aw-active.png"); ?>');
+    background-image: url('<?php echo base_url("docs/head-elderly-aw-active-hover.png"); ?>');
     background-repeat: no-repeat;
     width: 580px;
     height: 58px;
@@ -7336,4 +7336,161 @@
         transform: translateX(0); /* Move back to original position */
     }
 }
+
+.btn-queue {
+    background-image: url('<?php echo base_url("docs/btn-queue.png"); ?>');
+    width: 140px;
+    height: 50px;
+    position: relative;
+    /* เพิ่ม position relative เพื่อใช้กับ position absolute ภายใน */
+    transition: background-image 0.6s ease;
+  }
+
+  .btn-queue:hover {
+    background-image: url('<?php echo base_url("docs/btn-queue-hover.png"); ?>');
+    width: 140px;
+    height: 50px;
+    transition: background-image 0.6s ease;
+  }
+
+  .btn-queue .btn {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* ทำให้ปุ่มโปร่งใส */
+    border: none;
+    /* เอาเส้นขอบออก */
+    position: absolute;
+    /* ทำให้ปุ่มครอบคลุมทั้งพื้นที่ของ .btn-queue */
+    top: 0;
+    left: 0;
+  }
+
+  .font-label-e-service-queue {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .queue-container {
+    border: 1px solid #ddd;
+    border-radius: 0px 0px 20px 20px;
+    width: 1460px;
+    margin: auto;
+    height: auto;
+  }
+
+  .queue-container-in {
+    background: #fff;
+    padding: 20px;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid #D9D9D9;
+    height: 80px;
+  }
+
+  .queue-header {
+    display: flex;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid #D9D9D9;
+    background: #B6E1A1;
+    margin-top: 50px;
+    box-sizing: border-box;
+    /* Ensure padding is included in element's width and height */
+  }
+
+  .queue-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    /* overflow-y: auto; */
+    /* เพิ่มการเลื่อนถ้ามีเนื้อหาเกิน */
+  }
+
+  .status-dot {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+  }
+
+  .status-dot::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 2px;
+    height: 80px;
+    background-color: #D9D9D9;
+  }
+
+  .status-container {
+    position: relative;
+  }
+
+  .status-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #D9D9D9;
+  }
+
+  .status-container:first-child::after {
+    display: none;
+  }
+
+  .status-container-last .status-dot::after {
+    display: none;
+    /* ซ่อนเส้นสำหรับรายการสุดท้าย */
+  }
+
+  .status-container-last::after {
+    display: none;
+    /* ซ่อนเส้นสำหรับรายการสุดท้าย */
+  }
+
+  .font-queue-content {
+    color: #9C9C9C;
+    font-family: "Noto Looped Thai UI";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .font-queue-content2 {
+    color: #000;
+    font-family: "Noto Looped Thai UI";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .status-date {
+    margin-top: 4px;
+    margin-left: 45px;
+    /* Adjust this value to move the date further to the right */
+  }
+
+
+  .font-label-e-service-follow-queue {
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .font-queue-head {
+    color: #432F17;
+    font-family: "Noto Looped Thai UI";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 </style>

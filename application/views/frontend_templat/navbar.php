@@ -374,6 +374,7 @@
                           <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยื่นเอกสารออนไลน์</span></a></a>
                           <a href="<?php echo site_url('Pages/adding_suggestions'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</span></a></a>
                           <a href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</span></a></a>
+                          <a href="<?php echo site_url('Pages/adding_queue'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;จองคิวติดต่อราชการออนไลน์</span></a></a>
                           <a href="<?php echo site_url('Pages/q_a'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กระทู้ ถาม-ตอบ (Q&A)</span></a></a>
                           <a href="<?php echo site_url('Pages/questions'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำถามที่พบบ่อย (FAQ)</span></a></a>
                           <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม E-Book</span></a></a>
@@ -401,8 +402,8 @@
                           <a href="<?php echo site_url('Pages/plan_pcra'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการจัดเก็บรายได้ประจำปี</span></a></a>
                       </div>
                       <div class="dropdown-right">
-                          <a href="https://itas.nacc.go.th/go/iit/6bq910" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;IIT แบบวัดการรับรู้ภายใน</span></a></a>
-                          <a href="https://itas.nacc.go.th/go/eit/6bq910" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;EIT แบบวัดการรับรู้ภายนอก</span></a></a>
+                          <a href="https://itas.nacc.go.th/go/iit/pvzgf9" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;IIT แบบวัดการรับรู้ภายใน</span></a></a>
+                          <a href="https://itas.nacc.go.th/go/eit/pvzgf9" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;EIT แบบวัดการรับรู้ภายนอก</span></a></a>
                       </div>
                   </ul>
               </div>
@@ -645,6 +646,7 @@
                               <a href="<?php echo site_url('Pages/adding_esv_ods'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ยื่นเอกสารออนไลน์</span></a></a>
                               <a href="<?php echo site_url('Pages/adding_suggestions'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ช่องทางรับฟังความคิดเห็น</span></a></a>
                               <a href="<?php echo site_url('Pages/adding_corruption'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</span></a></a>
+                              <a href="<?php echo site_url('Pages/adding_queue'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;จองคิวติดต่อราชการออนไลน์</span></a></a>
                               <a href="<?php echo site_url('Pages/q_a'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;กระทู้ ถาม-ตอบ (Q&A)</span></a></a>
                               <a href="<?php echo site_url('Pages/questions'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;คำถามที่พบบ่อย (FAQ)</span></a></a>
                               <a href="<?php echo site_url('Pages/pbsv_e_book'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;ดาวน์โหลดแบบฟอร์ม E-Book</span></a></a>
@@ -672,8 +674,8 @@
                               <a href="<?php echo site_url('Pages/plan_pcra'); ?>"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;แผนการจัดเก็บรายได้ประจำปี</span></a></a>
                           </div>
                           <div class="dropdown-right">
-                              <a href="https://itas.nacc.go.th/go/iit/6bq910" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;IIT แบบวัดการรับรู้ภายใน</span></a></a>
-                              <a href="https://itas.nacc.go.th/go/eit/6bq910" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;EIT แบบวัดการรับรู้ภายนอก</span></a></a>
+                              <a href="https://itas.nacc.go.th/go/iit/pvzgf9" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;IIT แบบวัดการรับรู้ภายใน</span></a></a>
+                              <a href="https://itas.nacc.go.th/go/eit/pvzgf9" target="_blank"><img src="<?php echo base_url('docs/icon-nav.png'); ?>"><span class="font-nav">&nbsp;&nbsp;EIT แบบวัดการรับรู้ภายนอก</span></a></a>
                           </div>
                       </ul>
                   </div>

@@ -243,6 +243,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <!-- <h6 class="collapse-header">Custom Components:</h6> -->
                 <a class="collapse-item" href="<?php echo site_url('Complain_backend'); ?>">ร้องเรียน/ร้องทุกข์</a>
+                <a class="collapse-item" href="<?php echo site_url('Queue_backend'); ?>">จองคิวติดต่อราชการออนไลน์</a>
                 <a class="collapse-item" href="<?php echo site_url('Corruption_backend'); ?>">แจ้งเรื่องทุจริต<br>หน่วยงานภาครัฐ</a>
                 <a class="collapse-item" href="<?php echo site_url('Suggestions_backend'); ?>">รับฟังความคิดเห็น<br>และข้อเสนอแนะ</a>
                 <a class="collapse-item" href="<?php echo site_url('Esv_ods_backend'); ?>">ยื่นเอกสารออนไลน์</a>
@@ -1255,6 +1256,13 @@
 
                     <li class="hide">
                         <span>เรื่องร้องเรียน</span>
+                    </li>
+                </a>
+                
+                <a href="<?php echo site_url('Queue_backend'); ?>" class="link">
+
+                    <li class="hide">
+                        <span>จองคิวติดต่อราชการออนไลน์</span>
                     </li>
                 </a>
 

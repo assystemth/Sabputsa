@@ -192,7 +192,7 @@
                            </script>
                         <?php endif; ?>
                      </td>
-                     <td class="font-20" align="center">
+                     <td class="font-18" align="center" style="color: black;">
                         <?php
                         // ในการใช้งาน setThaiMonth
                         $date = new DateTime($rs->intra_discipline_datesave);

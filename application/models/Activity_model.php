@@ -105,7 +105,7 @@ class Activity_model extends CI_Model
         $this->db->from('tbl_activity as a');
         $this->db->join('tbl_activity_img as ai', 'a.activity_id = ai.activity_img_ref_id', 'left');
         $this->db->group_by('a.activity_id');
-        $this->db->order_by('a.activity_id', 'DESC');
+        $this->db->order_by('a.activity_date', 'DESC'); // เรียงตามวันที่ใหม่ล่าสุด    
         $query = $this->db->get();
         return $query->result();
     }

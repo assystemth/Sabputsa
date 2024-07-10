@@ -74,7 +74,7 @@
                         <div class="mt-1"></div>
                         <a href="https://www.oic.go.th/INFOCENTER78/7852/" target="_blank" class="font-content-all-web">ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์</a><br>
                         <div class="mt-1"></div>
-                        <a href="<?php echo site_url('Pages/pbsv_ahs'); ?>" class="font-content-all-web">หลักประกันสุขภาพตำบลสว่าง</a><br>
+                        <a href="<?php echo site_url('Pages/pbsv_ahs'); ?>" class="font-content-all-web">หลักประกันสุขภาพตำบล</a><br>
                         <div class="mt-1"></div>
                         <a href="https://www.nacc.go.th/NACCPPWFC?" target="_blank" class="font-content-all-web">ยกระดับเจตจำนงทางการเมืองในการต่อต้านการทุจริต</a><br>
                         <div class="mt-1"></div>
@@ -193,7 +193,7 @@
                         <div class="mt-1"></div>
                         <a href="<?php echo site_url('Pages/procurement'); ?>" class="font-content-all-web">ข่าวจัดซื้อจัดจ้าง</a><br>
                         <div class="mt-1"></div>
-                        <a href="<?php echo site_url('Pages/e_gp'); ?>" class="font-content-all-web">ข่าวจัดซื้อจัดจ้าง e-GP</a><br>
+                        <a href="<?php echo site_url('Pages/egp'); ?>" class="font-content-all-web">ข่าวจัดซื้อจัดจ้าง e-GP</a><br>
                         <div class="mt-1"></div>
                         <a href="<?php echo site_url('Pages/p_rpo'); ?>" class="font-content-all-web">รายงานผลการดำเนินงานจัดซื้อจัดจ้าง</a><br>
                         <div class="mt-1"></div>
@@ -214,6 +214,8 @@
                         <a href="<?php echo site_url('Pages/adding_suggestions'); ?>" class="font-content-all-web">ช่องทางรับฟังความคิดเห็น</a><br>
                         <div class="mt-1"></div>
                         <a href="<?php echo site_url('Pages/adding_corruption'); ?>" class="font-content-all-web">แจ้งเรื่องทุจริตหน่วยงานภาครัฐ</a><br>
+                        <div class="mt-1"></div>
+                        <a href="<?php echo site_url('Pages/adding_queue'); ?>" class="font-content-all-web">จองคิวติดต่อราชการออนไลน์</a><br>
                         <div class="mt-1"></div>
                         <a href="<?php echo site_url('Pages/q_a'); ?>" class="font-content-all-web">กระทู้ ถาม-ตอบ (Q&A)</a><br>
                         <div class="mt-1"></div>
@@ -241,9 +243,9 @@
                 <div class="content-all-web mt-4">
                     <span class="font-head-all-web">อื่นๆ</span><br>
                     <div class="underline pad-left-35">
-                        <a href="https://itas.nacc.go.th/go/iit/u4gpi2" target="_blank" class="font-content-all-web">แบบวัดการรับรู้ภายใน IIT</a><br>
+                        <a href="https://itas.nacc.go.th/go/iit/pvzgf9" target="_blank" class="font-content-all-web">แบบวัดการรับรู้ภายใน IIT</a><br>
                         <div class="mt-1"></div>
-                        <a href="https://itas.nacc.go.th/go/eit/u4gpi2" target="_blank" class="font-content-all-web">แบบวัดการรับรู้ภายนอก EIT</a><br>
+                        <a href="https://itas.nacc.go.th/go/eit/pvzgf9" target="_blank" class="font-content-all-web">แบบวัดการรับรู้ภายนอก EIT</a><br>
                     </div>
                 </div>
             </div>
