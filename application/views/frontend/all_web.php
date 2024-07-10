@@ -60,6 +60,8 @@
                         <div class="mt-1"></div>
                         <a href="<?php echo site_url('Pages/p_education'); ?>" class="font-content-all-web">กองสวัสดิการสังคม</a><br>
                         <div class="mt-1"></div>
+                        <a href="<?php echo site_url('Pages/p_learder'); ?>" class="font-content-all-web">กำนัน / ผู้ใหญ่บ้าน</a><br>
+                        <div class="mt-1"></div>
                         <a href="<?php echo site_url('Pages/p_audit'); ?>" class="font-content-all-web">หน่วยตรวจสอบภายใน</a><br>
                     </div>
                 </div>

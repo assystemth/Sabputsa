@@ -3,7 +3,7 @@
 
 <head>
     <link rel="icon" href="<?php echo base_url("docs/b-logo.png"); ?>" type="image/x-icon">
-    <title>อบต.ซับพุทรา ระบบอินทราเน็ต</title>
+    <title>อบต.ซับพุทรา ระบบ Back Office</title>
     <!-- icon -->
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
