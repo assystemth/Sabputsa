@@ -34,58 +34,43 @@
 </div> -->
 
 <nav class="wel-navbar" id="wel-navbar">
-    <div class="row">
-        <div class="col-4">
-            <div class="text-wel-menubar">
-                <!-- <span class="font-text-menubar-wel">องค์การบริหารส่วนตำบลบ้านกลาง</span> -->
+    <div class="wel-navbar-list underline">
+        <a href="#">
+            <div class="navbar-item">
+                <img src="<?php echo base_url('docs/menubar-home1.png'); ?>">
+                <span class="font-text-icon-wel">หน้าหลัก</span>
             </div>
-        </div>
-        <div class="col-8">
-            <div class="wel-navbar-list underline">
-                <a href="#">
-                    <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-home.png'); ?>" width="65">
-                        <span class="font-text-icon-wel">หน้าหลัก</span>
-                    </div>
-                </a>
-                <a href="#activity">
-                    <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-activity.png'); ?>" width="65">
-                        <span class="font-text-icon-wel">กิจกรรม</span>
-                    </div>
-                </a>
-                <a href="#egp">
-                    <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-egp.png'); ?>" width="65">
-                        <span class="font-text-icon-wel">ข่าว e-GP</span>
-                    </div>
-                </a>
-                <a href="#oss">
-                    <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-eservice.png'); ?>" width="65">
-                        <span class="font-text-icon-wel">e-Service</span>
-                    </div>
-                </a>
-                <!-- <a href="https://www.facebook.com/people/%E0%B8%AD%E0%B8%9A%E0%B8%95-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87-%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B8%81-%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C/pfbid0QrCQ8hnZV1Sgw1kosgKZX6y8aUHMWBA6EEs9k8mHvF7Wp4f8cbxbvhCkVHho3iRRl/" target="_blank">
-                    <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-facebook.png'); ?>">
-                        <span class="font-text-icon-wel">FACEBOOK</span>
-                    </div> -->
-                </a>
-                <a href="https://webmail.ban-klang.go.th/" target="_blank">
-                    <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-email.png'); ?>" width="65">
-                        <span class="font-text-icon-wel">E-Mail</span>
-                    </div>
-                </a>
-                <!-- <a href="<?php echo site_url('Pages/contact'); ?>" target="_blank">
-                    <div class="navbar-item">
-                        <img src="<?php echo base_url('docs/menubar-contact.png'); ?>">
-                        <span class="font-text-icon-wel">ติดต่อเรา</span>
-                    </div>
-                </a> -->
+        </a>
+        <a href="#activity">
+            <div class="navbar-item">
+                <img src="<?php echo base_url('docs/menubar-activity1.png'); ?>">
+                <span class="font-text-icon-wel">กิจกรรม</span>
             </div>
-        </div>
+        </a>
+        <a href="#egp">
+            <div class="navbar-item">
+                <img src="<?php echo base_url('docs/menubar-egp1.png'); ?>">
+                <span class="font-text-icon-wel">ข่าว e-GP</span>
+            </div>
+        </a>
+        <a href="#oss">
+            <div class="navbar-item">
+                <img src="<?php echo base_url('docs/menubar-eservice1.png'); ?>">
+                <span class="font-text-icon-wel">e-Service</span>
+            </div>
+        </a>
+        <a href="https://webmail.sabputsa.go.th/" target="_blank">
+            <div class="navbar-item">
+                <img src="<?php echo base_url('docs/menubar-email1.png'); ?>">
+                <span class="font-text-icon-wel">E-Mail</span>
+            </div>
+        </a>
+        <a href="<?php echo base_url('pages/contact'); ?>" target="_blank">
+            <div class="navbar-item">
+                <img src="<?php echo base_url('docs/menubar-contact1.png'); ?>">
+                <span class="font-text-icon-wel">ติดต่อเรา</span>
+            </div>
+        </a>
     </div>
 </nav>
 <button class="hide-button" id="hide-button"></button>

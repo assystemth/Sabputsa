@@ -6748,20 +6748,20 @@
 
   .wel-navbar {
     position: fixed;
-    top: 65%;
+    top: 40%;
     left: 0;
     transform: translateY(-50%);
     padding: 10px;
     border-radius: 0 10px 10px 0;
-    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 1;
-    background-image: url('<?php echo base_url("docs/bg-menu-bar.png"); ?>');
-    width: 177px;
-    height: 699px;
-    z-index: 10;
+    /* เริ่มต้นด้วยการแสดง */
+    background-image: url('<?php echo base_url("docs/bg-menu-bar1.png"); ?>');
+    width: 91px;
+    height: 461px;
+    z-index: 9999;
+    /* เพิ่ม z-index เพื่อให้มั่นใจว่าอยู่ข้างบนสุด */
   }
-
-
 
   .wel-navbar.hide {
     left: -235px;
@@ -6776,9 +6776,9 @@
     justify-content: center;
     transform: rotate(90deg);
     /* หมุนข้อความ 90 องศา */
-    transform-origin: left center;
+    transform-origin: right center;
     /* ตำแหน่งจุดหมุน */
-    margin-right: 30px;
+    margin-left: 30px;
     margin-top: -240px;
   }
 
@@ -6796,57 +6796,59 @@
 
   .hide-button {
     position: fixed;
-    top: 22.7%;
-    left: 0;
+    top: 68%;
+    left: 10px;
     transform: translateY(-50%);
     padding: 0;
-    width: 177px;
-    height: 269px;
+    width: 28px;
+    /* กำหนดขนาดของปุ่ม */
+    height: 28px;
     cursor: pointer;
     border: none;
     background: none;
     /* เอาพื้นหลังออก */
-    background-image: url('<?php echo base_url("docs/hide-menu-bar.png"); ?>');
+    background-image: url('<?php echo base_url("docs/hidenavbar1.png"); ?>');
     /* เปลี่ยนเป็น URL รูปภาพของคุณ */
     background-size: cover;
     background-position: center;
-    z-index: 10;
+    z-index: 10000;
     transition: background-image 0.6s ease;
-    margin-right: 35px;
+    margin-left: 15px;
   }
 
   .hide-button:hover {
-    background-image: url('<?php echo base_url("docs/hide-menu-bar-hover.png"); ?>');
+    background-image: url('<?php echo base_url("docs/hidenavbar1_over.png"); ?>');
   }
 
   .show-button {
     position: fixed;
-    top: 22.7%;
-    left: 0;
+    top: 68%;
+    left: 10px;
     transform: translateY(-50%);
-    padding: 0;
-    width: 177px;
-    height: 269px;
+    padding: 0px;
+    width: 28px;
+    /* กำหนดขนาดของปุ่ม */
+    height: 28px;
     cursor: pointer;
     border: none;
     background: none;
     /* เอาพื้นหลังออก */
-    background-image: url('<?php echo base_url("docs/show-menu-bar.png"); ?>');
+    background-image: url('<?php echo base_url("docs/shownavbar1.png"); ?>');
     /* เปลี่ยนเป็น URL รูปภาพของคุณ */
     background-size: cover;
     background-position: center;
-    z-index: 10;
+    z-index: 10000;
     transition: background-image 0.6s ease;
-    margin-right: 35px;
+    margin-left: 15px;
   }
 
   .show-button:hover {
-    background-image: url('<?php echo base_url("docs/show-menu-bar-hover.png"); ?>');
+    background-image: url('<?php echo base_url("docs/shownavbar1_over.png"); ?>');
   }
 
   .wel-navbar-list {
-    margin-top: 70px;
-    margin-left: -16px;
+    margin-top: 50px;
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6858,19 +6860,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8px 0;
-    /* transition: transform 0.5s ease, font-size 0.5s ease; */
+    margin: 4px 0;
+    transition: transform 0.5s ease, font-size 0.5s ease;
   }
 
-  .navbar-item:hover .font-text-icon-wel {
-    color: #214A1B;
-    /* เปลี่ยนสีของข้อความเมื่อ hover */
-    transition: color 0.5s ease;
-    /* เพิ่มการเปลี่ยนสีอย่างนุ่มนวล */
-  }
-
-  /* .navbar-item:hover {
+  .navbar-item:hover {
     transform: scale(1.10);
+    /* ปรับขนาดการขยาย */
   }
 
   .navbar-item img {
@@ -6879,14 +6875,19 @@
 
   .navbar-item:hover img {
     transform: scale(1.10);
-  } */
+    /* ปรับขนาดการขยาย */
+  }
 
+  .navbar-item:hover .font-text-icon-wel {
+    color: #214A1B;
+    /* เปลี่ยนสีของข้อความเมื่อเมาส์ชี้ที่รูป */
+  }
 
   .font-text-icon-wel {
     color: #FFF;
     text-align: center;
     font-family: "Noto Looped Thai";
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -7044,7 +7045,7 @@
 
   .messenger-container {
     position: fixed;
-    bottom: 190px;
+    bottom: 150px;
     left: 10px;
     z-index: 999;
     display: flex;
